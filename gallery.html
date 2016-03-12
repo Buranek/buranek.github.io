@@ -12,6 +12,8 @@
 <link rel="SHORTCUT ICON" href="../favicon.ico"> <!-- Значок сайта -->
 <link rel="stylesheet" href="style.css" type="text/css"> <!-- Ссылка на CSS сайта -->
 <!-- <<<ПОДРУБОНЫ>>> -->
+<!-- Аккордион меню -->
+<script src="/js/accordion-menu.js"></script>
 <!-- Добавить свежую минимальную бибиотеку jQuery -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <!-- Добавить fancyBox -->
@@ -23,6 +25,10 @@ $(document).ready(function() {
     $(".fancybox").fancybox();
 });
 </script>
+
+    <style>
+        ul li{margin:10px 0;}
+    </style>
 
 <!-- HTML5Shiv для осла -->
 <!--[if lt IE 9]>
@@ -183,9 +189,43 @@ $(document).ready(function() {
 </div>
 <div id="right">
 <h3>Категории новостей:</h3><br>
-<ul>
-тут будет какой-нибудь охуенный список новостей
-</ul>
+<div style="float:right;width:200px;">
+            <div id="accordion">
+                <ul>
+                    <li>
+                        <div>Sollicitudin</div>
+                        <ul>
+                            <li><a href="?11">Lorem ipsum</a></li>
+                            <li><a href="?12">Dolor sit</a></li>
+                            <li>
+                                <div>Commodo Rhoncus</div>
+                                <ul>
+                                    <li><a href="?131">Consectetur</a></li>
+                                    <li><a href="demo.html">Current</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>Quis Porttitor</div>
+                        <ul>
+                            <li><a href="?21">Finibus Bonorum</a></li>
+                            <li><a href="?22">Sed ut</a></li>
+                            <li><a href="?23">Neque porro</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>Odio Ac</div>
+                        <ul>
+                            <li><a href="?31">Minima veniam</a></li>
+                            <li><a href="?32">Voluptate velit</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="?4">Sapien quam</a>
+                    </li>
+                </ul>
+            </div>
 <br>
 <!-- Социальный блок -->
 <p><h3>Я в сервисах:</h3></p>

@@ -455,7 +455,7 @@ footer {
   background: linear-gradient(#66665e 0%, #45463d 100%);
 }
 #cssmenu > ul > li {
-  background: #5c919b;
+  background: #e2c1ba;
 /*
   background: -moz-linear-gradient(#e94f31 0%, #d13516 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e94f31), color-stop(100%, #d13516));
@@ -464,14 +464,16 @@ footer {
 */
 }
 #cssmenu > ul > li:hover {
-  background: #e84323;
+  background: #5bced2;
+/*
   background: -moz-linear-gradient(#e84323 0%, #c33115 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e84323), color-stop(100%, #c33115));
   background: -webkit-linear-gradient(#e84323 0%, #c33115 100%);
   background: linear-gradient(#e84323 0%, #c33115 100%);
+*/
 }
 #cssmenu > ul > li > a {
-  font-size: 14px;
+  font-size: 16px;
   display: block;
   background: url(images/cssmenu/pattern.png) top left repeat;
   color: #ffffff;
@@ -481,7 +483,7 @@ footer {
 }
 #cssmenu > ul > li > a > span {
   display: block;
-  padding: 12px 10px;
+  padding: 14px 10px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;

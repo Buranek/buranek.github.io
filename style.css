@@ -6,7 +6,7 @@ html, body {
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #ded1be url(images/back.jpg) repeat top left;
+	background: #ded1be url(images/theme/back.jpg) repeat top left;
 	font-family: "Arial", Arial, Helvetica, sans-serif;
 	font-size: 11pt;
 	color: #80795F;

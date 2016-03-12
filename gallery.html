@@ -9,14 +9,14 @@
 <meta name="keywords" content="буранчик,галерея,картина,картины"> <!-- Ключевые слова -->
 <meta name="author" content="Buranchik"> <!-- Имя автора -->
 <meta name="generator" content="Static page" /> <!-- Оставлю это для статистики -->
-<link rel="SHORTCUT ICON" href="favicon.ico"> <!-- Значок сайта -->
+<link rel="SHORTCUT ICON" href="../favicon.ico"> <!-- Значок сайта -->
 <link rel="stylesheet" href="style.css" type="text/css"> <!-- Ссылка на CSS сайта -->
 <!-- <<<ПОДРУБОНЫ>>> -->
 <!-- Добавить свежую минимальную бибиотеку jQuery -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <!-- Добавить fancyBox -->
-<link rel="stylesheet" href="../fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="../fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<link rel="stylesheet" href="../fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../fancybox/source/jquery.fancybox.pack.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -43,21 +43,7 @@ $(document).ready(function() {
 </div>
 
 <!-- Меню сайта -->
-<div id="menu" style="text-align: center;">
-|
-<a href="priks">Приключения</a>
-|
-<a href="gallery">Галерея</a>
-|
-<a href="music">Музыка</a>
-|
-<a href="about">Об авторе</a>
-|
-<a href="freestock">Разное</a>
-|
-<a href="sovenok3">Браузерная игра (альфа)</a>
-|
-</div>
+<script src="/blocks/menu.shtml"></script>
 
 <!-- Левый блок сайта -->
 <div id="left">
@@ -74,17 +60,10 @@ $(document).ready(function() {
 <div>
 <!-- Картины начинаются здесь -->
 	<p>
-<!--
-		<a class="fancybox" href="../gal/pic1.png" data-fancybox-group="gallery" title="И 1000 солнц погасли..."><img src="../gal/pic1_th.png" alt="" /></a>
--->
-		
-		<a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="1_s.jpg" alt="" /></a>
-
-		<a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="2_s.jpg" alt="" /></a>
-
-		<a class="fancybox" href="3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="3_s.jpg" alt="" /></a>
-
-		<a class="fancybox" href="4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="4_s.jpg" alt="" /></a>
+		<a class="fancybox" href="../pics/1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="../pics/1_s.jpg" alt="" /></a>
+		<a class="fancybox" href="../pics/2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="../pics/2_s.jpg" alt="" /></a>
+		<a class="fancybox" href="../pics/3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="../pics/3_s.jpg" alt="" /></a>
+		<a class="fancybox" href="../pics/4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="../pics/4_s.jpg" alt="" /></a>
 	</p>
 <!--
 <a title="Хентайчик по эскизам анона. Очень трудная и кропотливая работа + шутка про дом Колотушкина." class="fancybox" rel="group" href="/gal/pic2.png"><img src="/gal/pic2_th.png" alt="Board ZOr" /></a>

@@ -4,22 +4,204 @@
 
 <head>
 <title>Буранчик - Галерея</title>
+<!-- Метан -->
+<meta charset="UTF-8">
+<meta name="description" content="Галерея Буранчика">
+<meta name="keywords" content="буранчик,галерея,картина,картины">
+<meta name="author" content="Hege Refsnes">
+<meta name="generator" content="Static page" /> <!-- leave this for stats -->
 <!-- Значок сайта -->
 <link rel="SHORTCUT ICON" href="favicon.ico">
-<meta name="keywords" content="<? here_keywords(); ?>">
-<meta name="generator" content="Fohroer">
-<meta name="description" content="<? here_description(); ?>">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- Ссылка на CSS сайта -->
 <link rel="stylesheet" href="style.css" type="text/css">
-<!-- Подрубить последнюю минимальную jQuery -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- <<<ПОДРУБОНЫ>>> -->
+<!-- Подрубить jQuery -->
+<script type="text/javascript" src="../lib/jquery-1.10.1.min.js"></script>
 <!-- Добавить главный JS файл fancyBox и CSS файлы -->
-<script type="text/javascript" src="/js/source/jquery.fancybox.js?v=2.1.5"></script>
-<link rel="stylesheet" type="text/css" href="/js/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
 <!-- HTML5Shiv для осла -->
 <!--[if lt IE 9]>
     <script src="/js/html5shiv.min.js"></script>
 <![endif]-->
+
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
 </head>
 <body>
 <div id="content">
@@ -31,7 +213,23 @@
 Мудрость совы, созидание всего мира. Нна меню внимание обратите!
 <br>Начиная с 24 января 2016 сайт является божьим даром <a href="/news/bojiy-dar">официально</a>.
 </div>
-<!-- Тут было меню -->
+<!-- Меню сайта -->
+<div id="menu" style="text-align: center;">
+|
+<a href="priks">Приключения</a>
+|
+<a href="gallery">Галерея</a>
+|
+<a href="music">Музыка</a>
+|
+<a href="about">Об авторе</a>
+|
+<a href="contract">Обратная связь</a>
+|
+<a href="freestock">Бесплатный сток</a>
+|
+<a href="sovenok3">Браузерная игра (альфа)</a>
+|
 </div>
 <div id="left">
 <!-- Содержание сайта -->
@@ -46,7 +244,7 @@
 <br>
 <div>
 <!-- Картины начинаются здесь -->
-<a class="fancybox" href="/gal/pic1.png" data-fancybox-group="gallery" title="И 1000 солнц погасли..."><img src="/gal/pic1_th.png" alt="" /></a>
+<a class="fancybox" href="../gal/pic1.png" data-fancybox-group="gallery" title="И 1000 солнц погасли..."><img src="../gal/pic1_th.png" alt="" /></a>
 <!--
 <a title="Хентайчик по эскизам анона. Очень трудная и кропотливая работа + шутка про дом Колотушкина." class="fancybox" rel="group" href="/gal/pic2.png"><img src="/gal/pic2_th.png" alt="Board ZOr" /></a>
 <a title="Hard Dance" class="fancybox" rel="group" href="/gal/pic3.png"><img src="/gal/pic3_th.png" alt="Hard Dance" /></a>
@@ -161,37 +359,20 @@
 <!-- А кончаются тут -->
     <br>
     <h4>Конфеты</h4>
-    <?php here_messages('gallery'); ?>
+    Тут были комменты
 <br>
 </div>
 <div id="right">
 <h3>Категории новостей:</h3><br>
 <ul>
-<!-- Меню сайта -->
-<div id="menu" style="text-align: center;">
-|
-<a href="priks">Приключения</a>
-|
-<a href="gallery">Галерея</a>
-|
-<a href="music">Музыка</a>
-|
-<a href="about">Об авторе</a>
-|
-<a href="contract">Обратная связь</a>
-|
-<a href="freestock">Бесплатный сток</a>
-|
-<a href="sovenok3">Браузерная игра (альфа)</a>
-|
+тут будет какой-нибудь охуенный список новостей
 </ul>
 <br>
 <!-- Социальный блок -->
 <p><h3>Я в сервисах:</h3></p>
-<p><a title="DeviantArt" href="http://fap-material.deviantart.com/"><img src="/images/socs/deviantart.png" alt="deviantart" width="50" height="50"></a>
-<a title="RSS лента" href="<? here_urlrss(); ?>"><img src="/images/socs/rss.png" alt="rss" width="50" height="50"></a>
-<a title="YouTube" href="https://www.youtube.com/user/Bur2nek/videos"><img src="/images/socs/yt.png" alt="youtube" width="50" height="50"></a>
-<a title="SoundCloud" href="https://soundcloud.com/fohroer/tracks"><img src="/images/socs/soundcloud.png" alt="soundcloud" width="50" height="50"></a></p>
+<p><a title="DeviantArt" href="http://fap-material.deviantart.com/"><img src="../images/socs/deviantart.png" alt="deviantart" width="50" height="50"></a>
+<a title="YouTube" href="https://www.youtube.com/user/Bur2nek/videos"><img src="../images/socs/yt.png" alt="youtube" width="50" height="50"></a>
+<a title="SoundCloud" href="https://soundcloud.com/fohroer/tracks"><img src="../images/socs/soundcloud.png" alt="soundcloud" width="50" height="50"></a></p>
 <p>ТУТ БУДЕТ ЯНДЕКС МЕТРИКА</p>
 </div>
 <!-- Подвал -->

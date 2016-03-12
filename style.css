@@ -150,6 +150,7 @@ html>body #menu {
 	 margin: 0px auto;
 	 padding: 0px;
 	 width: 700px;
+	 background: #ded1be url(images/theme/left-body.png) repeat top left;
 }
 
 /** Форма комментариев **/

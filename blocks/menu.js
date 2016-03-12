@@ -1,3 +1,7 @@
+document.write('\
+\
+    <h1>Add your HTML code here</h1>\
+\
 <div id="menu" style="text-align: center;">
 |
 <a href="priks">Приключения</a>
@@ -13,3 +17,5 @@
 <a href="sovenok3">Браузерная игра (альфа)</a>
 |
 </div>
+\
+');

@@ -16,9 +16,6 @@
 <!-- Добавить главный JS файл fancyBox и CSS файлы -->
 <script type="text/javascript" src="/js/source/jquery.fancybox.js?v=2.1.5"></script>
 <link rel="stylesheet" type="text/css" href="/js/source/jquery.fancybox.css?v=2.1.5" media="screen" />
-<!-- Добавить помощник Плашек (это опционально) -->
-<link rel="stylesheet" type="text/css" href="/js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
-<script type="text/javascript" src="/js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 <!-- HTML5Shiv для осла -->
 <!--[if lt IE 9]>
     <script src="/js/html5shiv.min.js"></script>
@@ -64,24 +61,8 @@
 <br>Детализация картин различна, тематика также разнообразна. Некоторые картины выглядят так, словно они сотворены ребёнком, другие поставят в тупик даже застарелого зрителя.</p>
 <br>
 <div>
-<!-- Настройки фетишбокса здесь -->
-$('.fancybox-thumbs').fancybox({
-prevEffect : 'none',
-nextEffect : 'none',
-
-closeBtn  : false,
-arrows    : false,
-nextClick : true,
-
-helpers : {
-thumbs : {
-width  : 50,
-height : 50
-}
-}
-});
 <!-- Картины начинаются здесь -->
-<a title="И 1000 солнц погасли..." class="fancybox" rel="group" href="/gal/pic1.png"><img src="/gal/pic1_th.png" alt="И 1000 солнц погасли" /></a>
+<a class="fancybox" href="/gal/pic1.png" data-fancybox-group="gallery" title="И 1000 солнц погасли..."><img src="/gal/pic1_th.png" alt="" /></a>
 <!--
 <a title="Хентайчик по эскизам анона. Очень трудная и кропотливая работа + шутка про дом Колотушкина." class="fancybox" rel="group" href="/gal/pic2.png"><img src="/gal/pic2_th.png" alt="Board ZOr" /></a>
 <a title="Hard Dance" class="fancybox" rel="group" href="/gal/pic3.png"><img src="/gal/pic3_th.png" alt="Hard Dance" /></a>

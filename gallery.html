@@ -190,21 +190,27 @@ ul li{margin:10px 0;}
 <h3>Категории новостей:</h3><br>
 <!-- Меню сайта -->
 <div style="float:right;width:200px;">
-<div id="menu" style="text-align: center;">
-|
-<a href="priks">Приключения</a>
-|
-<a href="gallery">Галерея</a>
-|
-<a href="music">Музыка</a>
-|
-<a href="about">Об авторе</a>
-|
-<a href="freestock">Разное</a>
-|
-<a href="sovenok3">Браузерная игра (альфа)</a>
-|
+
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='priks'><span>Приключения</span></a></li>
+   <li class='has-sub'><a href='gallery'><span>Галерея</span></a>
+      <ul>
+         <li><a href='about'><span>Музыка</span></a></li>
+         <li><a href='music'><span>Об авторе</span></a></li>
+         <li class='other'><a href='#'><span>Разное</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>About</span></a>
+      <ul>
+         <li><a href='#'><span>Company</span></a></li>
+         <li class='contact'><a href='#'><span>Обратная связь</span></a></li>
+      </ul>
+   </li>
+   <li class='last'><a href='#'><span>Contact</span></a></li>
+</ul>
 </div>
+
 </div>
 
 <br>

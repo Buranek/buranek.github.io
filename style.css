@@ -1,22 +1,40 @@
-/** Основное **/
+/* ШРИФТЫ */
+/* Шрифт Oldtyper */
+@font-face {
+font-family: Oldtyper; /* Гарнитура шрифта */
+src: url('/fonts/a_old_typer.ttf'); /* Путь к файлу со шрифтом */
+}
+
+/* Шрифт Liberation Sans */
+@font-face {
+    font-family: 'Liberation Sans'; /* Гарнитура шрифта */
+    font-style: normal;
+    font-weight: 400;
+    src: local('Liberation Sans'), local('LiberationSans-Regular'),
+        url(/fonts/liberation-sans.woff) format('woff'),
+        url(/fonts/liberation-sans.ttf) format('truetype');
+}
+
+/* Основное */
 html, body {
 	height: 100%;
 }
 
+/*Обычный текст*/
 body {
 	margin: 0px;
 	padding: 0px;
 	background: #ded1be url(images/theme/back.png) repeat top left;
-	font-family: "Arial", Arial, Helvetica, sans-serif;
-	font-size: 11pt;
-	color: #80795F;
+	font-family: Liberation Sans, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #445a53;
 }
 
 h1{
 	margin-top: 0px;
 	margin-left: 0px;
 	font-weight: bold;
-	font-size: 23pt;
+	font-family: Oldtyper, Verdana, Georgia,serif;
 	color: #5E5945;
 }
 
@@ -59,15 +77,30 @@ ul {
 	list-style-type: square;
 }
 
-a {
-	color: #488081;
+/* ССЫЛКИ */
+
+/*a:link - обычная, непосещённая ссылка*/
+a:link {
+color: #EE0000;
 }
 
+/* a:visited - ссылка, которую пользователь уже посетил */
+a:visited {
+    color: #551A8B;
+}
+
+/*a:hover - ссылка, когда мышка наведена поверх неё*/
 a:hover {
-	text-decoration: none;
+text-decoration: none;
+color: #5e629d;
 }
 
-/** HEADER */
+/* a:active - ссылка в момент, когда она нажата */
+a:active {
+    color: #5e629d;
+}
+
+/* ЗАГОЛОВОК */
 
 #header {
 	float: left;
@@ -89,7 +122,7 @@ a:hover {
 	font-size: 11px;
 }
 
-/** Меню **/
+/* Меню (старое) */
 
 #menu {
 	margin: 20px auto;
@@ -114,7 +147,7 @@ html>body #menu {
 	text-align: center;
 }
 
-/** Элемент меню **/
+/* Элемент меню (старого) */
 #menu a {
 	display: inline;
 	padding: 20px;
@@ -133,7 +166,7 @@ html>body #menu {
 	color: #5E5945;
 }
 
-/** СОДЕРЖИМОЕ **/
+/* СОДЕРЖИМОЕ */
 #content {
 	margin: auto;
 	width: 1050px;
@@ -143,7 +176,7 @@ html>body #menu {
 	border-right: 1px solid #5E5945;
 }
 
-/** Кусок с новостями или страницей (или галереей) **/
+/* Кусок с новостями или страницей (или галереей) */
 
 #left {
 	 float: left;
@@ -153,7 +186,7 @@ html>body #menu {
 	 background: #ded1be url(images/theme/left-body.png) repeat top left;
 }
 
-/** Форма комментариев **/
+/* Форма комментариев (из Ruxe Engine) */
 
 .optionstable{
                            border-left: solid 1px silver;
@@ -336,7 +369,7 @@ html>body #menu {
 	 width: 730px;
 }
 
-/** Кусок с профилем, кнопочками, последними конфетами, и так далее **/
+/** Правый кусок с меню **/
 
 #right {
 	 float: right;
@@ -347,10 +380,10 @@ html>body #menu {
    	 background: #ccc2ab;
 }
 
-/** Рекламный блок **/
-.advertizing {display:block;position:relative !important;font-family:inherit;width:100%;height:auto;clear:both;}
+/* Рекламный блок (вряд ли понадобится) */
+/*.advertizing {display:block;position:relative !important;font-family:inherit;width:100%;height:auto;clear:both;}*/
 
-/** Подвал **/
+/* Подвал (там как подвал дома, только чище) */
 
 #footer {
 	clear: both;
@@ -361,12 +394,14 @@ html>body #menu {
 	width: 1050px;
     padding: 10px 0px 10px 0px;
 	background-color: #cdcdcd;
+	background-image: url("images/theme/footerback.jpg");
+    background-repeat: repeat-x-y;
 	font-size: 10px;
 	text-align: center;
 	color: #FFFFFF;
 }
 
-/** Эпотаж **/
+/* Эпотаж (разное всякое, не вошедшее в основное) */
 .container {
 	width: 850px;
 }
@@ -390,12 +425,12 @@ footer {
   padding: 1em
 }
 
-/*CSSMENU*/
+/*Меню CSSMENU*/
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 @charset "UTF-8";
-/* Base Styles */
+/* Базовые Стили */
 #cssmenu,
 #cssmenu ul,
 #cssmenu li,
@@ -451,13 +486,17 @@ footer {
 }
 #cssmenu > ul > li:first-child:hover {
   background: #66665e;
+/*
   background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66665e), color-stop(100%, #45463d));
   background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
   background: linear-gradient(#66665e 0%, #45463d 100%);
+*/
 }
+
+/*Пункт (расслабленный)*/
 #cssmenu > ul > li {
-  background: #e2c1ba;
+  background: #5E5945;
 /*
   background: -moz-linear-gradient(#e94f31 0%, #d13516 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e94f31), color-stop(100%, #d13516));
@@ -465,8 +504,10 @@ footer {
   background: linear-gradient(#e94f31 0%, #d13516 100%);
 */
 }
+
+/*Пункт (наведённый)*/
 #cssmenu > ul > li:hover {
-  background: #5bced2;
+  background: #AFC797;
 /*
   background: -moz-linear-gradient(#e84323 0%, #c33115 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e84323), color-stop(100%, #c33115));
@@ -478,7 +519,7 @@ footer {
   font-size: 16px;
   display: block;
   background: url(images/cssmenu/pattern.png) top left repeat;
-  color: #ffffff;
+  color: #FFFFFF;
   border: 1px solid #ba2f14;
   border-top: none;
   text-shadow: 0 -1px 1px #751d0c;
@@ -492,6 +533,7 @@ footer {
 }
 #cssmenu > ul > li > a:hover {
   text-decoration: none;
+  color: #5E5945
 }
 #cssmenu > ul > li.active {
   border-bottom: none;
@@ -502,22 +544,26 @@ footer {
 #cssmenu > ul > li.has-sub.active > a span {
   background: url(images/icon_minus.png) 96% center no-repeat;
 }
-/* Sub menu */
+/* Подменю */
 #cssmenu ul ul {
   display: none;
   background: #fff;
   border-right: 1px solid #a2a194;
   border-left: 1px solid #a2a194;
 }
+
+/* Пункт вложенного меню (расслабленный) */
 #cssmenu ul ul li {
   padding: 0;
   border-bottom: 1px solid #d4d4d4;
   border-top: none;
-  background: #f7f7f7;
+  background: #faf6f6;
+/*
   background: -moz-linear-gradient(#f7f7f7 0%, #ececec 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ececec));
   background: -webkit-linear-gradient(#f7f7f7 0%, #ececec 100%);
   background: linear-gradient(#f7f7f7 0%, #ececec 100%);
+*/
 }
 #cssmenu ul ul li:last-child {
   border-bottom: none;
@@ -535,6 +581,9 @@ footer {
   left: 10px;
   color: #e94f31;
 }
+
+/* Пункт вложенного меню (наведённый) */
 #cssmenu ul ul a:hover {
   color: #e94f31;
+  background: #f1dbb0;
 }

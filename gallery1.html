@@ -17,9 +17,7 @@
 <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
 
  <!-- Скрипт CSSMENU (ему нужна jQuery) -->
-<!--
 <script src="../js/cssmenu.js"></script>
--->
 
 <!-- Добавить fancyBox -->
 <link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
@@ -35,7 +33,7 @@ $(document).ready(function() {
 <!-- Скрипт загрузки блоков (использует JQuery) -->
 <script type="text/javascript">
 $("documend").ready(function(){
-   $("#cssmenu").load("../blocks/menu.html");
+   //$("#cssmenu").load("../blocks/menu.html");
    $("#metrika").load("../blocks/metrika.html");
    $("#gallery1").load("../blocks/gallery1.html"); <!-- Первая галерея -->
 });
@@ -82,7 +80,34 @@ $("documend").ready(function(){
 <div id="right">
 <h3>Меню сайта:</h3><br>
 <!-- НАЧАЛО Меню сайта (cssmenu) -->
+<!--
 <div id='cssmenu'></div>
+-->
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Главная</span></a></li>
+   <li class='has-sub'><a href='#'><span>Галереи</span></a>
+       <ul>
+         <li><a href='gallery1.html'><span>Серия первая</span></a>
+         <li><a href='gallery2.html'><span>Серия вторая</span></a></li>
+         <li class='last'><a href='gallery3.html'><span>Серия сканная</span></a></li>
+      </ul>
+   <li class='has-sub'><a href='#'><span>Ещё творчество</span></a>
+      <ul>
+         <li><a href='music.html'><span>Музыка</span></a></li>
+         <li class='last'><a href='books.html'><span>Книги</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Где я?</span></a>
+      <ul>
+         <li><a href='about.html'><span>Об авторе</span></a></li>
+         <li class='last'><a href='contact.html'><span>Обратная связь</span></a></li>
+      </ul>
+   </li>
+   <li class='last'><a href='sovenok.html'><span>Браузерная игра (альфа)</span></a></li>
+</ul>
+</div>
+
 <!-- КОНЕЦ Меню сайта (cssmenu) -->
 <br>
 <!-- Социальный блок -->

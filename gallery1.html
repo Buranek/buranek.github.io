@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Буранчик - Галерея</title>
+<!-- Метан -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- Набор символов -->
+<meta name="description" content="Галерея Буранчика"> <!-- Описание сайта -->
+<meta name="keywords" content="буранчик,галерея,картина,картины"> <!-- Ключевые слова -->
+<meta name="author" content="Buranchik"> <!-- Имя автора -->
+<meta name="generator" content="Static page" /> <!-- Оставлю это для статистики -->
+<link rel="SHORTCUT ICON" href="../favicon.ico"> <!-- Значок сайта -->
+<link rel="stylesheet" href="../style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
+
+<!-- <<<ПОДРУБОНЫ>>> -->
+<!-- Подрубить бибиотеку jQuery (production версия) -->
+<script type="text/javascript" src="/js/jquery-2.2.1.min.js"></script>
+
+ <!-- Скрипт CSSMENU -->
+<script src="../js/cssmenu.js"></script>
+
+<!-- Добавить fancyBox -->
+<link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js"></script>
+
+<!-- Простой режим запуска fancyBox -->
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+});
+</script>
+
+<!-- Скрипт загрузки блоков (я использую блоки для меню и для метрики) -->
+<script type="text/javascript">
+$("documend").ready(function(){
+   $("#menucont").load("../blocks/menu.html");
+   $("#metrika").load("../blocks/metrika.html");
+   $("#metrika").load("../blocks/gallery1.html"); <!-- Первая галерея -->
+});
+</script>
+
+<!-- HTML5Shiv для осла -->
+<!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="content">
+<div>
+<!-- Логотип -->
+<a href=""><img src="../images/theme/shlyapa.svg" alt="Логотип Буранчика" width="150" height="120"><h1>Всё тот же Буранчик</h1></a>
+<!-- Идеальная пластинка -->
+<br><img src="../images/theme/ideal.png" alt="Представление сайта" width="468" height="60"></br>
+<br>Добым словом встречаю всякого сюда зашедшего!
+<br>Мудрость совы, созидание всего мира. На меню внимание обратите!
+<br>Начиная с 24 января 2016 сайт является божьим даром <a href="/news/bojiy-dar">официально</a>.
+</div>
+<!-- Линия отчерка (можно и убрать) -->
+<div align="center" height="25" valign="top"> <img src="images/theme/line.gif" height="11" width="950"></div>
+
+<!-- Левый блок сайта -->
+<div id="left">
+<!-- Содержание сайта -->
+<h2>Картинная галерея, серия первая</h2>
+<h3>Примечание</h3>
+<p>Вы можете использовать <b>стрелочки</b>, чтобы перемещаться между изображениями в режиме показа плашек. Чтобы выйти из показа плашек, нужно нажать мышкой вне плашки, чтобы переключиться с плашек обратно на сетку. Включите <b>Javascript</b>, чтобы просматривать галерею с эффектами, в противном случае будут просто открываться картинки в новых вкладках.
+<br>Изображения с красной рамкой и пометкой <b>NSFW (Not Safe For Work — то бишь не совместимые с рабочим настроем)</b> могут оказаться неприемлемыми для некоторых зрителей (либо по причине страшного внешнего вида, либо по причине наличия жестокости или мрачности темы картины, либо по причине наличия сцен сексуального характера).
+<br>Цензура наложена только на предпросмотр. Картины в галерее расположены в алфавитном порядке. <b>Внимание! Герои и героини всех картин имеют минимальный возраст 18 лет и дали своё согласие на попадание в сцены с сексуальным содержанием.</b>
+<br>Для скачивания воспользуйтесь <b>wget</b> или <b>Down Them All!</b> (пункт <i>Ссылки</i>) и скачайте файлы pic1-pic109.
+<br>Большинство картин выполнено с помощью художественной техники родового этно-мазка.
+<br>Детализация картин различна, тематика также разнообразна. Некоторые картины выглядят так, словно они сотворены ребёнком, другие поставят в тупик даже бывалого зрителя.</p>
+<br>
+<div>
+<!-- Картины начинаются здесь -->
+<div id='gallery1'></div>
+	</div>
+<!-- А кончаются тут -->
+</div>
+<div id="right">
+<h3>Меню сайта:</h3><br>
+<!-- НАЧАЛО Меню сайта (cssmenu) -->
+<div id='menucont'></div>
+<!-- КОНЕЦ Меню сайта (cssmenu) -->
+<br>
+<!-- Социальный блок -->
+<p><h3>Я в сервисах:</h3></p>
+<p><a title="DeviantArt" href="http://fap-material.deviantart.com/"><img src="../images/socs/deviantart.png" alt="deviantart" width="50" height="50"></a>
+<a title="YouTube" href="https://www.youtube.com/user/Bur2nek/videos"><img src="../images/socs/yt.png" alt="youtube" width="50" height="50"></a>
+<a title="SoundCloud" href="https://soundcloud.com/fohroer/tracks"><img src="../images/socs/soundcloud.png" alt="soundcloud" width="50" height="50"></a></p>
+<!-- Яндекс.Метрика НАЧАЛО -->
+<div id='metrika'></div>
+<!-- Яндекс.Метрика КОНЕЦ -->
+</div>
+<!-- Подвал -->
+<div id="footer">
+<p>Если Вы копируете статьи с сайта, пожалуйста оставляйте активную ссылку.
+<br>Некоторые страницы сайта могут содержать материалы с возрастным ограничением <b>18+</b>
+<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Лицензия Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br/> (2015-беконечность) <a style="color:white;" href="/viewprofile/Fohroer">Буранчик</a>.</p>
+<p style="float:right; margin: 0; padding: 0;" align="center"><a href="#"><img title="Подняться наверх" src="images/theme/up.gif" alt="Вверх" border="0" height="21" width="21"></a></p>
+</div>
+</div>
+</body>
+</html>

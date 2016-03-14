@@ -12,12 +12,12 @@
 <link rel="SHORTCUT ICON" href="../favicon.ico"> <!-- Значок сайта -->
 <link rel="stylesheet" href="../style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
 
+ <!-- Скрипт CSSMENU -->
+<script src="../js/script.js"></script>
+
 <!-- <<<ПОДРУБОНЫ>>> -->
 <!-- Подрубить бибиотеку jQuery (production версия) -->
 <script type="text/javascript" src="/js/jquery-2.2.1.min.js"></script>
-
- <!-- Скрипт CSSMENU -->
-<script src="../js/cssmenu.js"></script>
 
 <!-- Добавить fancyBox -->
 <link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
@@ -30,7 +30,7 @@ $(document).ready(function() {
 });
 </script>
 
-<!-- Скрипт загрузки блоков (я использую блоки для меню и для метрики) -->
+<!-- Скрипт загрузки блоков (использует JQuery) -->
 <script type="text/javascript">
 $("documend").ready(function(){
    $("#menucont").load("../blocks/menu.html");

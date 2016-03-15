@@ -1,36 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--Здесь будет находиться список новостей и их ангельские имена
 
-Инструкция:
-чтобы добавить новость в список, нужно добавить блок
+Инструкция: чтобы добавить новость в список, нужно добавить блок
 
-<Article>
+  <Article>
     <Title></Title>
     <Desc</Desc>
     <Date></Date>
     <Filename></Filename>
-</Article>
+  </Article>
 
 Заполните графы Title, Desc и Date вполне понятными вещами.
-В графе Filename укажите полное имя файла (с форматом после точки), который положили в каталог news. Имена могут повторяться.
-
-Напоминание: сделать потом функцию <ArchivedArticles>.
+В графе Filename укажите полное имя файла, который положили в папку news. Имена могут повторяться.
 -->
 
 <RecentArticles>
 
-<Article>
-	<Title>Интересная новость</Title>
-	<Desc>неплохая, сын старался.</Desc>
-	<Date>14/03/2016</Date>
-	<Filename>test2.xml</Filename>
-</Article>
+  <Article>
+    <Title>Интересная новость</Title>
+    <Desc>неплохая, сын старался.</Desc>
+    <Date>14/03/2016</Date>
+    <Filename>test2.xml</Filename>
+  </Article>
 
-<Article>
-	<Title>На 20% более интересная новость</Title>
-	<Desc>просто охуительная, батя грит малаца!</Desc>
-	<Date>15/03/2016</Date>
-	<Filename>test2.xml</Filename>
-</Article>
+  <Article>
+    <Title>На 20% более интересная новость</Title>
+    <Desc>просто охуительная, батя грит малаца!</Desc>
+    <Date>15/03/2016</Date>
+    <Filename>test2.xml</Filename>
+  </Article>
 
 </RecentArticles>

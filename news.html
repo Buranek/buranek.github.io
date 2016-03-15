@@ -97,14 +97,24 @@ $('/news/test',xml).each(function() {
 </script>
 -->
 
-<!--Просто вкачу из демо для проверки-->
+<!-- Просто вкачу из демо для проверки -->
+
+<!--
 <div id="jparse-meta" style="text-align: center; margin: 15px 0 0 0;">
     <p><a href="http://feeds.feedburner.com/KyleRushBlogPortfolio">Click here</a> to see the kylerush.net blog RSS feed.</p>
 </div><!--/#jparse-meta-->
 <div id="ajax-cont"></div><!--/#demo-cont-->
+-->
 
+<!-- Обычный парсинг с джиквери -->
 <script type="text/javascript">
-{dataType: ($.browser.msie) ? "text" : "xml", contentType: 'text/xml'}
+$('Contact',xml).each(function() {
+	srno = parseInt($(this).find("srno").text());
+	empId = $(this).find("empid").text();
+	name = $(this).find("name").text();
+	contact = $(this).find("contact-data").text();
+	type = $(this).find("type").text();
+}
 </script>
 
 <br>

@@ -5,12 +5,13 @@
 
   <Article>
     <Title></Title>
+    <Author></Author>
     <Desc</Desc>
     <Date></Date>
     <Filename></Filename>
   </Article>
 
-Заполните графы Title, Desc и Date вполне понятными вещами.
+Заполните графы Title, Author, Desc и Date вполне понятными вещами.
 В графе Filename укажите имя файла, который положили в папку news. Имена могут повторяться.
 -->
 
@@ -18,6 +19,7 @@
 
   <Article>
     <Title>Интересная новость</Title>
+    <Author>Буранчик</Author>
     <Desc>неплохая, сын старался.</Desc>
     <Date>14/03/2016</Date>
     <Filename>test2.xml</Filename>
@@ -25,6 +27,7 @@
 
   <Article>
     <Title>На 20% более интересная новость</Title>
+    <Author>Сырно</Author>
     <Desc>просто охуительная, батя грит малаца!</Desc>
     <Date>15/03/2016</Date>
     <Filename>test1.xml</Filename>

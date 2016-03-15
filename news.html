@@ -16,9 +16,6 @@
 <!-- Подрубить бибиотеку jQuery (production версия) -->
 <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
 
-<!--Подрубить джипарс-->
-<script type="text/javascript" src="../js/jparse-beta-0.3.3-min.js"></script>
-
  <!-- Скрипт CSSMENU (ему нужна jQuery) -->
 <script src="../js/cssmenu.js"></script>
 <!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт. -->
@@ -47,24 +44,72 @@ $("documend").ready(function(){
 });
 </script>
 
-<!--JS из демки-->
-<script type="text/javascript">
-function start(){
-    jQuery('#jparse-meta').html('<img alt="Content Loading" src="ajax-loader.gif" />');
-}
-function finish(){
-    jQuery('#jparse-meta').remove();
-}
-$(function(){
-    $('#ajax-cont').jParse({
-        ajaxOpts: {url: 'kyle-rush-feed.xml'},
-        elementTag: ['title', 'link', 'description', 'slash:comments', 'comments'],
-        output: ' <div class="feed-entry"><h4><a href="jpet01">jpet00</a></h4><p><a href="jpet4">jpet03 Comment(s)</a><p>jpet02</p></p></div>',
-        precallback: start,
-        callback: finish
+<script>
+<!-- Открываем XML -->
+$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        url: "/news/list.xml",
+        dataType: "xml",
+        success: xmlParser
     });
 });
+
+<!-- Хуячим парсинг XML -->
+function xmlParser(xml) {
+    $('#load').fadeOut();
+
+    $(xml).find("Article").each(function () {
+
+        $(".main").append('<div class="article"><div class="title">' + $(this).find("Title").text() + '</div><div class="description">' + $(this).find("Description").text() + '</div><div class="date">Опубликовано: ' + $(this).find("Date").text() + '</div></div>');
+        $(".book").fadeIn(1000);
+
+    });
+}
 </script>
+
+<!-- Дизайн блока новостей. Потом уберу в CSS -->
+<style> 
+.mainnews {
+width:1000px;
+margin:0 auto;
+height:130px;
+}
+ 
+.article {
+width: 208px;
+float: center;
+margin: 10px;
+border: 1px #dedede solid;
+padding: 5px;
+display: none;
+}
+
+.articlecontent {
+width: 408px;
+float: left;
+margin: 10px;
+border: 1px #dedede solid;
+padding: 5px;
+display: none;
+}
+
+.title {
+margin-bottom:6px;
+}
+ 
+.description {
+	font-size:11px; font-family:Geneva, Arial, Helvetica, sans-serif;
+	}
+
+.date {
+	font-size:10px; color:#999; margin-top:4px;
+	}
+
+.loader {
+height:36px;
+}
+</style>
 
 <!-- HTML5Shiv для осла -->
 <!--[if lt IE 9]>
@@ -85,34 +130,14 @@ $(function(){
 <h3>Примечание</h3>
 
 <p>А тут будет примечание</p>
-<!--
-<script type="text/javascript">
-$('/news/test',xml).each(function() {
-	srno = parseInt($(this).find("srno").text());
-	empId = $(this).find("empid").text();
-	name = $(this).find("name").text();
-	contact = $(this).find("contact-data").text();
-	type = $(this).find("type").text();
-}
-</script>
--->
-
-<!-- Обычный парсинг с джиквери -->
-<script type="text/javascript">
-$('Contact',xml).each(function() {
-	srno = parseInt($(this).find("srno").text());
-	empId = $(this).find("empid").text();
-	name = $(this).find("name").text();
-	contact = $(this).find("contact-data").text();
-	type = $(this).find("type").text();
-}
-</script>
-
 <br>
 <div>
-<!-- Новости начинаются здесь -->
-<p>А тут будут парситься сами новости</p>
-<!-- А кончаются тут -->
+<!-- Новости НАЧИНАЮТСЯ здесь -->
+<div class="mainnews">
+<!-- Крутится логотип загрузки -->
+<div align="center" class="loader"><img src="../images/themes/loader.gif" id="load" width="36" height="36" align="absmiddle"/></div></div>
+<div class="clear"></div>
+<!-- Новости КОНЧАЮТСЯ здесь -->
 </div>
 <div id="right">
 <h3>Меню сайта:</h3><br>

@@ -71,32 +71,34 @@ function xmlParser(xml) {
 <!-- Дизайн блока новостей. Потом уберу в CSS -->
 <style> 
 .mainnews {
-width:1000px;
-margin:0 auto;
-height:130px;
-}
+	width:600px;
+	margin:0 auto;
+	height:130px;
+	}
  
 .article {
-width: 208px;
-float: center;
-margin: 10px;
-border: 1px #dedede solid;
-padding: 5px;
-display: none;
-}
+	width: 208px;
+	float: left;
+	margin: 10px;
+	border: 1px #dedede solid;
+	padding: 5px;
+	display: none;
+	}
 
+<!--
 .articlecontent {
-width: 408px;
-float: left;
-margin: 10px;
-border: 1px #dedede solid;
-padding: 5px;
-display: none;
-}
+	width: 408px;
+	float: left;
+	margin: 10px;
+	border: 1px #dedede solid;
+	padding: 5px;
+	display: none;
+	}
+-->
 
 .title {
-margin-bottom:6px;
-}
+	margin-bottom:6px;
+	}
  
 .description {
 	font-size:11px; font-family:Geneva, Arial, Helvetica, sans-serif;
@@ -107,8 +109,8 @@ margin-bottom:6px;
 	}
 
 .loader {
-height:36px;
-}
+	height:36px;
+	}
 </style>
 
 <!-- HTML5Shiv для осла -->
@@ -135,7 +137,7 @@ height:36px;
 <!-- Новости НАЧИНАЮТСЯ здесь -->
 <div class="mainnews">
 <!-- Крутится логотип загрузки -->
-<div align="center" class="loader"><img src="../images/themes/loader.gif" id="load" width="36" height="36" align="absmiddle"/></div></div>
+<div align="center" class="loader"><img src="../images/theme/loader.gif" id="load" width="36" height="36" align="absmiddle"/></div></div>
 <div class="clear"></div>
 <!-- Новости КОНЧАЮТСЯ здесь -->
 </div>

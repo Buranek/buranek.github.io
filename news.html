@@ -66,6 +66,7 @@ $("documend").ready(function(){
 <h3>Примечание</h3>
 
 <p>А тут будут охуенно парситься сами новости.</p>
+<!--
 <script type="text/javascript">
 $('/news/test',xml).each(function() {
 	srno = parseInt($(this).find("srno").text());
@@ -75,6 +76,32 @@ $('/news/test',xml).each(function() {
 	type = $(this).find("type").text();
 }
 </script>
+-->
+
+<!--JS из демки-->
+<script type="text/javascript">
+function start(){
+    jQuery('#jparse-meta').html('<img alt="Content Loading" src="ajax-loader.gif" />');
+}
+function finish(){
+    jQuery('#jparse-meta').remove();
+}
+$(function(){
+    $('#ajax-cont').jParse({
+        ajaxOpts: {url: 'kyle-rush-feed.xml'},
+        elementTag: ['title', 'link', 'description', 'slash:comments', 'comments'],
+        output: ' <div class="feed-entry"><h4><a href="jpet01">jpet00</a></h4><p><a href="jpet4">jpet03 Comment(s)</a><p>jpet02</p></p></div>',
+        precallback: start,
+        callback: finish
+    });
+});
+</script>
+
+<!--Просто вкачу из демо для проверки-->
+<div id="jparse-meta" style="text-align: center; margin: 15px 0 0 0;">
+    <p><a href="http://feeds.feedburner.com/KyleRushBlogPortfolio">Click here</a> to see the kylerush.net blog RSS feed.</p>
+</div><!--/#jparse-meta-->
+<div id="ajax-cont"></div><!--/#demo-cont-->
 
 <br>
 <div>

@@ -20,12 +20,14 @@
     <Title>Интересная новость</Title>
     <Desc>неплохая, сын старался.</Desc>
     <Date>14/03/2016</Date>
+    <Filename>test2.xml</Filename>
   </Article>
 
   <Article>
     <Title>На 20% более интересная новость</Title>
     <Desc>просто охуительная, батя грит малаца!</Desc>
     <Date>15/03/2016</Date>
+    <Filename>test1.xml</Filename>
   </Article>
 
 </RecentArticles>

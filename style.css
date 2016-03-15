@@ -591,12 +591,11 @@ footer {
 
 /* <<<Парсер новостей>>> */
 
+/* Блок вывода списка статей */
 .main {
-/*
-	width: 600px;
+	width: 550px;
 	margin: 0 auto;
 	height: 130px;
-*/
 	font-size:13pt;
     line-height:110%;
 	font-weight:bold;
@@ -605,6 +604,7 @@ footer {
 	color:#505f7f;
 	}
 
+/* Углеводы статьи */
 .article {
 	width: 208px;
 	float: left;
@@ -614,21 +614,37 @@ footer {
 	display: none;
 }
 
+/* Заголовок новости */
 .title {
 	margin-bottom: 6px;
-	}
-
-.description {
-	font-size: 11pt;
+	text-align:center;
 	font-family: Liberation Sans, Arial, Helvetica, sans-serif;
 	}
 
+/* Описание новости */
+.desс {
+	font-size: 11pt;
+	text-align:center;
+	font-family: Liberation Sans, Arial, Helvetica, sans-serif;
+	}
+
+/* Дата новости */
 .date {
 	font-size:11pt;
+	text-align:left;
 	color:#0F2658;
 	margin-top:4px;
 	}
+	
+/* Див-ссылка для открытия полной новости */
+a.filename { 
+     display:block;
+     width:500px;
+     height:500px; 
+     float:left;
+}
 
+/* Логотип загрузки новостей */
 .loader {
 	height:36px;
 	}

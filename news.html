@@ -40,14 +40,14 @@ $(document).ready(function () {
     });
 });
 
-<!-- Хуячим парсинг XML -->
+<!-- Производим парсинг XML -->
 function xmlParser(xml) {
 
     $('#load').fadeOut();
 
     $(xml).find("Article").each(function () {
 
-        $(".main").append('<div class="article"><div class="title">' + $(this).find("Title").text() + '</div><div class="description">В двух словах: ' + $(this).find("Desc").text() + '</div><div class="date">Подвезли: ' + $(this).find("Date").text() + '</div></div>');
+        $(".main").append('<div class="article"><div class="title">' + $(this).find("Title").text() + '</div><div class="desc">В двух словах: ' + $(this).find("Desc").text() + '</div><div class="date">Подвезли: ' + $(this).find("Date").text() + '</div><div class="filename" href="../news/ + $(this).find("Filename").text() + xml">O--''</div></div>');
         $(".article").fadeIn(1000);
     });
 

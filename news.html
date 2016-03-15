@@ -28,6 +28,8 @@ $("documend").ready(function(){
 	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
 });
 
+<!-- ПАРСЕР XML -->
+
 <!-- Открываем XML -->
 $(document).ready(function () {
     $.ajax({
@@ -76,7 +78,9 @@ function xmlParser(xml) {
 <!-- Новости НАЧИНАЮТСЯ здесь -->
 <div class="main">
 <!-- Крутится логотип загрузки -->
-<div align="center" class="loader"><img src="loader.gif" id="load" width="36" height="36" align="absmiddle"/></div>
+<div align="center" class="loader">
+	<img src="../images/theme/loader.gif" id="load" width="36" height="36" align="middle"/>
+	</div>
 </div>
 
 <div class="clear"></div>

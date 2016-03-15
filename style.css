@@ -2,7 +2,7 @@
 /* Шрифт Oldtyper */
 @font-face {
 font-family: Oldtyper; /* Гарнитура шрифта */
-src: url('/fonts/a_old_typer.ttf'); /* Путь к файлу со шрифтом */
+src: url('/fonts/oldtyper.ttf'); /* Путь к файлу со шрифтом */
 }
 
 /* Шрифт Liberation Sans */

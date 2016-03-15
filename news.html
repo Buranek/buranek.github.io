@@ -20,21 +20,6 @@
 <script src="../js/cssmenu.js"></script>
 <!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт. -->
 
-<!-- Добавить fancyBox (вряд ли в новостях-то понадобится) -->
-<!--
-<link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js"></script>
--->
-
-<!-- Простой режим запуска fancyBox (и следом закомментил) -->
-<!--
-<script type="text/javascript">
-$(document).ready(function() {
-    $(".fancybox").fancybox();
-});
-</script>
--->
-
 <!-- Скрипт загрузки блоков (использует JQuery) -->
 <script type="text/javascript">
 $("documend").ready(function(){
@@ -42,9 +27,7 @@ $("documend").ready(function(){
 	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
 	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
 });
-</script>
 
-<script>
 <!-- Открываем XML -->
 $(document).ready(function () {
     $.ajax({
@@ -57,61 +40,17 @@ $(document).ready(function () {
 
 <!-- Хуячим парсинг XML -->
 function xmlParser(xml) {
+
     $('#load').fadeOut();
 
     $(xml).find("Article").each(function () {
 
-        $(".main").append('<div class="article"><div class="title">' + $(this).find("Title").text() + '</div><div class="description">' + $(this).find("Description").text() + '</div><div class="date">Опубликовано: ' + $(this).find("Date").text() + '</div></div>');
-        $(".book").fadeIn(1000);
-
+        $(".main").append('<div class="article"><div class="title">' + $(this).find("Title").text() + '</div><div class="description">В двух словах: ' + $(this).find("Description").text() + '</div><div class="date">Подвезли: ' + $(this).find("Date").text() + '</div></div>');
+        $(".article").fadeIn(1000);
     });
+
 }
 </script>
-
-<!-- Дизайн блока новостей. Потом уберу в CSS -->
-<style> 
-.main {
-	width:600px;
-	margin:0 auto;
-	height:130px;
-	}
- 
-.article {
-	width: 208px;
-	float: left;
-	margin: 10px;
-	border: 1px #dedede solid;
-	padding: 5px;
-	display: none;
-	}
-
-<!--
-.articlecontent {
-	width: 408px;
-	float: left;
-	margin: 10px;
-	border: 1px #dedede solid;
-	padding: 5px;
-	display: none;
-	}
--->
-
-.title {
-	margin-bottom:6px;
-	}
- 
-.description {
-	font-size:11px; font-family:Geneva, Arial, Helvetica, sans-serif;
-	}
-
-.date {
-	font-size:10px; color:#999; margin-top:4px;
-	}
-
-.loader {
-	height:36px;
-	}
-</style>
 
 <!-- HTML5Shiv для осла -->
 <!--[if lt IE 9]>
@@ -137,7 +76,9 @@ function xmlParser(xml) {
 <!-- Новости НАЧИНАЮТСЯ здесь -->
 <div class="main">
 <!-- Крутится логотип загрузки -->
-<div align="center" class="loader"><img src="../images/theme/loader.gif" id="load" width="36" height="36" align="absmiddle"/></div></div>
+<div align="center" class="loader"><img src="loader.gif" id="load" width="36" height="36" align="absmiddle"/></div>
+</div>
+
 <div class="clear"></div>
 <!-- Новости КОНЧАЮТСЯ здесь -->
 </div>

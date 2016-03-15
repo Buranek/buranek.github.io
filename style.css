@@ -426,7 +426,7 @@ footer {
   padding: 1em
 }
 
-/*Меню CSSMENU*/
+/* <<<Меню CSSMENU>>> */
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
@@ -495,7 +495,7 @@ footer {
 */
 }
 
-/*Пункт (расслабленный)*/
+/* Пункт (расслабленный) */
 #cssmenu > ul > li {
   background: #5E5945;
 /*
@@ -506,7 +506,7 @@ footer {
 */
 }
 
-/*Пункт (наведённый)*/
+/* Пункт (наведённый) */
 #cssmenu > ul > li:hover {
   background: #AFC797;
 /*
@@ -588,3 +588,47 @@ footer {
   color: #e94f31;
   background: #f1dbb0;
 }
+
+/* <<<Парсер новостей>>> */
+
+.main {
+	width: 400px;
+	margin: 0 auto;
+	height: 130px;
+	}
+
+.article {
+	width: 208px;
+	float: left;
+	margin: 10px;
+	border: 1px #dedede solid;
+	padding: 5px;
+	display: none;
+}
+
+/*
+.articlecontent {
+	width: 408px;
+	float: left;
+	margin: 10px;
+	border: 1px #dedede solid;
+	padding: 5px;
+	display: none;
+	}
+*/
+
+.title {
+	margin-bottom:6px;
+	}
+
+.description {
+	font-size:11px; font-family:Geneva, Arial, Helvetica, sans-serif;
+	}
+
+.date {
+	font-size:10px; color:#999; margin-top:4px;
+	}
+
+.loader {
+	height:36px;
+	}

@@ -47,6 +47,25 @@ $("documend").ready(function(){
 });
 </script>
 
+<!--JS из демки-->
+<script type="text/javascript">
+function start(){
+    jQuery('#jparse-meta').html('<img alt="Content Loading" src="ajax-loader.gif" />');
+}
+function finish(){
+    jQuery('#jparse-meta').remove();
+}
+$(function(){
+    $('#ajax-cont').jParse({
+        ajaxOpts: {url: 'kyle-rush-feed.xml'},
+        elementTag: ['title', 'link', 'description', 'slash:comments', 'comments'],
+        output: ' <div class="feed-entry"><h4><a href="jpet01">jpet00</a></h4><p><a href="jpet4">jpet03 Comment(s)</a><p>jpet02</p></p></div>',
+        precallback: start,
+        callback: finish
+    });
+});
+</script>
+
 <!-- HTML5Shiv для осла -->
 <!--[if lt IE 9]>
     <script src="/js/html5shiv.min.js"></script>
@@ -77,25 +96,6 @@ $('/news/test',xml).each(function() {
 }
 </script>
 -->
-
-<!--JS из демки-->
-<script type="text/javascript">
-function start(){
-    jQuery('#jparse-meta').html('<img alt="Content Loading" src="ajax-loader.gif" />');
-}
-function finish(){
-    jQuery('#jparse-meta').remove();
-}
-$(function(){
-    $('#ajax-cont').jParse({
-        ajaxOpts: {url: 'kyle-rush-feed.xml'},
-        elementTag: ['title', 'link', 'description', 'slash:comments', 'comments'],
-        output: ' <div class="feed-entry"><h4><a href="jpet01">jpet00</a></h4><p><a href="jpet4">jpet03 Comment(s)</a><p>jpet02</p></p></div>',
-        precallback: start,
-        callback: finish
-    });
-});
-</script>
 
 <!--Просто вкачу из демо для проверки-->
 <div id="jparse-meta" style="text-align: center; margin: 15px 0 0 0;">
@@ -141,8 +141,9 @@ $(function(){
 
 <!-- КОНЕЦ Меню сайта (cssmenu) -->
 <br>
-<!-- Социальный блок -->
+<!-- Социальный блок НАЧАЛО -->
 <div id='socials'></div>
+<!-- Социальный блок КОНЕЦ -->
 <!-- Яндекс.Метрика НАЧАЛО -->
 <div id='metrika'></div>
 <!-- Яндекс.Метрика КОНЕЦ -->

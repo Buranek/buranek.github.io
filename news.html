@@ -47,7 +47,7 @@ function xmlParser(xml) {
 
     $(xml).find("Статья").each(function () {
 
-        $(".main").append('<div class="article"><div class="title">' + $(this).find("Заголовок").text() + '</div><div class="description">В двух словах: ' + $(this).find("Описание").text() + '</div><div class="date">Подвезли: ' + $(this).find("Дата").text() + '</div><div class="description" ><"a href="./news/test2.xml">"O--"</a> + $(this).find("Файл").text() + '</div></div>');
+        $(".main").append('<div class="article"><div class="title">' + $(this).find("Заголовок").text() + '</div><div class="description">В двух словах: ' + $(this).find("Описание").text() + '</div><div class="date">Подвезли: ' + $(this).find("Дата").text() + '</div></div>');
         $(".article").fadeIn(1000);
     });
 

@@ -592,9 +592,17 @@ footer {
 /* <<<Парсер новостей>>> */
 
 .main {
-	width: 400px;
+/*
+	width: 600px;
 	margin: 0 auto;
 	height: 130px;
+*/
+	font-size:11pt;
+    line-height:110%;
+	font-weight:bold;
+	text-align:center;
+	margin-top:1em;
+	color:#505f7f;
 	}
 
 .article {
@@ -605,17 +613,6 @@ footer {
 	padding: 5px;
 	display: none;
 }
-
-/*
-.articlecontent {
-	width: 408px;
-	float: left;
-	margin: 10px;
-	border: 1px #dedede solid;
-	padding: 5px;
-	display: none;
-	}
-*/
 
 .title {
 	margin-bottom:6px;
@@ -632,3 +629,16 @@ footer {
 .loader {
 	height:36px;
 	}
+
+/* Содержание новости */
+
+/*
+.articlecontent {
+	width: 408px;
+	float: left;
+	margin: 10px;
+	border: 1px #dedede solid;
+	padding: 5px;
+	display: none;
+	}
+*/

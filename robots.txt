@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /blocks/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /scraps/
+Disallow: /делюсь/

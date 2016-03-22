@@ -16,11 +16,13 @@ src: url('/fonts/oldtyper.ttf'); /* Путь к файлу со шрифтом *
 }
 
 /* Основное */
+
 html, body {
 	height: 100%;
 }
 
 /*Обычный текст*/
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -81,22 +83,26 @@ ul {
 /* ССЫЛКИ */
 
 /* a:link - обычная, непосещённая ссылка */
+
 a:link {
-color: #FF4343;
+color: #993131;
 }
 
 /* a:visited - ссылка, которую пользователь уже посетил */
+
 a:visited {
     color: #551A8B;
 }
 
 /* a:hover - ссылка, когда мышка наведена поверх неё */
+
 a:hover {
 text-decoration: none;
 color: #5e629d;
 }
 
 /* a:active - ссылка в момент, когда она нажата */
+
 a:active {
     color: #5e629d;
 }
@@ -123,51 +129,8 @@ a:active {
 	font-size: 11px;
 }
 
-/* Меню (старое) */
-
-#menu {
-	margin: 20px auto;
-	width: 1050px;
-    padding: 20px 0px 20px 0px;
-	background-color: #5E5945;
-	font-size: 10pt;
-	color: #FFFFFF;
-}
-
-html>body #menu {
-}
-
-#menu ul {
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-}
-
-#menu li {
-	display: inline;
-	text-align: center;
-}
-
-/* Элемент меню (старого) */
-#menu a {
-	display: inline;
-	padding: 20px;
-	background-color: #5E5945;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #e5e2cf;
-}
-
-#menu a:hover {
-	padding: 20px;
-	background-color: #AFC797;
-	text-decoration: none;
-	color: #5E5945;
-}
-
 /* СОДЕРЖИМОЕ */
+
 #content {
 	margin: auto;
 	width: 1050px;
@@ -187,167 +150,7 @@ html>body #menu {
 	 background: #ded1be url(images/theme/left-body.png) repeat top left;
 }
 
-/* Форма комментариев (из Ruxe Engine) */
-
-.optionstable{
-                           border-left: solid 1px silver;
-                           border-top: solid 1px silver;
-                           text-align:left;
-                           }
-             .optionstable td{
-                           border-bottom: solid 1px silver;
-                           border-right:solid 1px silver;
-                           padding:4px;
-                           }
-             .smilestable  {
-                           border-left: solid 1px silver;
-                           border-top: solid 1px silver;
-                           border-bottom: solid 1px silver;
-                           border-right: solid 1px silver;
-                           text-align:left;
-                           }
-             .smilestable td {
-                           border-bottom: none;
-                           border-right:none;
-                           padding:4px;
-                           }
-             #without {
-                           border-right:none;
-                           }
-             #without2 {
-                           border-left:none;
-                           text-align:right;
-                           color:gray;
-                           }
-             .titletable td {
-                           background-color:#1b3045;
-                           font-weight: bold;
-                           color: white;
-                           }
-             .hide {
-                           border-left: solid 1px silver;
-                           border-top: solid 1px silver;
-                           border-right: solid 1px silver;
-                           border-bottom: solid 1px silver;
-                           width:80%;
-                           background-color:#DDDDDD;
-                           text-align:left;
-                           font-family:verdana,arial,tahoma;
-                           font-size:8pt;
-                           font-weight: bold;
-                           padding:4px;
-                           margin-bottom:10px;
-                           }
-
-              .hidetext {
-                           
-                           font-family:verdana,arial,tahoma;
-                           background-color:#FFFFFF;
-                           font-size:10pt;
-                           padding:4px;
-                           margin-top:5px;
-                           font-weight: normal;
-              }
-             .faqtable td {
-                           background-color:#eeebeb;
-                           }
-             input, textarea, select {
-	                   color: #111111;
-	                   margin-right:2px;
-	                   padding:2px;
-	                   font-family:verdana,arial,tahoma;
-	                   font-size:10pt;
-	                   border-left: 1px solid silver;
-	                   border-top: 1px solid silver;
-	                   border-right: 1px solid silver;
-	                   border-bottom: 1px solid silver;
-	                   background-color: #FFFFFF;
-                           }
-                           
-             .spoiler {
-                           border-left: solid 1px silver;
-                           border-top: solid 1px silver;
-                           border-right: solid 1px silver;
-                           border-bottom: solid 1px silver;
-                           width:80%;
-                           background-color:#DDDDDD;
-                           text-align:left;
-                           font-family:verdana,arial,tahoma;
-                           font-size:8pt;
-                           font-weight: bold;
-                           padding:4px;
-                           margin-top:3px;
-                           margin-bottom:10px;
-                           }
-
-             .spoilertext {
-                           
-                           font-family:verdana,arial,tahoma;
-                           background-color:#FFFFFF;
-                           font-size:10pt;
-                           padding:4px;
-                           margin-top:5px;
-                           font-weight: normal;
-                           }
-                           
-             .quote {
-                           border-left: solid 1px silver;
-                           border-top: solid 1px silver;
-                           border-right: solid 1px silver;
-                           border-bottom: solid 1px silver;
-                           width:80%;
-                           background-color:#DDDDDD;
-                           text-align:left;
-                           font-family:verdana,arial,tahoma;
-                           font-size:8pt;
-                           font-weight: bold;
-                           padding:4px;
-                           margin-bottom:10px;
-                           }
-
-             .quotetext {
-                           
-                           font-family:verdana,arial,tahoma;
-                           background-color:#FFFFFF;
-                           font-size:10pt;
-                           padding:4px;
-                           margin-top:5px;
-                           font-weight: normal;
-                           }
-
-             input:hover, textarea:hover, select:hover { 
-	                   border-left: 1px solid #666666;
-	                   border-top: 1px solid #666666;
-	                   border-right: 1px solid #666666;
-	                   border-bottom: 1px solid #666666;
-	                   background-color: #F5F5F5;
-                           }
-             .pager a {
-                           padding: 2px 5px;
-                           background: #f7f7f7;
-                           border: 1px solid #c7c7c7;
-                           color: #000000;
-                           text-decoration: none;
-                           margin: 0px 1px;
-                           font-weight: bold;
-                           }
-
-             .pager a:hover {
-                           background: #FFF2D7;
-                           border: 1px solid #666666;
-                           text-decoration: none;
-                           }
-
-             .pager a.active{
-                           background: #666666;
-                           border: 1px solid #666666;
-                           color: #ffffff;
-                           font-weight: bold;
-                           }
-
-             .pager a.active:hover {
-                           background: #666666;
-                           }
+/* Когда переехал - не помню */
                            .ro {
         text-indent: 30px;
 }
@@ -363,6 +166,8 @@ html>body #menu {
         font-size: 10pt;
 }
 
+/* Левый блок */
+
 #left {
 	 float: left;
 	 margin: 0px auto;
@@ -370,7 +175,7 @@ html>body #menu {
 	 width: 730px;
 }
 
-/** Правый кусок с меню **/
+/* Правый кусок (с меню и кнопочками сервисов) */
 
 #right {
 	 float: right;
@@ -381,10 +186,7 @@ html>body #menu {
    	 background: #ccc2ab;
 }
 
-/* Рекламный блок (вряд ли понадобится) */
-/*.advertizing {display:block;position:relative !important;font-family:inherit;width:100%;height:auto;clear:both;}*/
-
-/* Подвал (там как подвал дома, только чище) */
+/* ПОДВАЛ (там как подвал дома, только чище) */
 
 #footer {
 	clear: both;

@@ -195,7 +195,7 @@ a:active {
 #footer p {
 	margin: 0px auto;
 	width: 1050px;
-/* padding: 10px 0px 10px 0px; */
+	padding: 10px 0px 10px 0px;
 	background-color: #cdcdcd;
 	background-image: url("images/theme/footerback.jpg");
     background-repeat: repeat-x-y;

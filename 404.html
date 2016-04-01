@@ -26,6 +26,7 @@ $("documend").ready(function(){
 	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
 	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
 	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
+	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
 });
 </script>
 
@@ -39,7 +40,7 @@ $("documend").ready(function(){
 <div id="content">
 <div id="slogan"></div>
 <!-- Линия отчерка (можно и убрать) -->
-<div align="center" height="25" valign="top"> <img src="images/theme/line.gif" height="11" width="950"></div>
+<div align="center" height="25" valign="top"> <img src="../images/theme/line.gif" height="11" width="950"></div>
 
 <!-- Левый блок сайта -->
 <div id="left">
@@ -53,13 +54,13 @@ $("documend").ready(function(){
 <!-- НАЧАЛО Меню сайта (cssmenu) -->
 <div id="cssmenu">
 <ul>
-   <li class="active"><a href="index.html"><span>Главная</span></a></li>
-   <li class="active"><a href="contact.html"><span>Обратная связь</span></a></li>
+   <li class="active"><a href="http://буранчик.рф/index.html"><span>Главная</span></a></li>
    <li class="has-sub"><a href="#"><span>Творчество</span></a>
        <ul>
-         <li><a href="галерея1"><span>Галерея, серия первая</span></a>
-         <li><a href="галерея2"><span>Галерея, серия вторая</span></a></li>
-         <li class="last"><a href="музыка"><span>Музыка</span></a></li>
+         <li><a href="http://буранчик.рф/галерея1/"><span>Галерея, серия первая</span></a>
+         <li><a href="http://буранчик.рф/галерея2/"><span>Галерея, серия вторая</span></a></li>
+         <li><a href="http://буранчик.рф/галерея3/"><span>Галерея, серия сканок</span></a></li>
+         <li class="last"><a href="http://буранчик.рф/музыка/"><span>Музыка</span></a></li>
       </ul>
 </ul>
 </div>
@@ -73,12 +74,9 @@ $("documend").ready(function(){
 <!-- Яндекс.Метрика КОНЕЦ -->
 </div>
 <!-- Подвал -->
-<div id="footer">
-<p>Если Вы копируете материалы с этого сайта, пожалуйста оставляйте активную ссылку.
-<br>Некоторые страницы сайта могут содержать материалы с возрастным ограничением <b>18+</b>. Все порнокартинки в превью замазаны.
-<br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Лицензия Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br/> (2015-беконечность) <a style="color:white;" href="/viewprofile/Fohroer">Буранчик</a>.</p>
-<p style="float:right; margin: 0; padding: 0;" align="center"><a href="#"><img title="Подняться наверх" src="images/theme/up.gif" alt="Вверх" border="0" height="21" width="21"></a></p>
-</div>
+<!-- Подвала начало -->
+<div id="footer"></div>
+<!-- Подвала конец -->
 </div>
 </body>
 </html>

@@ -145,9 +145,10 @@ a:active {
 #left {
 	 float: left;
 	 margin: 0px auto;
-	 padding: 0px;
+	 padding: 0px 15px 2px 5px;
+/* Верхнее поле — 0px, правое поле — 15px, нижнее поле — 2px, левое поле — 5px */
 	 width: 700px;
-	 background: #ded1be url(images/theme/left-body.png) repeat top left;
+	 background: #ded1be url(images/theme/left-body.png) repeat top left; 
 }
 
 /* Когда переехал - не помню */

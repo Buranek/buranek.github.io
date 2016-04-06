@@ -76,6 +76,10 @@ p, ol, ul {
 	line-height: 160%;
 }
 
+p {
+    padding: 16px 24px;
+}
+
 ul {
 	list-style-type: square;
 }

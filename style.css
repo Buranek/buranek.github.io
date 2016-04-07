@@ -47,6 +47,7 @@ h2{
 	font-weight: bold;
 	font-size: 15pt;
 	color: #5E5945;
+	text-align: center;
 }
 
 h3{
@@ -67,7 +68,7 @@ h4 a:hover {
 	color:#00a877;
 }
 
-h1, h2, h3, h4 {padding-left: 24px;}
+h3, h4 {padding-left: 24px;}
 
 hr {
 	display: none;

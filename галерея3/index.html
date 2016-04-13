@@ -11,6 +11,7 @@
 <meta name="generator" content="Static page" /> <!-- Оставлю это для статистики -->
 <link rel="SHORTCUT ICON" href="favicon.ico"> <!-- Значок сайта -->
 <link rel="stylesheet" href="../style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
+<link type="text/plain" rel="author" href="../humans.txt" /> <!-- Мы — Люди, Не Машины -->
 
 <!-- <<<ПОДРУБОНЫ>>> -->
 <!-- Подрубить бибиотеку jQuery (production версия) -->
@@ -36,7 +37,6 @@ $(document).ready(function() {
 $("documend").ready(function(){
 	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
 	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
-	$("#gallery3").load("../blocks/gallery3.html"); <!-- Третья галерея -->
 	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
 	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
 });
@@ -58,16 +58,54 @@ $("documend").ready(function(){
 <div id="left">
 <!-- Содержание сайта -->
 <h2>Картинная галерея, серия третья (сканная)</h2>
-<h3>Примечание</h3>
-<p>Вы можете использовать <b>стрелочки</b>, чтобы перемещаться между изображениями в режиме показа плашек. Чтобы выйти из показа плашек, нужно нажать мышкой вне плашки, чтобы переключиться с плашек обратно на сетку.
+<h3 id="note">Примечание</h3>
+<p>Вы можете использовать <b>стрелочки</b>, чтобы перемещаться между изображениями в режиме показа плашек.
+Чтобы выйти из показа плашек, нужно нажать мышкой вне плашки, чтобы переключиться с плашек обратно на сетку.
 <br>В этой галереи нет изображений, которые могут оказаться неприемлемыми для зрителей.
 <br>Для скачивания воспользуйтесь <b>wget</b> или <b>Down Them All!</b> (пункт <i>Ссылки</i>) и скачайте файлы 1-14.
-<br>Это сканки картин, сделанных от руки.
+<br>Это сканки картин, сделанных от руки. Некоторые картины уже где-то стоят, поэтому сделаны фотографии.
 <br>Детализация картин крайне высока. Сканки сделаны с разрешающей способностью в 600 DPI.</p>
+<h3 id="culturalfight">Орудия труда</h3>
+<p>
+Старые фломастеры Centropen (серия 7790).
+<br>Новые фломастеры Centropen (серия PERFECT TRI (с пингвином на обложке)).
+<br>Чёрная гелевая ручка Standard GP-116 (толщина 0.4), синяя той же фирмы.
+<br>Чёрная гелевая ручка TUKZAR QUEEN 0.5. Кстати, она ещё и пишет очень хорошо!
+<br>Цанговый механический карандаш фирмы JEDO (KOREA), толщина 0.7. Больше 10 лет мне служит уже. Такой уж я аккуратный.
+<br>Ручки-фломастеры MC Bazir.
+<br>LIQUID HIGH LIGHTING PEN REFILLABLE из магазина Fix Price.
+<br>Выделители текста Text marker Centrum. Фломастеры какой-то левой фирмы, подписаны DALMATIANS.
+<br>Фломастеры-кисти (на них ничего не написано, а коробку я выбросил).
+<br>Красная гелевая ручка, фирму не помню, вроде бы Pilot.
+</p>
 <br>
 <!-- Картины начинаются здесь -->
-<div id="gallery3"></div>
-<!-- А кончаются тут -->
+<div id="gallery3">
+<p>
+	<a class="fancybox" href="../images/gal3/or/1.png" data-fancybox-group="gallery" title="Блёклые"><img src="../images/gal3/th/1.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/2.png" data-fancybox-group="gallery" title="Закладка"><img src="../images/gal3/th/2.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/3.png" data-fancybox-group="gallery" title="Красное"><img src="../images/gal3/th/3.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/4.png" data-fancybox-group="gallery" title="Красные замки"><img src="../images/gal3/th/4.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/5.png" data-fancybox-group="gallery" title="Лес"><img src="../images/gal3/th/5.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/6.png" data-fancybox-group="gallery" title="Лёгкое"><img src="../images/gal3/th/7.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/7.png" data-fancybox-group="gallery" title="Листья"><img src="../images/gal3/th/7.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/8.png" data-fancybox-group="gallery" title="Ролл"><img src="../images/gal3/th/8.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/9.png" data-fancybox-group="gallery" title="Ряби"><img src="../images/gal3/th/9.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/10.png" data-fancybox-group="gallery" title="Самбок"><img src="../images/gal3/th/10.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/11.png" data-fancybox-group="gallery" title="Сладкий чёрный"><img src="../images/gal3/th/11.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/12.png" data-fancybox-group="gallery" title="Тамилы"><img src="../images/gal3/th/12.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/13.png" data-fancybox-group="gallery" title="Утончённые спирали"><img src="../images/gal3/th/13.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/14.png" data-fancybox-group="gallery" title="Часы"><img src="../images/gal3/th/14.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/15.png" data-fancybox-group="gallery" title="Автокарина нецветная"><img src="../images/gal3/th/15.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/16.png" data-fancybox-group="gallery" title="Небольшой ролл"><img src="../images/gal3/th/16.png" alt="Скан картины" /></a>
+	<a class="fancybox" href="../images/gal3/or/17.png" data-fancybox-group="gallery" title="Это обалденно!"><img src="../images/gal3/th/17.png" alt="Скан картины" /></a>
+<!-- Тут кончаются сканки картин и начинаются фотографии картин -->
+	<a class="fancybox" href="../images/gal3/or/18.jpg" data-fancybox-group="gallery" title="Автокарина цветная (на работе у матан)"><img src="../images/gal3/th/18.jpg" alt="Фотография" /></a>
+	<a class="fancybox" href="../images/gal3/or/19.jpg" data-fancybox-group="gallery" title="Массив (на стене у родственников)"><img src="../images/gal3/th/19.jpg" alt="Фотография" /></a>
+	<a class="fancybox" href="../images/gal3/or/20.jpg" data-fancybox-group="gallery" title="Грация (за стеклом у меня дома)"><img src="../images/gal3/th/20.png" alt="Фотография" /></a>
+</p>
+</div>
+<!-- А кончается вся галерея вот тут -->
 </div>
 <div id="right">
 <h3>Меню сайта:</h3><br>

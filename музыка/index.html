@@ -34,11 +34,10 @@ $(document).ready(function() {
 <!-- Скрипт загрузки блоков (использует JQuery) -->
 <script type="text/javascript">
 $("documend").ready(function(){
-	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
-	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
-	$("#music").load("../blocks/music.html"); <!-- Музыка (начинка) -->
-	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
-	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
+   $("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
+   $("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
+   $("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
+   $("#footer").load("../blocks/footer.html"); <!-- Подвал -->
 });
 </script>
 
@@ -59,10 +58,60 @@ $("documend").ready(function(){
 <!-- Содержание сайта -->
 <h2>Музыкальное</h2>
 <h3>Примечание</h3>
-<p>Одну песенку пишу, другую примечаю</p>
 <br>
 <!-- Музыка начинается здесь -->
-<div id="music"></div>
+<div id="music">
+<div id="customHeaderWrapper">
+<h1>Фохроер композитор</h1>
+<div class="desktop-header"><img src="../images/music/synth.png" alt="Цитата" width="676" height="105" /></div>
+<div class="desktop-header">
+<table style="width: 790px; height: 570px;" border="0">
+<tbody>
+<tr>
+<td><img class="resizableArt" src="../images/music/nehcover_small.png" alt="Фохроер - Мне не холодно (обложка)" width="350" height="350" /></td>
+<td><img class="resizableArt" src="../images/music/coming_soon_small.png" alt="Скоро будет выпущено!" width="350" height="350" /></td>
+</tr>
+<tr>
+<td>
+<p>
+<h2><a title="Скачать альбом с Bandcamp" href="https://fohroer.bandcamp.com/album/-">Скачать на Bandcamp</a><h2>
+<h2><a title="Прослушать альбом на SoundCloud" href="https://soundcloud.com/fohroer/sets/neholodno">Прослушать на SoundCloud</a></h2>
+<h2><a title="Скачать zip архив с альбомом с Яндекс.Диска (FLAC 24 бита)" href="https://yadi.sk/d/iojajbjVqnxko">Скачать архив с Яндекс.Диска (24 битные FLAC файлы)</a></h2>
+</p>
+</td>
+<td>
+<div class="ipCellLabel1"><a title="Страница альбома" href="#"><span style="font-size: xx-large;">Артикс</span></a></div>
+<h2>Потом</h2></td>
+</tr>
+<tr>
+<td><strong>Дата выпуска альбома:</strong> 10 ноября 2015 года</td>
+<td><strong>Дата выпуска альбома:</strong> ещё не выпущен</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="donating">
+<p><h2>Пожертвовать за альбом:</h2></p>
+<p><a href="http://yasobe.ru/na/neholono">Пожертвовать с банковской карты или Яндекс.Денег</a></p>
+<p>Пожертвовать Bitcoin: <b><code>1F5PKEzP8hF6Z1H4H5n9XfVsjnMVW1tyqz</code></b></p>
+<p><a href="../images/music/bitcoin-qrcode.png">Посмотреть QR код Bitcoin</a></p>
+</div>
+<div id="rightColumn" class="rightColumn index-page">
+<div id="bio-container">
+<h2>О композиторе:</h2>
+<p id="bio-text">
+Я долго тренировался, прежде, чем преставить вам этот альбом. Старательно писал электронную музыку.
+Была проделана продуктивная работа: я 4.5 года оттачивал своё музыкальное умение, 1.5 года изучал мастеринг,
+аккуратно и неторопливо делал музыкальные композиции и вот &mdash; представляю вам альбом "Мне Не Холодно".
+<br>И это ещё не конец. В следующем альбоме вы услышите, как я могу выдавать вокал в очень редком диапазоне.
+Как робот, как дикий зверь леопард, да и вообще я могу делать вобл бас без использования какой-либо техники,
+а только используя возможности своего организма. Сейчас провожу всякие эксперименты.
+Скоро на эту страницу поступят новые альбомы.
+Одну песенку пишу, другую сочиняю.
+</p>
+</div>
+</div>
 <!-- А кончается тут -->
 </div>
 <div id="right">

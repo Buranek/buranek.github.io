@@ -221,7 +221,7 @@ a:active {
 
 /* Блок с новостями (в духе KDE 4!) */
 
-#newsbox {
+.newsbox {
 	width:700px; /* Ширина блока */
 	height: 400px; /* Высота блока */
 	background-color: #b4ab96; /* Фоновый цвет*/

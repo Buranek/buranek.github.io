@@ -219,6 +219,17 @@ a:active {
 	color: #FFFFFF;
 }
 
+/* Блок с новостями (в духе KDE 4!) */
+
+#newsbox {
+	width:700px; /* Ширина блока */
+	height: 400px; /* Высота блока */
+	background-color: #b4ab96; /* Фоновый цвет*/
+	border: 4px solid #ba7373; /* Ширина и цвет границ*/
+	border-radius: 10px; /* Радиус границ*/
+	box-shadow: 0 0 15px #65caeb; /* Размер и цвет тени блока*/
+}
+
 /* Эпотаж (разное всякое, не вошедшее в основное) */
 
 .container {

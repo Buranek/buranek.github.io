@@ -223,11 +223,13 @@ a:active {
 
 .newsbox {
 	width: 650px; /* Ширина блока */
-	height: 400px; /* Высота блока */
-	background-color: #D0C2A0; /* Фоновый цвет*/
-	border: 4px solid #ba7373; /* Ширина и цвет границ*/
-	border-radius: 10px; /* Радиус границ*/
-	box-shadow: 0 0 15px #65caeb; /* Размер и цвет тени блока*/
+	height: 350px; /* Высота блока */
+	background-color: #C3B491; /* Фоновый цвет */
+	background-image: url("../images/theme/newsback.png");
+    background-repeat: repeat-x-y;
+	border: 3px solid #ba7373; /* Ширина и цвет границ */
+	border-radius: 10px; /* Радиус границ */
+	box-shadow: 0 0 15px #7EBDD1; /* Размер и цвет тени блока */
 	padding: 16px 24px;
 }
 

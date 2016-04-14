@@ -229,7 +229,7 @@ a:active {
     background-repeat: repeat-x-y;
 	border: 3px solid #ba7373; /* Ширина и цвет границ */
 	border-radius: 10px; /* Радиус границ */
-	box-shadow: 0 0 15px #7EBDD1; /* Размер и цвет тени блока */
+	box-shadow: 0 0 15px #F5C671; /* Размер и цвет тени блока */
 	padding: 16px 24px;
 }
 

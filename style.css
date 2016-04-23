@@ -95,6 +95,11 @@ ul {
 	padding: 16px 24px;
 }
 
+#kartoright {
+/* padding: 10% 10% 10% 10% */
+text-align: right; width: 100%
+}
+
 /* ССЫЛКИ */
 
 /* a:link - обычная, непосещённая ссылка */

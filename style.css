@@ -203,15 +203,21 @@ a:active {
 /* Блок с новостями (в духе KDE 4!) */
 
 .newsbox {
-	width: 650px; /* Ширина блока */
-	height: 350px; /* Высота блока */
+	width: 90%; /* Ширина блока (в процентах надёжнее!) */
+	/*height: 350px; Высота блока */
 	background-color: #C3B491; /* Фоновый цвет */
 	background-image: url("../images/theme/newsback.png");
     background-repeat: repeat-x-y;
 	border: 3px solid #ba7373; /* Ширина и цвет границ */
 	border-radius: 10px; /* Радиус границ */
-	box-shadow: 0 0 15px #F5C671; /* Размер и цвет тени блока */
-	padding: 16px 24px;
+	box-shadow: 0 0 15px #F5C671; /* Размер и цвет тени блока (оранжевый) */
+	padding: 4px 12px;
+	margin: 0px auto;
+}
+
+.kartoright {
+	padding: 4px 12px;
+	margin: 0px auto;
 }
 
 /* Эпотаж (разное всякое, не вошедшее в основное) */

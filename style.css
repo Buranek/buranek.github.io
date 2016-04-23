@@ -154,6 +154,12 @@ a:active {
 	border-right: 1px solid #5E5945;
 }
 
+#liniya {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
 /* Кусок с новостями или страницей (или галереей) */
 
 #left {
@@ -164,22 +170,6 @@ a:active {
 	width: 700px;
 	background: #ded1be url(../images/theme/left-body.png) repeat top left; 
 }
-
-/* Когда переехал - не помню */
-/*.ro {
-        text-indent: 30px;
-}*/
-/*.ro2 {
-        text-indent: 130px;
-}}*/
-/*.ro3 {
-        text-indent: 150px;
-        margin-bottom: -5px;
-}*/
-/*.ro4 {
-        text-indent: 150px;
-        font-size: 10pt;
-}*/
 
 /* Левый блок */
 

@@ -98,26 +98,22 @@ ul {
 /* ССЫЛКИ */
 
 /* a:link - обычная, непосещённая ссылка */
-
 a:link {
 	color: #993131;
 }
 
 /* a:visited - ссылка, которую пользователь уже посетил */
-
 a:visited {
     color: #551A8B;
 }
 
 /* a:hover - ссылка, когда мышка наведена поверх неё */
-
 a:hover {
 	text-decoration: none;
 	color: #5e629d;
 }
 
 /* a:active - ссылка в момент, когда она нажата */
-
 a:active {
     color: #5e629d;
 }
@@ -144,6 +140,11 @@ a:active {
 	font-size: 11px;
 }
 
+.liniya {
+	display:block;
+	margin:15px auto 25px;
+	}
+
 /* СОДЕРЖИМОЕ */
 
 #content {
@@ -153,12 +154,6 @@ a:active {
 	background-color: #faf6f6;
 	border-left: 1px solid #5E5945;
 	border-right: 1px solid #5E5945;
-}
-
-#liniya {
-	display: block;
-	margin-left: auto;
-	margin-right: auto
 }
 
 /* Кусок с новостями или страницей (или галереей) */

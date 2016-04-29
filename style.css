@@ -215,6 +215,13 @@ a:active {
 	margin: 0px auto;
 }
 
+/* Блок с картинами */
+
+.galdiv {
+/*padding: 4px 12px;*/
+	margin: auto auto;
+}
+
 .kartoright {
 	padding: 4px 82px;
 	margin: 0px auto;

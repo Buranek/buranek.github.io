@@ -3,3 +3,7 @@ Disallow: /blocks/
 Disallow: /fonts/
 Disallow: /js/
 Disallow: comments.html
+
+User-agent: *
+Disallow:
+Host: www.буранчик.рф

@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /blocks/
 Disallow: /fonts/
 Disallow: /js/
+Disallow: comments.html

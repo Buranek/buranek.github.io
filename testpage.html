@@ -17,6 +17,32 @@
 <!-- Подрубить бибиотеку jQuery (production версия) -->
 <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
 
+<script type="text/javascript">
+( function( $ ) {
+$( document ).ready(function() {
+$('#cssmenu > ul > li > a').click(function() {
+  $('#cssmenu li').removeClass('active');
+  $(this).closest('li').addClass('active');	
+  var checkElement = $(this).next();
+  if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+    $(this).closest('li').removeClass('active');
+    checkElement.slideUp('normal');
+  }
+  if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+    $('#cssmenu ul ul:visible').slideUp('normal');
+    checkElement.slideDown('normal');
+  }
+  if($(this).closest('li').find('ul').children().length == 0) {
+    return true;
+  } else {
+    return false;	
+  }		
+});
+});
+} )( jQuery );
+</script>
+
+
  <!-- Скрипт CSSMENU (ему нужна jQuery) -->
 <script src="http://буранчик.рф/js/cssmenu.js"></script>
 <!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт. -->

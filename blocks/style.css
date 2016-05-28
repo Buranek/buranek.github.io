@@ -1,0 +1,466 @@
+/* ШРИФТЫ */
+/* Шрифт Oldtyper */
+@font-face {
+font-family: Oldtyper; /* Гарнитура шрифта */
+src: url(../fonts/oldtyper.ttf); /* Путь к файлу со шрифтом */
+}
+
+/* Шрифт Liberation Sans */
+@font-face {
+    font-family: 'Liberation Sans'; /* Гарнитура шрифта */
+    font-style: normal;
+    font-weight: 400;
+    src: local('Liberation Sans'), local('LiberationSans-Regular'),
+        url(../fonts/liberation-sans.woff) format('woff'),
+        url(../fonts/liberation-sans.ttf) format('truetype');
+}
+
+/* Основное */
+
+html, body {
+	height: 100%;
+}
+
+/* Обычный текст */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #ded1be url(images/theme/back.png) repeat top left;
+	font-family: Liberation Sans, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #152018;
+}
+
+/* Аши */
+
+h1 {
+	margin-left: 0px;
+	font-family: Oldtyper, Verdana, Georgia, serif;
+}
+
+h2 {
+	margin-top: 0px;
+	font-size: 15pt;
+	text-align: center;
+}
+
+h3 {
+	margin-top: 0px;
+	font-weight: bold;
+	font-size: 13pt;
+	color: #68634e;
+}
+
+h4 {
+	font-size: 10pt;
+	line-height: 110%;
+	font-weight: bold;
+	margin-top: 1em;
+	color: #505f7f;
+}
+h4 a:hover {
+	color:#00a877;
+}
+
+h3, h4 {
+	padding-left: 24px;
+}
+
+h1, h2
+{
+	color: #5E5945;
+	font-weight: bold;
+	margin-top: 0px;
+}
+
+hr {
+	display: none;
+}
+
+/* Пихи */
+
+p, ol, ul {
+	text-align: justify;
+	line-height: 160%;
+}
+
+p {
+	padding: 16px 24px;
+}
+
+ul {
+	list-style-type: square;
+	margin-right: 24px;
+	padding: 16px 24px;
+}
+
+/* ССЫЛКИ */
+
+/* a:link - обычная, непосещённая ссылка */
+a:link {
+	color: #993131;
+}
+
+/* a:visited - ссылка, которую пользователь уже посетил */
+a:visited {
+    color: #551A8B;
+}
+
+/* a:hover - ссылка, когда мышка наведена поверх неё */
+a:hover {
+	text-decoration: none;
+	color: #5e629d;
+}
+
+/* a:active - ссылка в момент, когда она нажата */
+a:active {
+    color: #5e629d;
+}
+
+/* ЗАГОЛОВОК */
+
+#header {
+	float: left;
+	width: 180px;
+	margin-right: 1px;
+	padding: 10px;
+}
+
+#header h1 {
+	margin: 0px;
+	padding-top: 12px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#header h2 {
+	margin: 0px;
+	text-align: center;
+	font-size: 11px;
+}
+
+/* СОДЕРЖИМОЕ */
+
+#content {
+	margin: 0 auto;
+	width: 1050px;
+	/* padding: 20px; */
+	background-color: #faf6f6;
+	border-left: 1px solid #5E5945;
+	border-right: 1px solid #5E5945;
+}
+
+/* Кусок с новостями или страницей (или галереей) */
+
+#left {
+	float: left;
+	margin: 0px auto;
+	padding: 0px 15px 2px 5px;
+/* Верхнее поле — 0px, правое поле — 15px, нижнее поле — 2px, левое поле — 5px */
+	width: 700px;
+	background: #ded1be url(../images/theme/left-body.png) repeat top left; 
+}
+
+/* Левый блок */
+
+#left {
+	float: left;
+	margin: 0px auto;
+	padding: 0px;
+	width: 730px;
+}
+
+/* Правый кусок (с меню и кнопочками сервисов) */
+
+#right {
+	float: right;
+	margin: 0px;
+	padding: 10px;
+	width: 280px;
+	border: 1px dashed #5E5945;
+	background: #ccc2ab;
+}
+
+/* ПОДВАЛ (там как подвал дома, только чище) */
+
+#footer {
+	clear: both;
+}
+
+#footer p {
+	margin: 0px auto;
+	width: 1050px;
+	padding: 10px 0px 10px 0px;
+	background-color: #cdcdcd;
+	background-image: url("../images/theme/footerback.jpg");
+    background-repeat: repeat-x-y;
+	font-size: 10px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+/* Блок с новостями (в духе KDE 4!) */
+
+.newsbox {
+	width: 90%; /* Ширина блока (в процентах надёжнее!) */
+	/*height: 350px; Высота блока */
+	background-color: #C3B491; /* Фоновый цвет */
+	background-image: url("../images/theme/newsback.png");
+    background-repeat: repeat-x-y;
+	border: 3px solid #ba7373; /* Ширина и цвет границ */
+	border-radius: 10px; /* Радиус границ */
+	box-shadow: 0 0 15px #F5C671; /* Размер и цвет тени блока (оранжевый) */
+	padding: 4px 12px;
+	margin: 0px auto;
+}
+
+/* Блок с картинами */
+
+.galdiv {
+/*padding: 4px 12px;*/
+	margin: auto auto;
+}
+
+.kartoright {
+	padding: 4px 82px;
+	margin: 0px auto;
+}
+
+/* Эпотаж (разное всякое, не вошедшее в основное) */
+
+.container {
+	width: 850px;
+}
+blockquote {
+	background: #fcf8f2;
+	border-color: #f0ad4e;
+	font-size: 15px;
+}
+footer {
+	background: #eee;
+	padding: 15px 0;
+}
+.row div {
+	margin-bottom: 20px;
+}
+.jumbotron {
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.demo-wrapper {
+  padding: 1em
+}
+
+/* <<<Меню CSSMENU>>> */
+@import url(../fonts/Ubuntu:300,400,500,700);
+
+@import url(../fonts/Open_Sans:400,600,300);
+@charset "UTF-8";
+/* Базовые Стили */
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 1;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	position: relative;
+}
+#cssmenu {
+	width: 250px;
+	border-bottom: 4px solid #656659;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+#cssmenu a {
+	line-height: 1.3;
+}
+#cssmenu > ul > li:first-child {
+	background: #66665e;
+	background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66665e), color-stop(100%, #45463d));
+	background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
+	background: linear-gradient(#66665e 0%, #45463d 100%);
+	border: 1px solid #45463d;
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+#cssmenu > ul > li:first-child > a {
+	padding: 15px 10px;
+	background: url(../images/cssmenu/pattern.png) top left repeat;
+	border: none;
+	border-top: 1px solid #818176;
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 300;
+	text-shadow: 0 -1px 1px #000000;
+}
+#cssmenu > ul > li:first-child > a > span {
+	padding: 0;
+}
+#cssmenu > ul > li:first-child:hover {
+	background: #66665e;
+}
+
+/* Пункт (расслабленный) */
+#cssmenu > ul > li {
+	background: #5E5945;
+}
+
+/* Пункт (наведённый) */
+#cssmenu > ul > li:hover {
+	background: #AFC797;
+}
+#cssmenu > ul > li > a {
+	font-size: 16px;
+	display: block;
+	background: url(../images/cssmenu/pattern.png) top left repeat;
+	color: #FFFFFF;
+	border: 1px solid #ba2f14;
+	border-top: none;
+	text-shadow: 0 -1px 1px #751d0c;
+}
+#cssmenu > ul > li > a > span {
+	display: block;
+	padding: 14px 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+  color: #5E5945
+}
+#cssmenu > ul > li.active {
+  border-bottom: none;
+}
+#cssmenu > ul > li.has-sub > a span {
+	background: url(../images/cssmenu/icon_plus.png) 96% center no-repeat;
+}
+#cssmenu > ul > li.has-sub.active > a span {
+	background: url(../images/cssmenu/icon_minus.png) 96% center no-repeat;
+}
+/* Подменю */
+#cssmenu ul ul {
+	display: none;
+	background: #fff;
+	border-right: 1px solid #a2a194;
+	border-left: 1px solid #a2a194;
+}
+
+/* Пункт вложенного меню (расслабленный) */
+#cssmenu ul ul li {
+	padding: 0;
+	border-bottom: 1px solid #d4d4d4;
+	border-top: none;
+	background: #faf6f6;
+}
+#cssmenu ul ul li:last-child {
+	border-bottom: none;
+}
+#cssmenu ul ul a {
+	padding: 10px 10px 10px 25px;
+	display: block;
+	color: #676767;
+	font-size: 12px;
+	font-weight: normal;
+}
+#cssmenu ul ul a:before {
+	content: "»";
+	position: absolute;
+	left: 10px;
+	color: #e94f31;
+}
+
+/* Пункт вложенного меню (наведённый) */
+#cssmenu ul ul a:hover {
+	color: #e94f31;
+	background: #f1dbb0;
+}
+
+/* ПОКА НЕ ИСПОЛЬЗУЕТСЯ!!! */
+
+/* <<<Парсер новостей>>> */
+
+/* Блок вывода списка статей */
+.main {
+	width: 550px;
+	margin: 0 auto;
+	height: 130px;
+	font-size:13pt;
+    line-height:110%;
+	font-weight:bold;
+	text-align:center;
+	margin-top:1em;
+	color:#505f7f;
+	}
+
+/* Углеводы статьи */
+.article {
+	width: 208px;
+	float: left;
+	margin: 10px;
+	border: 1px #dedede solid;
+	padding: 5px;
+	display: none;
+}
+
+/* Заголовок новости */
+.title {
+	margin-bottom: 6px;
+	text-align:center;
+	font-family: Liberation Sans, Arial, Helvetica, sans-serif;
+	}
+
+/* Описание новости */
+.desс {
+	font-size: 11pt;
+	text-align:center;
+	font-family: Liberation Sans, Arial, Helvetica, sans-serif;
+	}
+
+/* Дата новости */
+.date {
+	font-size:11pt;
+	text-align:left;
+	color:#0F2658;
+	margin-top:4px;
+	}
+	
+/* Див-ссылка для открытия полной новости */
+a.filename { 
+     display:block;
+     width:500px;
+     height:500px; 
+     float:left;
+}
+
+/* Логотип загрузки новостей */
+.loader {
+	height:36px;
+	}
+
+/* Содержание новости */
+
+
+.articlecontent {
+	width: 408px;
+	float: left;
+	margin: 10px;
+	border: 1px #dedede solid;
+	padding: 5px;
+	display: none;
+	}

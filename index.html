@@ -46,7 +46,7 @@ $("documend").ready(function(){
 $(document).ready(function () {
     $.ajax({
         type: "GET",
-        url: "list.xml",
+        url: "../list.xml",
         dataType: "xml",
         success: xmlParser
     });
@@ -124,7 +124,7 @@ function xmlParser(xml) {
 
 <!-- Отделение комплекта новостей (без br!) -->
 <div class="articles">
-<div align="center" class="loader"><img src="../image/theme/loader.gif" id="load" width="36" height="36" align="absmiddle"/></div>
+<div align="center" class="loader"><img src="../images/theme/loader.gif" id="load" width="36" height="36" align="absmiddle"/></div>
 </div>
 
 <div class="clear"></div>

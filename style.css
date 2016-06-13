@@ -400,12 +400,12 @@ footer {
 	width: 80%;
 	margin: 0 auto;
 	height: 130px;
-	font-size:13pt;
-    line-height:110%;
-	font-weight:bold;
-	text-align:center;
-	margin-top:1em;
-	color:#505f7f;
+	font-size: 13pt;
+    line-height: 110%;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 1em;
+	color: #505f7f;
 	}
 
 /* Логотип загрузки новостей */
@@ -447,12 +447,14 @@ footer {
 	}
 
 /* Див-ссылка для открытия полной новости (не используется) */
+/*
 arlink { 
      display:block;
      width:500px;
      height:500px; 
      float:left;
 }
+*/
 
 /* <<<Парсер новостей — конец>>> */
 

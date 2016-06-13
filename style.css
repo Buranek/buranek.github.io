@@ -204,7 +204,7 @@ a:active {
 
 .newsbox {
 	width: 90%; /* Ширина блока (в процентах надёжнее!) */
-	/*height: 350px; Высота блока */
+	height: 950px; /* Высота блока (теперь стала необходима) */
 	background-color: #C3B491; /* Фоновый цвет */
 	background-image: url("../images/theme/newsback.png");
     background-repeat: repeat-x-y;
@@ -397,7 +397,7 @@ footer {
 
 /* Блок вывода списка статей */
 .main {
-	width: 80%;
+	width: 98%;
 	margin: 0 auto;
 	height: 130px;
 	font-size: 13pt;
@@ -415,7 +415,7 @@ footer {
 
 /* "Углеводы" статьи */
 .article {
-	width: 75%;
+	width: 95%;
 	float: left;
 	margin: 10px;
 	border: 1px #dedede solid;

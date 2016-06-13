@@ -396,7 +396,7 @@ footer {
 /* <<<Парсер новостей — начало>>> */
 
 /* Блок вывода списка статей */
-.articles {
+.main {
 	width: 550px;
 	margin: 0 auto;
 	height: 130px;

@@ -397,7 +397,7 @@ footer {
 
 /* Блок вывода списка статей */
 .main {
-	width: 550px;
+	width: 80%;
 	margin: 0 auto;
 	height: 130px;
 	font-size:13pt;
@@ -410,7 +410,7 @@ footer {
 
 /* Углеводы статьи */
 .article {
-	width: 550px;
+	width: 75%;
 	float: left;
 	margin: 10px;
 	border: 1px #dedede solid;

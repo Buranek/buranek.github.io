@@ -4,12 +4,14 @@
   <Article>
     <Title>Китайское имя</Title>
     <Full>Написал свой псевдоним по-китайски верно: 娄瑞 (lóu ruì) 玛氏 (mǎ shì).</Full>
+    <Reflink></Reflink>
     <Date>2016/06/08</Date>
   </Article>
   
   <Article>
     <Title>Аквагрунт</Title>
     <Full>Осваиваю аквагрунт, за фото пройдите в четвёртую галерею! <A XML-LINK="LINK" HREF="http://буранчик.рф/галерея4/">Перейти в четвёртую галерею</A></Full>
+    <Reflink>http://буранчик.рф/галерея4/</Reflink>
     <Date>2016/06/08</Date>
   </Article>
 

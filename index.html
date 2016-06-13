@@ -59,7 +59,7 @@ function xmlParser(xml) {
 
     $(xml).find("Article").each(function () {
 
-        $(".main").append('<div class="article"><div class="title">' + $(this).find("Title").text() + '</div><div class="full">' + $(this).find("Full") + '</div><div class="date">Добавлена: ' + $(this).find("Date").text() + '</div></div>');
+        $(".main").append('<div class="article"><div class="title">' + $(this).find("Title").text() + '</div><div class="full">' + $(this).find("Full").() + '</div><div class="date">Добавлена: ' + $(this).find("Date").text() + '</div></div>');
         $(".article").fadeIn(500);
     });
 

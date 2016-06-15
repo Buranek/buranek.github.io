@@ -204,7 +204,7 @@ a:active {
 
 .newsbox {
 	width: 90%; /* Ширина блока (в процентах надёжнее!) */
-	height: 1300px; /* Высота блока (теперь стала необходима) */
+	height: 1500px; /* Высота блока (теперь стала необходима) */
 	background-color: #C3B491; /* Фоновый цвет */
 	background-image: url("../images/theme/newsback.png");
     background-repeat: repeat-x-y;

@@ -31,19 +31,7 @@
 <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
 
 <script src="../js/ui/jquery-ui.min.js"></script>
-<script>
-$( "#tabs" ).tabs();
 
-// Hover states on the static widgets
-$( "#dialog-link, #icons li" ).hover(
-	function() {
-		$( this ).addClass( "ui-state-hover" );
-	},
-	function() {
-		$( this ).removeClass( "ui-state-hover" );
-	}
-);
-</script>
 
 
 
@@ -233,5 +221,18 @@ $("documend").ready(function(){
 <div id="footer"></div>
 <!-- Подвала конец -->
 </div>
+<script>
+$( "#tabs" ).tabs();
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
 </body>
 </html>

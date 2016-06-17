@@ -29,6 +29,23 @@
 <!-- Подрубить бибиотеку jQuery (production версия) -->
 <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
 
+<script src="../js/ui/jquery-ui.min.js"></script>
+<script>
+$( "#tabs" ).tabs();
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+
+
+
  <!-- Скрипт CSSMENU (ему нужна jQuery) -->
 <script src="../js/cssmenu.js"></script>
 <!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт. -->
@@ -94,6 +111,20 @@ $("documend").ready(function(){
 <br>
 <!-- Музыка начинается здесь -->
 <div id="music">
+
+<!-- Вкладки -->
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Мне не холодно</a></li>
+		<li><a href="#tabs-2">Артикс</a></li>
+		<li><a href="#tabs-3">Необычайная лёгкость</a></li>
+		<li><a href="#tabs-4">Отблагодарить</a></li>
+	</ul>
+	<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+	<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+	<div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
+	<div id="tabs-3">Nam dui erat fosfat tatatata.</div>
+</div>
 
 <!-- Мне не холодно -->
 <div>

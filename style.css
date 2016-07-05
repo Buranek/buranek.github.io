@@ -1,8 +1,8 @@
 /* ШРИФТЫ */
-/* Шрифт Oldtyper */
+/* Шрифт Oldtyper (версия, исправленная мной) */
 @font-face {
 font-family: Oldtyper; /* Гарнитура шрифта */
-src: url(../fonts/oldtyper.ttf); /* Путь к файлу со шрифтом */
+src: url(../fonts/oldtyper2016.ttf); /* Путь к файлу со шрифтом */
 }
 
 /* Шрифт Liberation Sans */
@@ -17,6 +17,12 @@ src: url(../fonts/oldtyper.ttf); /* Путь к файлу со шрифтом *
 
 /* Основное */
 
+html {
+/* Предотвратить подгонку размеров шрифта после изменения ориентации в IE и iOS. <normalize.css> */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
 html, body {
 	height: 100%;
 }
@@ -24,7 +30,7 @@ html, body {
 /* Обычный текст */
 
 body {
-	margin: 0px;
+	margin: 0;
 	padding: 0px;
 	background: #ded1be url(images/theme/back.png) repeat top left;
 	font-family: Liberation Sans, Arial, Helvetica, sans-serif;

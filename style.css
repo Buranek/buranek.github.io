@@ -210,7 +210,7 @@ a:active {
 
 .newsbox {
 	width: 90%; /* Ширина блока (в процентах надёжнее!) */
-	height: 1500px; /* Высота блока (теперь стала необходима) */
+	height: 2000px; /* Высота блока (теперь стала необходима) */
 	background-color: #C3B491; /* Фоновый цвет */
 	background-image: url("../images/theme/newsback.png");
     background-repeat: repeat-x-y;
@@ -474,3 +474,19 @@ arlink {
 	padding: 5px;
 	display: none;
 	}
+
+/* Скрыть блок с большими катинками в третьей галерее, если у пользователя смартфон */
+@media only screen and (max-device-width: 480px) {
+div#3rdgallery-desktop {
+	div {display:none;} /* говорит браузеру, что этот элемент не нужно отображать на странице */
+	}
+
+}
+
+/* Экран ПК экраны (скрыть блок с малыми катинками в третьей галарее) */
+@media only screen 
+and (min-width : 768px) {
+div#3rdgallery-mobile {
+	div {display:none;} /* говорит браузеру, что этот элемент не нужно отображать на странице */
+	}
+}

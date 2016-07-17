@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--Language: Russian-->
+<html>
+
+<head>
+<title>Буранчик - Видео</title>
+<!-- Метан -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- Набор символов -->
+<meta name="description" content="Галерея Буранчика"> <!-- Описание страницы -->
+<meta name="keywords" content="буранчик,галерея,картина,картины"> <!-- Ключевые слова -->
+<meta name="author" content="Buranchik"> <!-- Имя автора -->
+<meta name="generator" content="Static page" /> <!-- Оставлю это для статистики -->
+<!--<link rel="icon" href="../favicon.ico"> простой код значка сайта -->
+<!-- ICO браузеры -->
+<link rel="icon" href="../images/favicons/favicon-16.ico" type="image/x-icon">
+<link rel="icon" href="../images/favicons/favicon-32.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="../images/favicons/favicon-48.ico" type="image/vnd.microsoft.icon">
+<!-- PNG Apple -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/favicons/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/favicons/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/favicons/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../images/favicons/apple-touch-icon-57-precomposed.png">
+<!-- PNG значок сайта -->
+<link rel="shortcut icon" href="../images/favicons/favicon.png">
+<link rel="stylesheet" href="../style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
+
+
+<!-- <<<ПОДРУБОНЫ>>> -->
+<!-- Подрубить бибиотеку jQuery (production версия) -->
+<script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+
+ <!-- Скрипт CSSMENU (ему нужна jQuery) -->
+<script src="../js/cssmenu.js"></script>
+<!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт. -->
+
+<!-- Добавить fancyBox -->
+<link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js"></script>
+
+<!-- Простой режим запуска fancyBox -->
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+});
+</script>
+
+<!-- Скрипт загрузки блоков (использует JQuery) -->
+<script type="text/javascript">
+$("documend").ready(function(){
+	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
+	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
+	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
+	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
+});
+</script>
+
+<!-- HTML5Shiv для осла -->
+<!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="content">
+<div id="slogan"></div>
+
+<!-- Левый блок сайта -->
+<div id="left">
+<!-- Содержание сайта -->
+
+<h2>Видео галерея — вместо этих ваших ютюбов!</h2>
+<h3 id="note">Примечание</h3>
+<p>Начну её тем видео, которое я, ух ты, <b>сделал на 100% с помощью СВОБОДНОГО ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ!</b> Даже на свободных драйверах.
+</p>
+<br>
+<!-- Видеофайлы начинаются здесь -->
+<div id="videodiv">
+<p>
+<video width="480" height="880" poster="../videos/galeris.png" src="../videos/galeris.webm"  controls autobuffer>
+<p> Извините, это видео не будет воспроизводиться, так как Ваш Интернет-обозреватель не поддерживает HTML5 видео! Или Вы можете <a  href="../videos/galeris.webm">скачать это  видео</a> вместо просмотра на линии.</p>
+</video>
+<br>Была у меня мечта создать крутое видео в свободном видеоредаторе. Жесть лет я ждал, пока свободные видеоредакторы наберут колорит. И пару лет назад узнал про Shotcut на linux.org.ru.
+Я оценил его тогда как продукт, который впоследствии станет подходящим инструментом для моей задачи. Как же я ошибася! Это моя первая работа и чёрт возьми, последняя в видеоредакторе Shotcut. У этой программы ограничения жуткие — выделить группу файлов нельзя. А если ты сузил или обрезал видео и хочешь потом вернуть обратно, то у тебя нет шансов. Это как в израильтян, если обрезание сделал — это навсегда. А почему? Потому что подобные манипуляции с видео загружат все 4 процессора на 80%. Это при включённом (экспериментальном) режиме просчётов на видеокарте.
+<br>
+<br>Мать вашу, да в этой программе всё экспериментальное! Если вы когда-нибудь поймаете белогвардейского офицера, то вместо казни дайте ему что-нибудь помонтировать в этом видеоредакторе. Вот увидите — он сам застрелится!
+Итак, в Sony Vegas у меня бы вся работа с видео заняла бы 20 минут и монтаж был бы куда круче. С этой программой я пердолился 2 часа!
+</p>
+</div>
+<!-- А кончаются тут -->
+</div>
+<div id="right">
+<h3>Меню сайта:</h3><br>
+<!-- НАЧАЛО Меню сайта (cssmenu) -->
+<div id="cssmenu">
+<ul>
+   <li class="active"><a href="http://буранчик.рф/index.html"><span>Главная</span></a></li>
+   <li class="has-sub"><a href="#"><span>Графика</span></a>
+       <ul>
+         <li><a href="http://буранчик.рф/галерея1/"><span>Галерея, серия первая</span></a>
+         <li><a href="http://буранчик.рф/галерея2/"><span>Галерея, серия вторая</span></a></li>
+         <li><a href="http://буранчик.рф/галерея3/"><span>Галерея, серия сканок</span></a></li>
+         <li><a href="http://буранчик.рф/галерея-имперка/"><span>Галерея, серия имперская</span></a></li>
+         <li><a href="http://буранчик.рф/галерея-подвал/"><span>Галерея, грубая серия</span></a></li>
+      </ul>
+      <li class="has-sub"><a href="#"><span>Статьи</span></a>
+       <ul>
+         <li><a href="http://буранчик.рф/глич-хоп/"><span>Глич-Хоп</span></a>
+         <li class="last"><a href="http://буранчик.рф/казуу/"><span>Казуу</span></a></li>
+      </ul>
+            <li class="has-sub"><a href="#"><span>Ещё</span></a>
+       <ul>
+         <li><a href="http://буранчик.рф/музыка/"><span>Музыка</span></a>
+         <li class="last"><a href="http://буранчик.рф/видео/"><span>Видео</span></a></li>
+         <li class="last"><a href="http://буранчик.рф/земледелие/"><span>Земледелие</span></a></li>
+      </ul>
+      <li><a href="https://github.com/Buranek/Unreleased"><span>Репозиторий отменённых проектов</span></a>
+      <li class='last'><a href="https://github.com/Buranek/pix"><span>Репозиторий значков</span></a></li>
+</ul>
+<br>
+<div id='cbox'></div>
+</div>
+<!-- КОНЕЦ Меню сайта (cssmenu) -->
+<br>
+<!-- Социальный блок НАЧАЛО -->
+<div id='socials'></div>
+<!-- Социальный блок КОНЕЦ -->
+<!-- Яндекс.Метрика НАЧАЛО -->
+<div id='metrika'></div>
+<!-- Яндекс.Метрика КОНЕЦ -->
+</div>
+<!-- Подвал -->
+<!-- Подвала начало -->
+<div id="footer"></div>
+<!-- Подвала конец -->
+</div>
+</body>
+</html>

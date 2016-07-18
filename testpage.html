@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--Language: Russian-->
+<html>
+
+<head>
+<title>Буранчик - Главная страница</title>
+<!-- Метан -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- Набор символов -->
+<meta name="description" content="Про Буранчика"> <!-- Описание страницы -->
+<meta name="keywords" content="буранчик,человек,о сайте,картины,музыка,созидание"> <!-- Ключевые слова -->
+<meta name="author" content="Buranchik"> <!-- Имя автора -->
+<meta name="generator" content="Static page" /> <!-- Оставлю это для статистики -->
+<!--<link rel="icon" href="../favicon.ico"> простой код значка сайта -->
+<!-- ICO браузеры -->
+<link rel="icon" href="../images/favicons/favicon-16.ico" type="image/x-icon">
+<link rel="icon" href="../images/favicons/favicon-32.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="../images/favicons/favicon-48.ico" type="image/vnd.microsoft.icon">
+<!-- PNG Apple -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/favicons/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/favicons/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/favicons/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../images/favicons/apple-touch-icon-57-precomposed.png">
+<!-- PNG значок сайта -->
+<link rel="shortcut icon" href="../images/favicons/favicon.png">
+<link rel="stylesheet" href="../style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
+
+<!-- <<<ПОДРУБОНЫ>>> -->
+<!-- Подрубить бибиотеку jQuery (production версия) -->
+<script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+
+ <!-- Скрипт CSSMENU (ему нужна jQuery) -->
+<script src="../js/cssmenu.js"></script>
+<!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт (вообще никак). -->
+
+<!-- Скрипт загрузки блоков (использует JQuery) -->
+<script type="text/javascript">
+$("documend").ready(function(){
+	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
+	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
+	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
+	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
+	$("#cbox").load("../blocks/cbox.html"); <!-- Болтушка -->
+	$("#cbox").load("../blocks/menu.html"); <!-- Болтушка -->
+});
+
+<!-- Открываем XML со списком новостей -->
+$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        url: "../list.xml",
+        dataType: "xml",
+        success: xmlParser
+    });
+});
+<!-- Осуществляем парсинг XML -->
+function xmlParser(xml) {
+
+    $('#load').fadeOut();
+
+    $(xml).find("Article").each(function () {
+
+        $(".main").append('<div class="article"><div class="title">' + $(this).find("Title").text() + '</div><div class="full">' + $(this).find("Full").html() + '</div><div class="date">Добавлена: ' + $(this).find("Date").text() + '</div></div>');
+        $(".article").fadeIn(500);
+    });
+
+}
+</script>
+
+<!-- HTML5Shiv для осла -->
+<!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="content">
+<div id="slogan"></div>
+
+<!-- Левый блок сайта -->
+<div id="left">
+<!-- Содержание сайта -->
+<h2>Здравствуйте! Вы сможете узнать меня, благодаря этой странице.</h2>
+
+<h3 id="contents">Оглавление</h3>
+<ul>
+<li><a href="#prim">Очень важное</a></li>
+</ul>
+
+<h3 id="prim">Очень важное</h3>
+<p>Братишка, проснись, ты обосрался!</p>
+
+</div>
+
+<div id="right">
+<h3>Меню сайта:</h3><br>
+<!-- НАЧАЛО Меню сайта (cssmenu) -->
+<div id="cssmenu">
+<ul>
+<div id='menu'></div>
+</ul>
+<br>
+<div id='cbox'></div>
+</div>
+<!-- КОНЕЦ Меню сайта (cssmenu) -->
+<br>
+<!-- Социальный блок НАЧАЛО -->
+<div id='socials'></div>
+<!-- Социальный блок КОНЕЦ -->
+<!-- Яндекс.Метрика НАЧАЛО -->
+<div id='metrika'></div>
+<!-- Яндекс.Метрика КОНЕЦ -->
+</div>
+<!-- Подвал -->
+<!-- Подвала начало -->
+<div id="footer"></div>
+<!-- Подвала конец -->
+</div>
+</body>
+</html>

@@ -23,12 +23,13 @@
 <!-- PNG значок сайта -->
 <link rel="shortcut icon" href="../images/favicons/favicon.png">
 <link rel="stylesheet" href="../style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
-<link href="../js/ui/jquery-ui.min.css" rel="stylesheet"> <!-- Подключение Jquery UI -->
 
 
 <!-- <<<ПОДРУБОНЫ>>> -->
 <!-- Подрубить бибиотеку jQuery (production версия) -->
 <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+<!-- Подрубить бибиотеку jQuery UI (production версия) -->
+<script src="../js/ui/jquery-ui.min.js"></script>
 
  <!-- Скрипт CSSMENU (ему нужна jQuery) -->
 <script src="../js/cssmenu.js"></script>
@@ -52,6 +53,7 @@ $("documend").ready(function(){
 	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
 	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
 	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
+	$("#cbox").load("../blocks/cbox.html"); <!-- Болтушка -->
 });
 </script>
 
@@ -92,40 +94,35 @@ $("documend").ready(function(){
 <br>Эта галерея демонстрирует процесс роста растений, а также первичны результаты домашнего земледелия.
 <br>Нравится фото — <i>сохраните изображение как</i>.
 <br>Это фотографии некоторых из растений, которые я выращиваю у себя в квартире.
-<br>Я не фотограф, посему пардоньте. Снимки 1-6 сделаны 15 апреля 2016. Снимки 7-9 — 18 апреля 2016. Снимок №10 — 21 апреля.
-<br>Огуречник расчёт молодцом, ростки — задорные стройные герои. 2016/04/30 в 14:21:32 было сделано новое фото (№11).
-<br>Фото №12 было сделано 14 мая 2016 в 19:21. Фото №13 и №14 было сделано вслед за 12. Фото № 15 было сделано 2016/05/12 в 10:42. 
-<br>Фото №16 сделано 2016/05/26 в 15:35. Фото №17 — следом за 16ым. Фото №18 — 2016/05/28 в 13:18.
-<br>Фото № 19 — следом за 18ым. Фото №20 сделано 2016/05/28 в 18:50.
+<br>Я не фотограф, посему пардоньте за не идеальные фото.
+<br>Огуречник по-прежнему расчёт молодцом, ростки — задорные стройные герои уже превратились в статных и возвышенных красавцев.
+
 </p>
 <br>
-<!-- Фотографии начинаются здесь -->
+<!-- Старые фотографии начинаются здесь -->
 <div id="byloe-gallery">
 <p>
-<!-- Былое -->
-<a class="fancybox" href="../images/zem/old/or/1.jpg" data-fancybox-group="gal-old" title="Маленькое авокадо. <i>Помёт</i> 2016 года."><img src="../images/zem/old/th/1.png" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/2.jpg" data-fancybox-group="gal-old" title="Гранат. С 2005 года. Плодоносил в 2005 году и в 2015 году."><img src="../images/zem/old/th/2.png" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/3.jpg" data-fancybox-group="gal-old" title="Авокадо побольше и другого сорта. С 2015 года."><img src="../images/zem/old/th/3.png" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/4.jpg" data-fancybox-group="gal-old" title="Маленькая пальма юка. Отрезана в 2016 года."><img src="../images/zem/old/th/4.png" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/5.jpg" data-fancybox-group="gal-old" title="Роза (с подставкой). С 2015 года."><img src="../images/zem/old/th/5.png" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/6.jpg" data-fancybox-group="gal-old" title="Шефлера-бьянка. С 2015 года."><img src="../images/zem/old/th/6.png" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/7.jpg" data-fancybox-group="gal-old" title="Огуречник пророс!"><img src="../images/zem/old/th/7.png" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/8.jpg" data-fancybox-group="gal-old" title="Гранат детальнее."><img src="../images/zem/old/th/8.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/9.jpg" data-fancybox-group="gal-old" title="Спатифиллум кватро. Куплен в 2016. Но выращен в 2015, я думаю."><img src="../images/zem/old/th/9.png" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/10.jpg" data-fancybox-group="gal-old" title="Пальма юка. Испокон веков растим."><img src="../images/zem/old/th/10.jpg" alt="Фотография" /></a>
-<!-- Среднее -->
-<a class="fancybox" href="../images/zem/old/or/11.jpg" data-fancybox-group="gal-old" title="Огуречник вымахал."><img src="../images/zem/old/th/11.png" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/12.jpg" data-fancybox-group="gal-old" title="Огуречник — уровень 2."><img src="../images/zem/old/th/12.png" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/13.jpg" data-fancybox-group="gal-old" title="Помидор. Из семян. Растёт в парнике. Совсем недавно появились ростки."><img src="../images/zem/old/th/13.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/14.jpg" data-fancybox-group="gal-old" title="Каштан (2016). Хотя, плоды, видимо, пролежали с 2015 года и <b>сохранились!</b>"><img src="../images/zem/old/th/14.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/15.jpg" data-fancybox-group="gal-old" title="Укроп. С 2016. Совсем молодой. И зелёный."><img src="../images/zem/old/th/15.jpg" alt="Фотография" /></a>
-<!-- Наименее старое -->
-<a class="fancybox" href="../images/zem/old/or/16.jpg" data-fancybox-group="gal-old" title="Огуречник вымахал."><img src="../images/zem/old/th/16.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/17.jpg" data-fancybox-group="gal-old" title="Второй каштан начал потихоньку всходить."><img src="../images/zem/old/th/17.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/18.jpg" data-fancybox-group="gal-old" title="Земляничник растёт. Усы похожи на рыболовную леску."><img src="../images/zem/old/th/18.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/19.jpg" data-fancybox-group="gal-old" title="Помидоры растут."><img src="../images/zem/old/th/19.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/20.jpg" data-fancybox-group="gal-old" title="Укроп поднялся по жизни."><img src="../images/zem/old/th/20.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/old/or/21.jpg" data-fancybox-group="gal-old" title="Это вместо дерева годжи пророс маленький сорняк, который был в грунте. 2016/05/28 в 13:17"><img src="../images/zem/old/th/21.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/1.jpg" data-fancybox-group="gal-old" title="Маленькое авокадо. <i>Помёт</i> 2016 года. Фото было сделано 15 апреля 2016 года."><img src="../images/zem/old/th/1.png" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/2.jpg" data-fancybox-group="gal-old" title="Гранат. С 2005 года. Плодоносил в 2005 году и в 2015 году. Фото было сделано 15 апреля 2016 года."><img src="../images/zem/old/th/2.png" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/3.jpg" data-fancybox-group="gal-old" title="Авокадо побольше и другого сорта. С 2015 года. Фото было сделано 15 апреля 2016 года."><img src="../images/zem/old/th/3.png" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/4.jpg" data-fancybox-group="gal-old" title="Маленькая пальма юка. Отрезана в 2016 года. Фото было сделано 15 апреля 2016 года."><img src="../images/zem/old/th/4.png" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/5.jpg" data-fancybox-group="gal-old" title="Роза (с подставкой). С 2015 года. Фото было сделано 15 апреля 2016 года."><img src="../images/zem/old/th/5.png" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/6.jpg" data-fancybox-group="gal-old" title="Шефлера-бьянка. С 2015 года. Фото было сделано 15 апреля 2016 года."><img src="../images/zem/old/th/6.png" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/7.jpg" data-fancybox-group="gal-old" title="Огуречник пророс! Фото было сделано 18 апреля 2016 года."><img src="../images/zem/old/th/7.png" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/8.jpg" data-fancybox-group="gal-old" title="Гранат детальнее. Фото было сделано 18 апреля 2016 года."><img src="../images/zem/old/th/8.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/9.jpg" data-fancybox-group="gal-old" title="Спатифиллум кватро. Куплен в 2016. Но выращен в 2015, я думаю. Фото было сделано 18 апреля 2016 года."><img src="../images/zem/old/th/9.png" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/10.jpg" data-fancybox-group="gal-old" title="Пальма юка. Испокон веков растим. Фото было сделано 21 апреля 2016 года."><img src="../images/zem/old/th/10.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/11.jpg" data-fancybox-group="gal-old" title="Огуречник вымахал. Фото было сделано 2016/04/30 в 14:21:32."><img src="../images/zem/old/th/11.png" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/12.jpg" data-fancybox-group="gal-old" title="Огуречник — уровень 2. Фото было сделано 14 мая 2016 в 19:21."><img src="../images/zem/old/th/12.png" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/13.jpg" data-fancybox-group="gal-old" title="Помидор. Из семян. Растёт в парнике. Фото с того времени, когда только появились ростки. Фото было сделано 14 мая 2016 вслед за предыдущим."><img src="../images/zem/old/th/13.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/14.jpg" data-fancybox-group="gal-old" title="Каштан (2016). Хотя, плоды, видимо, пролежали с 2015 года и <b>сохранились!</b>. Фото было сделано 14 мая 2016 вслед за предыдущим."><img src="../images/zem/old/th/14.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/15.jpg" data-fancybox-group="gal-old" title="Укроп. С 2016. Совсем молодой. И зелёный. На данный момент уже собран. Фото было сделано 2016/05/12 в 10:42."><img src="../images/zem/old/th/15.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/16.jpg" data-fancybox-group="gal-old" title="Огуречник вымахал. Фото было сделано 2016/05/26 в 15:35."><img src="../images/zem/old/th/16.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/17.jpg" data-fancybox-group="gal-old" title="Второй каштан начал потихоньку всходить. Фото было сделано следом за предыдущим."><img src="../images/zem/old/th/17.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/18.jpg" data-fancybox-group="gal-old" title="Земляничник растёт. Усы похожи на рыболовную леску. Фото было сделано 2016/05/28 в 13:18."><img src="../images/zem/old/th/18.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/19.jpg" data-fancybox-group="gal-old" title="Помидоры растут. Фото было сделано следом за предыдущим."><img src="../images/zem/old/th/19.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/20.jpg" data-fancybox-group="gal-old" title="Укроп поднялся по жизни. Фото было сделано 2016/05/28 в 18:50."><img src="../images/zem/old/th/20.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/old/or/21.jpg" data-fancybox-group="gal-old" title="Это вместо дерева годжи пророс маленький сорняк, который был в грунте. Фото было сделано 2016/05/28 в 13:17"><img src="../images/zem/old/th/21.jpg" alt="Фотография" /></a>
 </p>
 </div>
 <!-- А кончаются тут -->
@@ -138,7 +135,7 @@ $("documend").ready(function(){
 Тут всё хорошо растёт, стыдиться нечего, кроме того, что должны уже зреть помидоры, а у меня ещё растения.
 Но можно сослаться на слишком холодное лето, когда температура ночью один раз даже уходила в <b>минус</b>!
 Понимаю, что у меня тут не Канны, но хрена ли так холодило?
-<br>Фотографии сделаны 2016/07/09 в конце девятнадцатого часа.
+<br>Фотографии с 1 по 8 сделаны 2016/07/09 в конце девятнадцатого часа.
 <p>
 <a class="fancybox" href="../images/zem/new/or/1.jpg" data-fancybox-group="gal-new" title="Помидоры и земляничник. Многострадальные."><img src="../images/zem/new/th/1.jpg" alt="Фотография" /></a>
 <a class="fancybox" href="../images/zem/new/or/2.jpg" data-fancybox-group="gal-new" title="Каштаны. Тоже натерпелись."><img src="../images/zem/new/th/2.jpg" alt="Фотография" /></a>
@@ -148,6 +145,7 @@ $("documend").ready(function(){
 <a class="fancybox" href="../images/zem/new/or/6.jpg" data-fancybox-group="gal-new" title="Помидоры. Много и круто."><img src="../images/zem/new/th/6.jpg" alt="Фотография" /></a>
 <a class="fancybox" href="../images/zem/new/or/7.jpg" data-fancybox-group="gal-new" title="Акокадо. Большое и моё."><img src="../images/zem/new/th/7.jpg" alt="Фотография" /></a>
 <a class="fancybox" href="../images/zem/new/or/8.jpg" data-fancybox-group="gal-new" title="Гранат. С элитными цветами. Спасибо Эпину-эстра и Энергену за эту жизненную энергию!"><img src="../images/zem/new/th/8.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/new/or/9.jpg" data-fancybox-group="gal-new" title="Амарант. Недавно. Фото было сделано 2016/07/17 в 13:44:32."><img src="../images/zem/new/th/9.jpg" alt="Фотография" /></a>
 </p>
 </div>
 </div>
@@ -178,7 +176,7 @@ $("documend").ready(function(){
 <li>Получить плоды томатов из горшков.</li>
 <li>Получить поставку семян домашнего подсолненечника бонсая из Китая и взрастить семена в немецкой земле.</li>
 </ul>
-Сегодня пересадили из контейнеров те <i>огрызки</i>, которые проросли, в горшок.
+Недавно пересадили из контейнеров те <i>огрызки</i>, которые проросли, в горшок.
 </div>
 
 </div>
@@ -195,9 +193,9 @@ cразу поймёте, что это дурацкая затея и она с
 <p>
 <a class="fancybox" href="../images/zem/exp/or/1.jpg" data-fancybox-group="gal-exp" title="Начало попытки вырастить помидоры в аквагрунте (двух разных производителей — из КНР и Италии). 2016/06/08 в 21:08"><img src="../images/zem/exp/th/1.jpg" alt="Фотография" /></a>
 <br>А вот и проросшие результаты:
-<br><a class="fancybox" href="../images/zem/exp/or/2.jpg" data-fancybox-group="gal-exp" title="Семена помидоров проросли 2016/06/14 в 21:57:48."><img src="../images/zem/exp/th/2.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/exp/or/3.jpg" data-fancybox-group="gal-exp" title="Семена помидоров проросли 2016/06/14 в 21:57:57."><img src="../images/zem/exp/th/3.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/exp/or/4.jpg" data-fancybox-group="gal-exp" title="Одно из них — календула. 2016/06/14 в 22:10:03."><img src="../images/zem/exp/th/4.jpg" alt="Фотография" /></a>
+<br><a class="fancybox" href="../images/zem/exp/or/2.jpg" data-fancybox-group="gal-exp" title="Семена помидоров проросли. Фото было сделано 2016/06/14 в 21:57:48."><img src="../images/zem/exp/th/2.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/exp/or/3.jpg" data-fancybox-group="gal-exp" title="Семена помидоров проросли. Фото было сделано 2016/06/14 в 21:57:57."><img src="../images/zem/exp/th/3.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/exp/or/4.jpg" data-fancybox-group="gal-exp" title="Одно из них — календула. Фото было сделано 2016/06/14 в 22:10:03."><img src="../images/zem/exp/th/4.jpg" alt="Фотография" /></a>
 </p>
 
 <br><b>Пост-скриптум:</b> Модными веяниями вроде пресованной флористики не интересуюсь.
@@ -209,15 +207,14 @@ cразу поймёте, что это дурацкая затея и она с
 <div>
 Тут немного специальных фото.
 <p>
-<a class="fancybox" href="../images/zem/spc/or/1.jpg" data-fancybox-group="gal-spc" title="Эта пальма уехала к матан на работу. Фото сделано 2016/06/09 в 15:25."><img src="../images/zem/spc/th/1.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/spc/or/2.jpg" data-fancybox-group="gal-spc" title="Урожай укропа (я отвечаю, это не та травка, про которую ты вспомнил, благородный витязь!). На дне немного покупного, остальной является нашим урожаем! Фото сделано 2016/06/12 в 23:30."><img src="../images/zem/spc/th/2.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/spc/or/3.jpg" data-fancybox-group="gal-spc" title="Огуречник. Свежий и жизнерадостный. Маскимум вкуса, прямо как в новой жвачке Орбита Сочный огуречник! Фото сделано 2016/06/15 в 19:21:48."><img src="../images/zem/spc/th/3.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/spc/or/4.jpg" data-fancybox-group="gal-spc" title="Горшок большой пальмы юки был снабжён поливочными шарами. Довольно роскошно смотрится! Фото сделано 2016/06/09 в 15:25:02."><img src="../images/zem/spc/th/4.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/spc/or/1.jpg" data-fancybox-group="gal-spc" title="Эта пальма уехала к матан на работу. Фото было сделано 2016/06/09 в 15:25."><img src="../images/zem/spc/th/1.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/spc/or/2.jpg" data-fancybox-group="gal-spc" title="Урожай укропа (я отвечаю, это не та травка, про которую ты вспомнил, благородный витязь!). На дне немного покупного, остальной является нашим урожаем! Фото было сделано 2016/06/12 в 23:30."><img src="../images/zem/spc/th/2.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/spc/or/3.jpg" data-fancybox-group="gal-spc" title="Огуречник. Свежий и жизнерадостный. Маскимум вкуса, прямо как в новой жвачке Орбита Сочный огуречник! Фото было сделано 2016/06/15 в 19:21:48."><img src="../images/zem/spc/th/3.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/spc/or/4.jpg" data-fancybox-group="gal-spc" title="Горшок большой пальмы юки был снабжён поливочными шарами. Довольно роскошно смотрится! Фото было сделано 2016/06/09 в 15:25:02."><img src="../images/zem/spc/th/4.jpg" alt="Фотография" /></a>
 <!--Новинки-->
-<a class="fancybox" href="../images/zem/spc/or/5.jpg" data-fancybox-group="gal-spc" title="я! Фото сделано 2016/07/11 в 16:23:22."><img src="../images/zem/spc/th/5.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/spc/or/6.jpg" data-fancybox-group="gal-spc" title="Помидор пропал! Фото сделано 2016/07/12 в 15:56:53."><img src="../images/zem/spc/th/6.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/spc/or/7.jpg" data-fancybox-group="gal-spc" title="Вырастил сорняк на свою голову. Фото сделано 2016/07/15 в 10:07:24."><img src="../images/zem/spc/th/7.jpg" alt="Фотография" /></a>
-
+<a class="fancybox" href="../images/zem/spc/or/5.jpg" data-fancybox-group="gal-spc" title="Помидор пропал! Фото было сделано 2016/07/12 в 15:56:53."><img src="../images/zem/spc/th/5.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/spc/or/6.jpg" data-fancybox-group="gal-spc" title="Пересадка помидоров. Фото было сделано 2016/07/11 в 16:23:22."><img src="../images/zem/spc/th/6.jpg" alt="Фотография" /></a>
+<a class="fancybox" href="../images/zem/spc/or/7.jpg" data-fancybox-group="gal-spc" title="Вырастил сорняк на свою голову! Фото было сделано несколько дней назад. Теперь сорняк выброшен, а горшок свободен."><img src="../images/zem/spc/th/7.jpg" alt="Фотография" /></a>
 
 </p>
 </div>
@@ -237,7 +234,7 @@ cразу поймёте, что это дурацкая затея и она с
          <li><a href="http://буранчик.рф/галерея3/"><span>Галерея, серия сканов</span></a></li>
          <li><a href="http://буранчик.рф/галерея-имперка/"><span>Галерея, серия имперская</span></a></li>
          <li><a href="http://буранчик.рф/галерея-подвал/"><span>Галерея, грубая серия</span></a></li>
-         <li><a href="http://буранчик.рф/галерея-приколов/"><span>Галерея, грубая серия</span></a></li>
+         <li><a href="http://буранчик.рф/галерея-приколов/"><span>Галерея, приколов серия</span></a></li>
       </ul>
       <li class="has-sub"><a href="#"><span>Статьи</span></a>
        <ul>

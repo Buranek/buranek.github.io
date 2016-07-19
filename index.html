@@ -31,7 +31,14 @@
  <!-- Скрипт CSSMENU (ему нужна jQuery) -->
 <script src="../js/cssmenu.js"></script>
 <!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт (вообще никак). -->
-<script src="../js/shbmnk.js"></script> <!-- Скрипт для слабовидящих -->
+<script>
+$(document).ready(function(){
+if (window.console) console.log('ШБМНК.js v1 загрузилось!'); // Если активна консоль отладки браузера
+    $("button").click(function(){
+        $("p", "h2", "h3", "h4").css({"font-size": "200%"});
+    });
+});
+</script><!-- Скрипт для слабовидящих -->
 
 <!-- Скрипт загрузки блоков (использует JQuery) -->
 <script type="text/javascript">

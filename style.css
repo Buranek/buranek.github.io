@@ -124,15 +124,16 @@ a:active {
     color: #5e629d;
 }
 
+/* Кнопка */
 button {
-    background-color: #f44336; /* Красный */
+    background-color: #7B5A4D; /* Коричневый */
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
 }

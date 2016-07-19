@@ -23,6 +23,7 @@
 <!-- PNG значок сайта -->
 <link rel="shortcut icon" href="../images/favicons/favicon.png">
 <link rel="stylesheet" href="../style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
+<link href="../js/ui/jquery-ui.min.css" rel="stylesheet"> <!-- Подключение Jquery UI -->
 
 
 <!-- <<<ПОДРУБОНЫ>>> -->
@@ -31,7 +32,7 @@
 <!-- Подрубить бибиотеку jQuery UI (production версия) -->
 <script src="../js/ui/jquery-ui.min.js"></script>
 
- <!-- Скрипт CSSMENU (ему нужна jQuery) -->
+<!-- Скрипт CSSMENU (ему нужна jQuery) -->
 <script src="../js/cssmenu.js"></script>
 <!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт. -->
 
@@ -71,22 +72,11 @@ $("documend").ready(function(){
 <div id="left">
 <!-- Содержание сайта -->
 <h2>Земледелие домашнее <i>интересное</i></h2>
-
-<!-- Земледелие начинается здесь -->
-<div id="zemledelie">
-<!-- Вкладки -->
-<div id="tabs">
-<ul>
-<li><a href="#tabs-1">История</a></li>
-<li><a href="#tabs-2">Сейчас</a></li>
-<li><a href="#tabs-3">Записи</a></li>
-<li><a href="#tabs-4">Эксперимент(ы)</a></li>
-<li><a href="#tabs-5">Специальное</a></li>
-</ul>
-
-<div id="tabs-1">
-<!-- История -->
-<div>
+<!--<img src="../images/music/synth.png" alt="Цитата" width="676" height="105" />-->
+<h3 id="bio">О земледельце</h3>
+<p>Я выращиваю дома различные интересные растения, в этом мне помогает матан.
+Все подоконники заставлены, часть полов и балкона — тоже.
+</p>
 <h3 id="note">Примечание</h3>
 <p>Вы можете использовать <b>стрелочки</b>, чтобы перемещаться между изображениями в режиме показа плашек.
 Чтобы выйти из показа плашек, нужно нажать мышкой вне плашки, чтобы переключиться с плашек обратно на сетку.
@@ -95,10 +85,29 @@ $("documend").ready(function(){
 <br>Нравится фото — <i>сохраните изображение как</i>.
 <br>Это фотографии некоторых из растений, которые я выращиваю у себя в квартире.
 <br>Я не фотограф, посему пардоньте за не идеальные фото.
-<br>Огуречник по-прежнему расчёт молодцом, ростки — задорные стройные герои уже превратились в статных и возвышенных красавцев.
+<br>Огуречник по-прежнему расчёт молодцом, ростки — задорные стройные герои уже превратились
+в статных и возвышенных красавцев.</p>
+<!--<br><img src="../images/music/fohroer.png" alt="Фохроер" width="634" height="610" /></p>-->
+<a href="../images/music/fohroer_outdated.png">Для тех, кто считает, что раньше аватар был лучше!</a>
+<br><br><br>
+<!-- Земледелие начинается здесь -->
+<div id="zemledelie">
 
-</p>
-<br>
+<!-- Вкладки -->
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Мне не холодно</a></li>
+		<li><a href="#tabs-2">Артикс</a></li>
+		<li><a href="#tabs-3">Необычайная лёгкость</a></li>
+		<li><a href="#tabs-4">Отблагодарить</a></li>
+	</ul>
+	<div id="tabs-1">
+	<!-- Мне не холодно -->
+<div>
+<p><a class="fancybox" href="../images/music/neh_cover.png" data-fancybox-group="gallery" title="Фохроер - Мне не холодно (обложка)"><img src="../images/music/neh_cover_small.png" alt="Фохроер - Мне не холодно (обложка)" /></a></p>
+</div>
+<!--Это-->
+<div>
 <!-- Старые фотографии начинаются здесь -->
 <div id="byloe-gallery">
 <p>
@@ -127,9 +136,13 @@ $("documend").ready(function(){
 </div>
 <!-- А кончаются тут -->
 </div>
-</div>
+	</div>
 	
-<div id="tabs-2">
+	<div id="tabs-2">
+	<!-- Артикс -->
+<div>
+<p><a class="fancybox" href="../images/music/artix_cover.png" data-fancybox-group="gallery" title="Фохроер - Артикс (обложка)"><img src="../images/music/artix_cover_small.png" alt="Фохроер - Артикс (обложка)" /></a></p>
+</div>
 <!--Это-->
 <div>
 Тут всё хорошо растёт, стыдиться нечего, кроме того, что должны уже зреть помидоры, а у меня ещё растения.
@@ -148,10 +161,11 @@ $("documend").ready(function(){
 <a class="fancybox" href="../images/zem/new/or/9.jpg" data-fancybox-group="gal-new" title="Амарант. Недавно. Фото было сделано 2016/07/17 в 13:44:32."><img src="../images/zem/new/th/9.jpg" alt="Фотография" /></a>
 </p>
 </div>
-</div>
+	</div>
 	
-<div id="tabs-3">
-<!-- А тут начинаются записи -->
+	<div id="tabs-3">
+	<!-- Необычайная лёгкость -->
+<div>
 <h2>Записи домашнего земледельца</h2>
 <h3 id="got">Получилось</h3>
 <ul>
@@ -178,9 +192,10 @@ $("documend").ready(function(){
 </ul>
 Недавно пересадили из контейнеров те <i>огрызки</i>, которые проросли, в горшок.
 </div>
-
-</div>
-<div id="tabs-4">
+	</div>
+	
+	<div id="tabs-4">
+	<div id="donating">
 <p>Здесь я продемонстрирую несколько фото аквагрунта и вы, благородный витязь,
 cразу поймёте, что это дурацкая затея и она себя не оправдала.
 История с аквагрунтом любопытна. Да, в нём действительно проросли семена,
@@ -199,27 +214,11 @@ cразу поймёте, что это дурацкая затея и она с
 
 <br><b>Пост-скриптум:</b> Модными веяниями вроде пресованной флористики не интересуюсь.
 </div>
+	</div>
 </div>
 
-<div id="tabs-5">
-<!--Это-->
-<div>
-Тут немного специальных фото.
-<p>
-<a class="fancybox" href="../images/zem/spc/or/1.jpg" data-fancybox-group="gal-spc" title="Эта пальма уехала к матан на работу. Фото было сделано 2016/06/09 в 15:25."><img src="../images/zem/spc/th/1.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/spc/or/2.jpg" data-fancybox-group="gal-spc" title="Урожай укропа (я отвечаю, это не та травка, про которую ты вспомнил, благородный витязь!). На дне немного покупного, остальной является нашим урожаем! Фото было сделано 2016/06/12 в 23:30."><img src="../images/zem/spc/th/2.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/spc/or/3.jpg" data-fancybox-group="gal-spc" title="Огуречник. Свежий и жизнерадостный. Маскимум вкуса, прямо как в новой жвачке Орбита Сочный огуречник! Фото было сделано 2016/06/15 в 19:21:48."><img src="../images/zem/spc/th/3.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/spc/or/4.jpg" data-fancybox-group="gal-spc" title="Горшок большой пальмы юки был снабжён поливочными шарами. Довольно роскошно смотрится! Фото было сделано 2016/06/09 в 15:25:02."><img src="../images/zem/spc/th/4.jpg" alt="Фотография" /></a>
-<!--Новинки-->
-<a class="fancybox" href="../images/zem/spc/or/5.jpg" data-fancybox-group="gal-spc" title="Помидор пропал! Фото было сделано 2016/07/12 в 15:56:53."><img src="../images/zem/spc/th/5.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/spc/or/6.jpg" data-fancybox-group="gal-spc" title="Пересадка помидоров. Фото было сделано 2016/07/11 в 16:23:22."><img src="../images/zem/spc/th/6.jpg" alt="Фотография" /></a>
-<a class="fancybox" href="../images/zem/spc/or/7.jpg" data-fancybox-group="gal-spc" title="Вырастил сорняк на свою голову! Фото было сделано несколько дней назад. Теперь сорняк выброшен, а горшок свободен."><img src="../images/zem/spc/th/7.jpg" alt="Фотография" /></a>
-
-</p>
-</div>
-</div>
-</div>
-
+</div><!-- Конец div music -->
+<!-- А кончается тут -->
 </div>
 <div id="right">
 <h3>Меню сайта:</h3><br>
@@ -267,5 +266,18 @@ cразу поймёте, что это дурацкая затея и она с
 <div id="footer"></div>
 <!-- Подвала конец -->
 </div>
+<script>
+$( "#tabs" ).tabs();
+
+// Наведённые этапы на статических виджетах
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
 </body>
 </html>

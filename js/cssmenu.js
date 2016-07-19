@@ -1,6 +1,7 @@
 ( function( $ ) {
-$( document ).ready(function() {
-$('#cssmenu > ul > li > a').click(function() {
+$( document ).ready(function() { // Если загрузился весь HTML и картинки
+if (window.console) console.log('cssmenu загрузилось!'); // Если активна консоль отладки браузера
+$('#cssmenu > ul > li > a').click(function() { // Создать анонимную функцию, суть которой в наличие детей (child selectors) ul > li > a у div с названием cssmenu (он же класс). Смотри: https://css-tricks.com/child-and-sibling-selectors/
   $('#cssmenu li').removeClass('active');
   $(this).closest('li').addClass('active');	
   var checkElement = $(this).next();

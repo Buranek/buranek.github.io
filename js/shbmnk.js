@@ -1,6 +1,6 @@
 $(document).ready(function(){
-if (window.console) console.log('ШБМНК.js v1 загрузилось!'); // Если активна консоль отладки браузера
+if (window.console) console.log('ШБМНК.js v1.1 загрузилось!'); // Если активна консоль отладки браузера
     $("button").click(function(){
-        $("body").css({"font-size": "175%"});
+        $("body", "h2", "h3").css({"font-size": "175%"});
     });
 });

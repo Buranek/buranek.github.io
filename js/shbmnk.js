@@ -1,5 +1,6 @@
 $(document).ready(function(){
 if (window.console) console.log('ШБМНК.js v1.3 загрузилось!'); // Если активна консоль отладки браузера, показать текст
+	// Режим окулиста
 	$("button").click(function(){ // Если была нажата кнопка
 		// Поменять размеры шрифтов, задействованных на главной странице сайта
 		$("body").css({"font-size": "175%"});
@@ -7,7 +8,7 @@ if (window.console) console.log('ШБМНК.js v1.3 загрузилось!'); /
 		$("h3").css({"font-size": "155%"});
 		$("h4").css({"font-size": "165%"});
 		$('body').css('background-image', 'url(../images/theme-okulist/back.png)'); // Поменять общий фон на окулистический
-		$('left').css('background-image', 'url(../images/theme-okulist/left-body.png)'); // Поменять левый фон на окулистический
+		$('#left').css('background-image', 'url(../images/theme-okulist/left-body.png)'); // Поменять левый фон на окулистический
         //$('lesopark').src = "../images/theme-okulist/lesopark.png"; // Поменять лесопарк на ЧБ (НЕ РАБОТАЕТ)
         //$('borago').src = "../images/theme-okulist/borago.gif"; // Поменять бораго на простое (НЕ РАБОТАЕТ)
     });

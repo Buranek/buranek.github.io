@@ -11,7 +11,7 @@ if (window.console) console.log("ШБМНК.js версии 1.4.4 загрузи
 		$("body").css("background-image", "url(../images/theme-okulist/back.png)"); // Поменять общий фон на окулистический
 		$("#left").css("background-image", "url(../images/theme-okulist/left-body.png)"); // Поменять левый фон на окулистический
 		$("#content").css("background", "#FFF"); // Поменять фон шапки на белый
-		$("#right").css("background", "grey"); // Поменять фон правого блока на серый
+		$("#right").css("background", "lightgrey"); // Поменять фон правого блока на серый
 		$("#footer p").css("background-image", "url(../images/theme-okulist/footerback.png)"); // Поменять подвальный фон на окулистический
 		$(".newsbox").css("background-image", "url(../images/theme-okulist/newsbox.png)"); // Поменять фон новостей на простой
 		$("#lesopark").attr("src","images/theme-okulist/lesopark.png"); //Поменять лесопарк на ЧБ

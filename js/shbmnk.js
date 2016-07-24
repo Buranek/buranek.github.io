@@ -10,7 +10,8 @@ if (window.console) console.log('ШБМНК.js версии 1.4.1 загрузи
 		// Поменять картинки
 		$('body').css('background-image', 'url(../images/theme-okulist/back.png)'); // Поменять общий фон на окулистический
 		$('#left').css('background-image', 'url(../images/theme-okulist/left-body.png)'); // Поменять левый фон на окулистический
-		$('#right').css('background', '#FFF'); // Поменять фон правого блока
+		$('#content').css('background', '#FFF'); // Поменять фон шапки на белый
+		$('#right').css('background', '#FFF'); // Поменять фон правого блока на белый
 		$('#footer p').css('background-image', 'url(../images/theme-okulist/footerback.png)'); // Поменять подвальный фон на окулистический
 		$('#lesopark').attr('src','images/theme-okulist/lesopark.png'); //Поменять лесопарк на ЧБ
 		$('#borago').attr('src','images/theme-okulist/bogaro.png'); //Поменять бораго на простое
@@ -27,6 +28,8 @@ if (window.console) console.log('ШБМНК.js версии 1.4.1 загрузи
 		// Поменять картинки
 		$('body').css('background-image', 'url(../images/theme/back.png)'); // Поменять общий фон на обычный
 		$('#left').css('background-image', 'url(../images/theme/left-body.png)'); // Поменять левый фон на обычный
+		$('#content').css('background', '#faf6f6'); // Поменять фон шапки на обычный
+		$('#right').css('background', '#ccc2ab'); // Поменять фон правого блока на обычный
 		$('#footer p').css('background-image', 'url(../images/theme/footerback.jpg)'); // Поменять подвальный фон на обычный
 		$('#lesopark').attr('src','images/theme/lesopark.png'); //Поменять лесопарк на обычный
 		$('#borago').attr('src','images/theme-okulist/bogaro.gif'); //Поменять бораго на обычное

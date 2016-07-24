@@ -2,6 +2,7 @@ $(document).ready(function(){
 if (window.console) console.log('ШБМНК.js v1.3 загрузилось!'); // Если активна консоль отладки браузера, показать текст
 	// Режим окулиста
 	$("button").click(function(){ // Если была нажата кнопка
+		alert(this.go-bigger);
 		// Поменять размеры шрифтов, задействованных на главной странице сайта
 		$("body").css({"font-size": "175%"});
 		$("h2").css({"font-size": "150%"});

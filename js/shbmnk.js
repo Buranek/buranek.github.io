@@ -10,7 +10,10 @@ if (window.console) console.log('ШБМНК.js v1.3 загрузилось!'); /
 		$('body').css('background-image', 'url(../images/theme-okulist/back.png)'); // Поменять общий фон на окулистический
 		$('#left').css('background-image', 'url(../images/theme-okulist/left-body.png)'); // Поменять левый фон на окулистический
 		$('#footer p').css('background-image', 'url(../images/theme-okulist/footerback.jpg)'); // Поменять подвальный фон на окулистический
-        $('#lesopark').attr('src','images/theme-okulist/lesopark.png'); //Поменять лесопарк на ЧБ (НЕ РАБОТАЕТ)
+		$('#lesopark').attr('src','images/theme-okulist/lesopark.png'); //Поменять лесопарк на ЧБ (НЕ РАБОТАЕТ)
+		$('#borago').attr('src','images/theme-okulist/bogaro.png'); //Поменять бораго на простое (НЕ РАБОТАЕТ)
+		
+		
         //$('borago').src = "../images/theme-okulist/borago.gif"; // Поменять бораго на простое (НЕ РАБОТАЕТ)
     });
 });

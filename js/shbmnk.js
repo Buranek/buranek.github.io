@@ -6,7 +6,7 @@ if (window.console) console.log('ШБМНК.js v1.3 загрузилось!'); /
         $("h3").css({"font-size": "155%"});
         $("h4").css({"font-size": "165%"});
         $('body').css('background-image', 'url(../images/theme-okulist/back.png)'); // Поменять фон на окулистический
-        document.getElementById("theme").src = "../images/theme-okulist/lesopark.png"; // Поменять лесопарк на ЧБ
-        document.getElementById("borago").src = "../images/theme-okulist/borago.gif"; // Поменять бораго на простое
+        $('lesopark').src = "../images/theme-okulist/lesopark.png"; // Поменять лесопарк на ЧБ
+        $('borago').src = "../images/theme-okulist/borago.gif"; // Поменять бораго на простое
     });
 });

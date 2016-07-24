@@ -17,6 +17,11 @@ src: url(../fonts/oldtyper2016.ttf); /* Путь к файлу со шрифто
 
 /* Основное */
 
+theme-directory
+{
+../images/theme/
+}
+
 html {
 /* Предотвратить подгонку размеров шрифта после изменения ориентации в IE и iOS. <normalize.css> */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -46,16 +51,25 @@ h1 {
 }
 
 h2 {
-	margin-top: 0px;
 	font-size: 15pt;
 	text-align: center;
 }
 
+h1, h2
+{
+	color: #5E5945;
+	margin-top: 0px;
+}
+
 h3 {
 	margin-top: 0px;
-	font-weight: bold;
 	font-size: 13pt;
 	color: #68634e;
+}
+
+h1, h2, h3
+{
+	font-weight: bold;
 }
 
 h4 {
@@ -71,13 +85,6 @@ h4 a:hover {
 
 h3, h4 {
 	padding-left: 24px;
-}
-
-h1, h2
-{
-	color: #5E5945;
-	font-weight: bold;
-	margin-top: 0px;
 }
 
 hr {
@@ -220,7 +227,7 @@ button {
 	color: #FFFFFF;
 }
 
-/* Блок с новостями (в духе KDE 4!) */
+/* Блок с новостями (не хуже, чем в KDE 5!) */
 
 .newsbox {
 	width: 90%; /* Ширина блока (в процентах надёжнее!) */
@@ -242,6 +249,7 @@ button {
 	margin: auto auto;
 }
 
+/* Достижение */
 .kartoright {
 	padding: 4px 82px;
 	margin: 0px auto;
@@ -277,7 +285,7 @@ footer {
 
 @import url(../fonts/Open_Sans:400,600,300);
 @charset "UTF-8";
-/* Базовые Стили */
+/* Базовые Стили Меню */
 #cssmenu,
 #cssmenu ul,
 #cssmenu li,
@@ -411,9 +419,7 @@ footer {
 	background: #f1dbb0;
 }
 
-/* ПОКА НЕ ИСПОЛЬЗУЕТСЯ!!! */
-
-/* <<<Парсер новостей — начало>>> */
+/* <<<ПАРСЕР НОВОСТЕЙ>>> */
 
 /* Блок вывода списка статей */
 .main {

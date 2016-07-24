@@ -3,6 +3,18 @@
 <RecentArticles>
 	
   <Article>
+    <Title>Небольшое обновление</Title>
+    <Full>Пара новых приколов. Доработка версии для слабовидящих.</Full>
+    <Date>2016/07/24</Date>
+  </Article>
+	
+  <Article>
+    <Title>5900</Title>
+    <Full>5900 прослушиваний на SoundCloud.</Full>
+    <Date>2016/07/22</Date>
+  </Article>
+	
+  <Article>
     <Title>Для слабовидящих</Title>
     <Full>Добавлена кнопочка для слабовидящих, пока что это только наработка скрипта.</Full>
     <Date>2016/07/19</Date>

@@ -55,8 +55,7 @@ h2 {
 	text-align: center;
 }
 
-h1, h2
-{
+h1, h2 {
 	color: #5E5945;
 	margin-top: 0px;
 }
@@ -85,6 +84,12 @@ h4 a:hover {
 
 h3, h4 {
 	padding-left: 24px;
+}
+
+h5 {
+	font-size: 13pt;
+	text-align: center;
+	color: #555450;
 }
 
 hr {

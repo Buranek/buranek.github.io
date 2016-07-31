@@ -99,7 +99,7 @@ hr {
 /* Пихи */
 
 p, ol, ul {
-	text-align: justify;
+	text-align: left;
 	line-height: 160%;
 }
 

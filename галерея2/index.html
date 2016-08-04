@@ -28,10 +28,6 @@
 <!-- Подрубить бибиотеку jQuery (production версия) -->
 <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
 
- <!-- Скрипт CSSMENU (ему нужна jQuery) -->
-<script src="../js/cssmenu.js"></script>
-<!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт. -->
-
 <!-- Добавить fancyBox -->
 <link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
 <script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js"></script>
@@ -45,12 +41,12 @@ $(document).ready(function() {
 
 <!-- Скрипт загрузки блоков (использует JQuery) -->
 <script type="text/javascript">
-$("documend").ready(function(){
+$( document ).ready(function() {
 	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
 	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
 	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
 	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
-	$("#cbox").load("../blocks/cbox.html"); <!-- Болтушка -->
+	$("#menu").load("../blocks/menu.html"); <!-- Меню -->
 });
 </script>
 
@@ -136,38 +132,7 @@ $("documend").ready(function(){
 </div>
 <div id="right">
 <h3>Меню сайта:</h3><br>
-<!-- НАЧАЛО Меню сайта (cssmenu) -->
-<div id="cssmenu">
-<ul>
-   <li class="active"><a href="http://буранчик.рф/index.html"><span>Главная</span></a></li>
-   <li class="has-sub"><a href="#"><span>Графика</span></a>
-       <ul>
-         <li><a href="http://буранчик.рф/галерея1/"><span>Галерея, серия первая</span></a>
-         <li><a href="http://буранчик.рф/галерея2/"><span>Галерея, серия вторая</span></a></li>
-         <li><a href="http://буранчик.рф/галерея3/"><span>Галерея, серия сканов</span></a></li>
-         <li><a href="http://буранчик.рф/галерея-имперка/"><span>Галерея, серия имперская</span></a></li>
-         <li><a href="http://буранчик.рф/галерея-подвал/"><span>Галерея, грубая серия</span></a></li>
-         <li><a href="http://буранчик.рф/галерея-приколов/"><span>Галерея, приколов серия</span></a></li>
-      </ul>
-      <li class="has-sub"><a href="#"><span>Статьи</span></a>
-       <ul>
-         <li><a href="http://буранчик.рф/глич-хоп/"><span>Глич-Хоп</span></a>
-         <li class="last"><a href="http://буранчик.рф/казуу/"><span>Казуу</span></a></li>
-         <li class="last"><a href="http://буранчик.рф/китайские-кремы/"><span>Современные китайские кремы</span></a></li>
-      </ul>
-            <li class="has-sub"><a href="#"><span>Ещё</span></a>
-       <ul>
-         <li><a href="http://буранчик.рф/музыка/"><span>Музыка</span></a>
-         <li class="last"><a href="http://буранчик.рф/видео/"><span>Видео</span></a></li>
-         <li class="last"><a href="http://буранчик.рф/земледелие/"><span>Земледелие</span></a></li>
-      </ul>
-      <li><a href="https://github.com/Buranek/Unreleased"><span>Репозиторий отменённых проектов</span></a>
-      <li class='last'><a href="https://github.com/Buranek/pix"><span>Репозиторий значков и бесплатного стока</span></a></li>
-</ul>
-<br>
-<div id='cbox'></div><!-- Болтушка -->
-</div>
-<!-- КОНЕЦ Меню сайта (cssmenu) -->
+<div id='menu'></div><!-- Нутро меню сайта -->
 <br>
 
 <div id='socials'></div> <!-- Социальный блок -->

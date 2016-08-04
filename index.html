@@ -28,20 +28,16 @@
 <!-- Подрубить бибиотеку jQuery (production версия) -->
 <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
 
- <!-- Скрипт CSSMENU (ему нужна jQuery) -->
-<script src="../js/cssmenu.js"></script>
-<!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт (вообще никак). -->
-
 <script src="../js/shbmnk.js"></script><!-- Скрипт для слабовидящих -->
 
 <!-- Скрипт загрузки блоков (использует JQuery) -->
 <script type="text/javascript">
-$("documend").ready(function(){
+$( document ).ready(function() {
 	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
 	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
 	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
 	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
-	$("#cbox").load("../blocks/cbox.html"); <!-- Болтушка -->
+	$("#menu").load("../blocks/menu.html"); <!-- Меню -->
 });
 
 <!-- <<<Парсер новостей>>> -->
@@ -162,7 +158,11 @@ function xmlParser(xml) {
 На сайте отныне не размещено никакой рекламы, можете даже отключить <a href="https://adblockplus.org/">Adblock Plus</a> (или другой, установленный у Вас блокиратор) на этом сайте.
 Если Вы осуждаете действия <a href="https://ru.wikipedia.org/wiki/Ромул_и_Рем">капитолийской волчицы, вскормившей Ромула и Рема</a>, или троллите её — пожалуйста покиньте этот сайт.
 Я делаю этот сайт (но больше это относится к разрещённым на нём материалам) — потому что могу. Этот сайт отражает мои идеи и взгляды на мир. Для этого он и существует.
-Куча непонятных вам вещей ожидает на пути. Но если разберётесь в них, то станете со мной солидарны. Оформление этого сайта выполнено именно так, как я и хотел. Было непросто, но в итоге получилось красиво. Оформление выполнено в современном стиле Flat <a href="https://yandex.ru/images/search?text=рококо">рококо</a> (но не Flat Material!).
+Куча непонятных вам вещей ожидает на пути. Но если разберётесь в них, то станете со мной солидарны.
+Оформление этого сайта выполнено именно так, как я и хотел. Было непросто, но в итоге получилось красиво.
+Оформление выполнено в современном стиле Flat
+<a href="https://yandex.ru/images/search?text=рококо">рококо</a> (но не Flat Material!).
+Вы словно бы приехали в квартиру к своей бабушке!
 Сайт разрещён на хостинге <a href="https://pages.github.com/">Github pages</a>.
 Сайт имеет <a href="http://new.gramota.ru/spravka/trudnosti?layout=item&id=36_138">федеративное</a> значение, об этом свидетельствует домен РФ!
 РФ — это моя федерация. Мои федеративные достижения — это часть общих заслуг нашей федерации.
@@ -203,14 +203,14 @@ function xmlParser(xml) {
 <ul>
 <li><img alt="Jabber" title="Мой Jabber" src="../images/theme/socs/small/jabber.png" height="22" width="16"> <a href="https://ru.wikipedia.org/wiki/XMPP">Jabber (XMPP)</a>: <a href="xmpp://buranek@jabber.ru">buranek@jabber.ru</a></li>
 <li><img alt="Tox" title="Мой Tox" src="../images/theme/socs/small/tox.png" height="20" width="16"> <a href="https://tox.chat/">Tox</a> ID: <form><textarea style="width: 560px; height: 20px;" cols="80" rows="1" readonly>CA7F3154444604BAC43D335590BA9ACFC7FE2AF4168B1F536B7D689368340140CCCA77FB73B3</textarea></form></li>
-<li><img alt="Email" title="Мой Email" src="../images/theme/socs/small/email.png" height="16" width="16"> E-mail: buranek<img alt="@" title="собака" src="../images/theme/dog.png" height="32" width="32">ya.ru (предпочтительный способ связи для тех, кто не знает мой сотовый)</li>
+<li><img alt="Email" title="Мой Email" src="../images/theme/socs/small/email.png" height="16" width="16"> E-mail: buranek<img alt="собака" title="@" src="../images/theme/dog.png" height="32" width="32">ya.ru (предпочтительный способ связи для тех, кто не знает мой сотовый)</li>
 <li><img alt="SoundCloud" title="Мой SoundCloud" src="../images/theme/socs/small/soundcloud.png" height="16" width="16"> <a href="https://ru.wikipedia.org/wiki/SoundCloud">SoundCloud</a>: <a href="https://soundcloud.com/fohroer">fohroer</a> (ищите кнопку Send Message, нужен аккаунт)</li>
 <li><img alt="Kontalk" title="Мой Kontalk" src="../images/theme/socs/small/kontalk.png" height="16" width="16"> Kontalk, но для этого нужно знать мой номер мобильника, потому что он является идентификатором в системе. А ещё там нужно немного повозиться с авторизацией, чтобы заработало. (предпочтительный способ связи для тех, кто знает мой сотовый)</li>
 </ul>
 <p>Не забудьте проверить аудиосвязь в Tox перед разговором. Для этого есть специальный
 <a href="https://toxme.io/u/echobot">бот</a>, который ответит Вам Вашу запись через 2 секунды:
 <a href="tox:76518406F6A9F2217E8DC487CC783C25CC16A15EB36FF32E335A235342C48A39218F515C39A6">echobot@toxme.io</a>
-В Jabber я в сети иногда, в Tox — иногда, электронную почту проверяю ежедневно.
+В Jabber я в сети иногда, в Tox — иногда, электронную почту проверяю ежедневно. В Kontalk я очень часто.
 Уведомления о личных сообщениях в SoundCloud приходят мне на электронную почту.
 <br>Не пытайтесь связаться со мной через Google Hangouts, ибо я туда не захожу и Steam, ибо я не использую его как инструмент общения.</p>
 
@@ -239,8 +239,7 @@ function xmlParser(xml) {
 <h3 id="extra">Экстра</h3>
 <p>Теперь немного экстра информации!</p>
 
-<!-- Слайдер с огуречником -->
-	<img id="borago" style="border: 0;" src="../images/theme/borago.gif" alt="Бораго" title="Бораго" width="490" height="490">
+<!-- Картинка с огуречником --><img id="borago" style="border: 0;" src="../images/theme/borago.gif" alt="Бораго" title="Бораго" width="490" height="490">
 <!-- Описание огуречника -->
 <br>
 <p><a href="http://www.greeninfo.ru/vegetables/borago_officinalis.html/Article/_/aID/4656">Бурачник</a> (бораго, огуречник, огуречная трава) —
@@ -265,44 +264,14 @@ function xmlParser(xml) {
 <li>Sanctitas hoc loco memini quod! [санкти́тас соу ке лёко мэ́мини куодд]</li>
 <li>Fiducia implebo te! [фидýча импле́бо тэ]</li>
 <li><a href="mailto://sailcast@ya.ru"><b>Sailcast</b></a> (vocare ad navem), gratias ago tibi search for multiplex defectus est in agro spatio. [вокáрэ ад нáвэм грати́ас аго ти́би серч фо мульти́плекс дефэ́ктус эст ин áгро спáтио]</li>
+<li>_vt, oxpa, karmich, tibi gratias ago pro auxilio linguae HTML [вити охра кармич ти́би грати́ас аго про аукси́лио лигуáе акатиэмэ́лль]</li>
 </ul>
 
 </div>
 
 <div id="right">
 <h3>Меню сайта:</h3><br>
-<!-- НАЧАЛО Меню сайта (cssmenu) -->
-<div id="cssmenu">
-<ul>
-   <li class="active"><a href="http://буранчик.рф/index.html"><span>Главная</span></a></li>
-   <li class="has-sub"><a href="#"><span>Графика</span></a>
-       <ul>
-         <li><a href="http://буранчик.рф/галерея1/"><span>Галерея, серия первая</span></a>
-         <li><a href="http://буранчик.рф/галерея2/"><span>Галерея, серия вторая</span></a></li>
-         <li><a href="http://буранчик.рф/галерея3/"><span>Галерея, серия сканов</span></a></li>
-         <li><a href="http://буранчик.рф/галерея-имперка/"><span>Галерея, серия имперская</span></a></li>
-         <li><a href="http://буранчик.рф/галерея-подвал/"><span>Галерея, грубая серия</span></a></li>
-         <li><a href="http://буранчик.рф/галерея-приколов/"><span>Галерея, приколов серия</span></a></li>
-      </ul>
-      <li class="has-sub"><a href="#"><span>Статьи</span></a>
-       <ul>
-         <li><a href="http://буранчик.рф/глич-хоп/"><span>Глич-Хоп</span></a>
-         <li class="last"><a href="http://буранчик.рф/казуу/"><span>Казуу</span></a></li>
-         <li class="last"><a href="http://буранчик.рф/китайские-кремы/"><span>Современные китайские кремы</span></a></li>
-      </ul>
-            <li class="has-sub"><a href="#"><span>Ещё</span></a>
-       <ul>
-         <li><a href="http://буранчик.рф/музыка/"><span>Музыка</span></a>
-         <li class="last"><a href="http://буранчик.рф/видео/"><span>Видео</span></a></li>
-         <li class="last"><a href="http://буранчик.рф/земледелие/"><span>Земледелие</span></a></li>
-      </ul>
-      <li><a href="https://github.com/Buranek/Unreleased"><span>Репозиторий отменённых проектов</span></a>
-      <li class='last'><a href="https://github.com/Buranek/pix"><span>Репозиторий значков и бесплатного стока</span></a></li>
-</ul>
-<br>
-<div id='cbox'></div><!-- Болтушка -->
-</div>
-<!-- КОНЕЦ Меню сайта (cssmenu) -->
+<div id='menu'></div><!-- Нутро меню сайта -->
 <br>
 
 <div id='socials'></div><!-- Социальный блок -->

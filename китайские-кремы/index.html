@@ -28,13 +28,9 @@
 <!-- Подрубить бибиотеку jQuery (production версия) -->
 <script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
 
- <!-- Скрипт CSSMENU (ему нужна jQuery) -->
-<script src="../js/cssmenu.js"></script>
-<!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт. -->
-
 <!-- Скрипт загрузки блоков (использует JQuery) -->
 <script type="text/javascript">
-$("documend").ready(function(){
+$( document ).ready(function() {
 	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
 	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
 	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->

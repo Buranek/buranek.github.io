@@ -41,6 +41,7 @@ $("documend").ready(function(){
 	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
 	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
 	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
+	$("#menu").load("../blocks/menu.html"); <!-- Меню -->
 	$("#cbox").load("../blocks/cbox.html"); <!-- Болтушка -->
 });
 
@@ -242,8 +243,7 @@ function xmlParser(xml) {
 <!-- Слайдер с огуречником -->
 	<img id="borago" style="border: 0;" src="../images/theme/borago.gif" alt="Бораго" title="Бораго" width="490" height="490">
 <!-- Описание огуречника -->
-<br>
-<p><a href="http://www.greeninfo.ru/vegetables/borago_officinalis.html/Article/_/aID/4656">Бурачник</a> (бораго, огуречник, огуречная трава) —
+<br><a href="http://www.greeninfo.ru/vegetables/borago_officinalis.html/Article/_/aID/4656">Бурачник</a> (бораго, огуречник, огуречная трава) —
 травянистое растение Borago officinalis [бораго оффичинализ] c широкими овальными мохнатыми серо-зелеными листьями,
 у которых приятный травяной вкус и аромат свежих огурцов. Я уже успел оценить вкус огуречника — он свеж и приятен,
 но похож на огурец лишь отчасти. Скорее по вкусу он напоминает салатный лист.
@@ -264,45 +264,14 @@ function xmlParser(xml) {
 <li>Grata ex cor meum! [грáта экс кор мэ́ум]</li>
 <li>Sanctitas hoc loco memini quod! [санкти́тас соу ке лёко мэ́мини куодд]</li>
 <li>Fiducia implebo te! [фидýча импле́бо тэ]</li>
-<li><a href="mailto://sailcast@ya.ru"><b>Sailcast</b></a> (vocare ad navem), gratias ago tibi search for multiplex defectus est in agro spatio. [вокáрэ ад нáвэм грати́ас аго ти́би серч фо мульти́плекс дефэ́ктус эст ин áгро спáтио]</li>
+<li><a href="mailto://sailcast@ya.ru"><b>Sailcast</b></a>, gratias ago tibi search for multiplex defectus est in agro spatio. [коль скафас гратиас аго тиби сёрч фо мультиплекс дефектос эст ин агро спатио]</li>
 </ul>
 
 </div>
 
 <div id="right">
 <h3>Меню сайта:</h3><br>
-<!-- НАЧАЛО Меню сайта (cssmenu) -->
-<div id="cssmenu">
-<ul>
-   <li class="active"><a href="http://буранчик.рф/index.html"><span>Главная</span></a></li>
-   <li class="has-sub"><a href="#"><span>Графика</span></a>
-       <ul>
-         <li><a href="http://буранчик.рф/галерея1/"><span>Галерея, серия первая</span></a>
-         <li><a href="http://буранчик.рф/галерея2/"><span>Галерея, серия вторая</span></a></li>
-         <li><a href="http://буранчик.рф/галерея3/"><span>Галерея, серия сканов</span></a></li>
-         <li><a href="http://буранчик.рф/галерея-имперка/"><span>Галерея, серия имперская</span></a></li>
-         <li><a href="http://буранчик.рф/галерея-подвал/"><span>Галерея, грубая серия</span></a></li>
-         <li><a href="http://буранчик.рф/галерея-приколов/"><span>Галерея, приколов серия</span></a></li>
-      </ul>
-      <li class="has-sub"><a href="#"><span>Статьи</span></a>
-       <ul>
-         <li><a href="http://буранчик.рф/глич-хоп/"><span>Глич-Хоп</span></a>
-         <li class="last"><a href="http://буранчик.рф/казуу/"><span>Казуу</span></a></li>
-         <li class="last"><a href="http://буранчик.рф/китайские-кремы/"><span>Современные китайские кремы</span></a></li>
-      </ul>
-            <li class="has-sub"><a href="#"><span>Ещё</span></a>
-       <ul>
-         <li><a href="http://буранчик.рф/музыка/"><span>Музыка</span></a>
-         <li class="last"><a href="http://буранчик.рф/видео/"><span>Видео</span></a></li>
-         <li class="last"><a href="http://буранчик.рф/земледелие/"><span>Земледелие</span></a></li>
-      </ul>
-      <li><a href="https://github.com/Buranek/Unreleased"><span>Репозиторий отменённых проектов</span></a>
-      <li class='last'><a href="https://github.com/Buranek/pix"><span>Репозиторий значков и бесплатного стока</span></a></li>
-</ul>
-<br>
-<div id='cbox'></div><!-- Болтушка -->
-</div>
-<!-- КОНЕЦ Меню сайта (cssmenu) -->
+<div id='menu'></div><!-- Блок меню -->
 <br>
 
 <div id='socials'></div><!-- Социальный блок -->

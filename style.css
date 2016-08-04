@@ -101,16 +101,13 @@ hr {
 p, ol, ul {
 	text-align: left;
 	line-height: 160%;
-}
-
-p {
 	padding: 16px 24px;
 }
 
 ul {
 	list-style-type: square;
 	margin-right: 24px;
-	padding: 16px 24px;
+	margin-left: 12pt;
 }
 
 /* ССЫЛКИ */
@@ -443,7 +440,7 @@ footer {
 	font-weight: bold;
 	text-align: center;
 	margin-top: 1em;
-	color: #505f7f;
+	color: #0F2658; /* Цвет текста новости */
 	}
 
 /* Логотип загрузки новостей */
@@ -472,16 +469,16 @@ footer {
 /* Текст новости */
 .full {
 	font-size: 11pt;
-	text-align:center;
+	text-align: center;
 	font-family: Liberation Sans, Arial, Helvetica, sans-serif;
 	}
 
 /* Дата новости */
 .date {
-	font-size:11pt;
-	text-align:left;
-	color:#0F2658;
-	margin-top:4px;
+	font-size: 9pt;
+	text-align: left;
+	color: #505f7f;
+	margin-top: 4px;
 	}
 
 /* Див-ссылка для открытия полной новости (не используется) */
@@ -515,7 +512,7 @@ div#3rdgallery-desktop {
 
 }
 
-/* Экран ПК экраны (скрыть блок с малыми катинками в третьей галарее) */
+/* Экран — ПК экраны (скрыть блок с малыми катинками в третьей галарее) */
 @media only screen 
 and (min-width : 768px) {
 div#3rdgallery-mobile {

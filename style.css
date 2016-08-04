@@ -242,7 +242,7 @@ button-green {
 	width: 90%; /* Ширина блока (в процентах надёжнее!) */
 	height: 3000px; /* Высота блока (теперь стала необходима) */
 	background-color: #C3B491; /* Фоновый цвет */
-	background-image: url("../images/theme/newsback.png");
+	background-image: url("../images/theme/newsback.png"); /* Клёвый бесшовный фон */
     background-repeat: repeat-x-y;
 	border: 3px solid #ba7373; /* Ширина и цвет границ */
 	border-radius: 10px; /* Радиус границ */
@@ -461,17 +461,19 @@ footer {
 /* Заголовок новости */
 .title {
 	margin-bottom: 6px;
-	text-align:center;
-	font-family: Liberation Sans, Arial, Helvetica, sans-serif;
-		color: #C73030;
+	color: #C73030;
 	}
 
 /* Текст новости */
 .full {
 	font-size: 11pt;
-	text-align: center;
-	font-family: Liberation Sans, Arial, Helvetica, sans-serif;
 	}
+
+/* И для текста и для заголовка новости */
+.full, .title {
+/* font-family: Liberation Sans, Arial, Helvetica, sans-serif; оно и так наследуется от body*/
+	text-align: center;
+}
 
 /* Дата новости */
 .date {

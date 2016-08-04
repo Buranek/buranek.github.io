@@ -36,7 +36,8 @@
 
 <!-- Скрипт загрузки блоков (использует JQuery) -->
 <script type="text/javascript">
-$("documend").ready(function(){
+$( document ).ready(function() { // Если загрузился весь HTML и картинки
+if (window.console) console.log('загрузка блоков загрузилось!'); // Если активна консоль отладки браузера
 	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
 	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
 	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->

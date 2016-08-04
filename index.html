@@ -33,7 +33,6 @@
 <!-- Оно работает только обычным образом, нахалом через блок его подрубить можно, но тогда не будет работать скрипт (вообще никак). -->
 
 <script src="../js/shbmnk.js"></script><!-- Скрипт для слабовидящих -->
-<script type="text/javascript" src="js/cycle.js"></script><!-- Скрипт циклического переключения изображений -->
 
 <!-- Скрипт загрузки блоков (использует JQuery) -->
 <script type="text/javascript">
@@ -45,13 +44,7 @@ $("documend").ready(function(){
 	$("#cbox").load("../blocks/cbox.html"); <!-- Болтушка -->
 });
 
-<!-- Необходимо для работы циклера изображений -->
-$(document).ready(function()
-{
-	$('#slider').cycle({
-	timeout: 4000,
-	});
-});
+<!-- <<<Парсер новостей>>> -->
 
 <!-- Открываем XML со списком новостей -->
 $(document).ready(function () {
@@ -247,10 +240,7 @@ function xmlParser(xml) {
 <p>Теперь немного экстра информации!</p>
 
 <!-- Слайдер с огуречником -->
-<div id="slider">
 	<img id="borago" style="border: 0;" src="../images/theme/borago.gif" alt="Бораго" title="Бораго" width="490" height="490">
-	<img id="borago" style="border: 0;" src="../images/theme/borago-night.gif" alt="Бораго" title="Бораго ночью" width="490" height="490">
-</div>
 <!-- Описание огуречника -->
 <br><a href="http://www.greeninfo.ru/vegetables/borago_officinalis.html/Article/_/aID/4656">Бурачник</a> (бораго, огуречник, огуречная трава) —
 травянистое растение Borago officinalis [бораго оффичинализ] c широкими овальными мохнатыми серо-зелеными листьями,

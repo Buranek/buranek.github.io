@@ -174,13 +174,16 @@ button-sweet {
 #content {
 	margin: 0 auto;
 	width: 1050px;
-	/* padding: 20px; */
-	background-color: #faf6f6;
+	background-color: #ccc2ab;
 	border-left: 1px solid #5E5945;
 	border-right: 1px solid #5E5945;
 }
 
 /* Кусок с новостями или страницей (или галереей) */
+
+#left, #right {
+background: #ded1be url(../images/theme/newsback.png) repeat top left; /* Клёвый бесшовный фон */
+}
 
 #left {
 	float: left;
@@ -188,7 +191,6 @@ button-sweet {
 	padding: 0px 15px 2px 5px;
 /* Верхнее поле — 0px, правое поле — 15px, нижнее поле — 2px, левое поле — 5px */
 	width: 700px;
-	background: #ded1be url(../images/theme/newsback.png) repeat top left; /* Клёвый бесшовный фон */
 }
 
 /* Левый блок */
@@ -208,8 +210,7 @@ button-sweet {
 	padding: 10px;
 	width: 280px;
 	border: 1px dashed #5E5945;
-	background: #ccc2ab;
-	background: #ded1be url(../images/theme/newsback.png) repeat top left; /* Клёвый бесшовный фон */
+/*background: #ccc2ab;*/
 }
 
 /* ПОДВАЛ (там как подвал дома, только чище) */

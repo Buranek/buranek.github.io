@@ -48,6 +48,7 @@ body {
 h1 {
 	margin-left: 0px;
 	font-family: Oldtyper, Verdana, Georgia, serif;
+	padding-left: 12px;
 }
 
 h2 {
@@ -94,6 +95,12 @@ h5 {
 
 hr {
 	display: none;
+}
+
+/* Символ со шляпой */
+.mysymbol {
+	margin: 0px auto;
+	padding-left: 12px;
 }
 
 /* Пихи */
@@ -362,7 +369,7 @@ footer {
 	display: block;
 	background: url(../images/cssmenu/pattern.png) top left repeat;
 	color: #FFFFFF;
-	border: 1px solid #ba2f14;
+	border: 1px solid #6F4C2D;
 	border-top: none;
 	text-shadow: 0 -1px 1px #751d0c;
 }

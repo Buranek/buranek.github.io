@@ -17,11 +17,6 @@ src: url(../fonts/oldtyper2016.ttf); /* Путь к файлу со шрифто
 
 /* Основное */
 
-theme-directory
-{
-../images/theme/
-}
-
 html {
 /* Предотвратить подгонку размеров шрифта после изменения ориентации в IE и iOS. <normalize.css> */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -54,6 +49,7 @@ h1 {
 h2 {
 	font-size: 15pt;
 	text-align: center;
+	padding-top: 12px;
 }
 
 h1, h2 {
@@ -476,7 +472,6 @@ footer {
 
 /* И для текста и для заголовка новости */
 .full, .title {
-/* font-family: Liberation Sans, Arial, Helvetica, sans-serif; оно и так наследуется от body*/
 	text-align: center;
 }
 
@@ -488,43 +483,4 @@ footer {
 	margin-top: 4px;
 	}
 
-/* Див-ссылка для открытия полной новости (не используется) */
-/*
-arlink { 
-     display:block;
-     width:500px;
-     height:500px; 
-     float:left;
-}
-*/
-
 /* <<<ПАРСЕР НОВОСТЕЙ - конец>>> */
-
-/* Содержание новости - не используется */
-
-/*
-.articlecontent {
-	width: 408px;
-	float: left;
-	margin: 10px;
-	border: 1px #dedede solid;
-	padding: 5px;
-	display: none;
-	}
-*/
-
-/* Скрыть блок с большими катинками в третьей галерее, если у пользователя смартфон */
-@media only screen and (max-device-width: 480px) {
-div#3rdgallery-desktop {
-	div {display:none;} /* говорит браузеру, что этот элемент не нужно отображать на странице */
-	}
-
-}
-
-/* Экран — ПК экраны (скрыть блок с малыми катинками в третьей галарее) */
-@media only screen 
-and (min-width : 768px) {
-div#3rdgallery-mobile {
-	div {display:none;} /* говорит браузеру, что этот элемент не нужно отображать на странице */
-	}
-}

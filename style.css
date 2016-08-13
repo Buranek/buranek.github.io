@@ -83,10 +83,16 @@ h3, h4 {
 	padding-left: 24px;
 }
 
-h5 {
+/* Противобаг, но это типа-типа h5 */
+muzak {
 	font-size: 13pt;
 	text-align: center;
 	color: #555450;
+}
+
+/* Противобаг */
+h5 a:link {
+text-decoration:none;
 }
 
 hr {
@@ -136,7 +142,8 @@ a:active {
     color: #5e629d;
 }
 
-/* Вкусные кнопки */
+/* Вкусные кнопки (позже задействую) */
+/*
 button-sweet {
     border: none;
     color: white;
@@ -147,8 +154,9 @@ button-sweet {
     font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: #7B5A4D; /* Коричневый */
+    background-color: #7B5A4D; Коричневый цвет
 }
+*/
 
 /* ЗАГОЛОВОК */
 

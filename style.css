@@ -46,7 +46,8 @@ h1 {
 	padding-left: 12px;
 }
 
-h1.article
+/* Этот класс я использую для заголовков статей */
+.articleheader
 {
 font-size: 16pt;
 }

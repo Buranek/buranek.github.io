@@ -47,9 +47,8 @@ h1 {
 }
 
 /* Этот класс я использую для заголовков статей */
-.articleheader
-{
-font-size: 16pt;
+.articleheader {
+font-size: 18pt;
 }
 
 h2 {
@@ -89,8 +88,12 @@ h3, h4 {
 	padding-left: 24px;
 }
 
+h5 {
+/* */
+}
+
 /* Противобаг, но это типа-типа h5 */
-muzak {
+.muzak {
 	font-size: 13pt;
 	text-align: center;
 	color: #555450;

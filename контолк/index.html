@@ -34,6 +34,13 @@
 <link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
 <script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js"></script>
 
+<!-- Простой режим запуска fancyBox -->
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+});
+</script>
+
 <!-- Скрипт загрузки блоков (использует JQuery) -->
 <script type="text/javascript">
 $( document ).ready(function() {
@@ -58,7 +65,8 @@ $( document ).ready(function() {
 <!-- Левый блок сайта -->
 <div id="left">
 <!-- Содержание сайта -->
-<h1 class="articleheader">Kontalk</h1><br/>
+<h1 class="articleheader">Kontalk</h1>
+<h3>Снимки можно нажимать!</h3><br>
 
 <br>
 <h3 id="contents">Оглавление статьи</h3>

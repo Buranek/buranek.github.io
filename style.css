@@ -46,6 +46,11 @@ h1 {
 	padding-left: 12px;
 }
 
+h1.article
+{
+font-size: 16pt;
+}
+
 h2 {
 	font-size: 15pt;
 	text-align: center;

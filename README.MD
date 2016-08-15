@@ -4,15 +4,15 @@ Wanna pay for copyright? You'd better go and buy some bread or rice.
 This website is presented in Russian.
 
 Yo, are you chinese, do you like rice?
-Hey, are you interested in these?
 
-Join the Fohroer family!
+Hey, are you interested in these? Join the Fohroer family!
 
 #Основное ПрочтиМеня
 ~Основной процесс чтения происходит здесь~
 Данный интернет сайт является личным портфолио Марса Фохроера. Обновления частые.
 Хотите заплатить за копирайт? Лучше ступайте и купите себе немного хлеба или риса.
 Данный интернет сайт представлен на русском языке.
+Теперь интеллигентный!
 
 Ку, а ты китаец, нравится ли тебе рис?
 

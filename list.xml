@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- От более новых к более старым (сверху вниз) -->
 <RecentArticles>
+	
+  <Article>
+    <Title>Печатаю, рисую</Title>
+    <Full>+1 статья, +1 картина.</Full>
+    <Date>2016/08/17</Date>
+  </Article>
 
   <Article>
     <Title>Конжзот</Title>

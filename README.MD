@@ -1,12 +1,3 @@
-#Main ReadMe
-This website is Mars Fohroer's own portfolio. Updates are often. 
-Wanna pay for copyright? You'd better go and buy some bread or rice.
-This website is presented in Russian.
-
-Yo, are you chinese, do you like rice?
-
-Hey, are you interested in these? Join the Fohroer family!
-
 #Основное ПрочтиМеня
 ~Основной процесс чтения происходит здесь~
 Данный интернет сайт является личным портфолио Марса Фохроера. Обновления частые.
@@ -17,6 +8,15 @@ Hey, are you interested in these? Join the Fohroer family!
 Ку, а ты китаец, нравится ли тебе рис?
 
 Эй, тебе интересно? Присоединяйся к семье Фохроер!
+
+#Main ReadMe
+This website is Mars Fohroer's own portfolio. Updates are often. 
+Wanna pay for copyright? You'd better go and buy some bread or rice.
+This website is presented in Russian.
+
+Yo, are you chinese, do you like rice?
+
+Hey, are you interested in these? Join the Fohroer family!
 
 #基本 自述
 这个 互联网 网站 是 玛氏 Fohroer 集子制品. 更新 急速的.

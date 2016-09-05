@@ -151,9 +151,9 @@ a:active {
     color: #5e629d;
 }
 
-/* Вкусные кнопки (позже задействую) */
-/*
-button-sweet {
+/* Вкусная кнопка */
+
+button {
     border: none;
     color: white;
     padding: 15px 32px;
@@ -165,7 +165,6 @@ button-sweet {
     cursor: pointer;
     background-color: #7B5A4D; Коричневый цвет
 }
-*/
 
 /* ЗАГОЛОВОК */
 

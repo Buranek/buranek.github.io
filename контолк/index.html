@@ -84,6 +84,10 @@ $( document ).ready(function() {
 <li><a href="#conclusion">Заключение</a></li>
 <li><a href="#faq">ЧаВо</a></li>
 <li><a href="#warnings">Предостережения</a></li>
+<li><a href="#root-way">Без kontalk-keys</a></li>
+<li><a href="#pc-program">Программа для ПК</a></li>
+<li><a href="#pc-program-compilation">Компиляция программы для ПК</a></li>
+<li><a href="#plans">Планы разработчиков</a></li>
 </ul>
 
 <br><h2 id="brief">Сводка</h2>
@@ -100,10 +104,12 @@ $( document ).ready(function() {
 </p>
 
 <br><h2 id="shortly">Коротко</h2>
+
 <p><br>Контолк (или Конталк) <i>(англ. Kontalk)</i> — программа для смартфонов с ОС Android, а также iPhone. Использует в качестве основы
 протокол XMPP, то есть Jabber. В качестве идентификаторов пользователей используются телефонные номера, которые берутся
 из телефонной книги Android. Сами номера не передаются на сервер, а передаются только их хэш-суммы. После этого зарегистрированные
 в Kontalk контакты автоматически появляются в Kontalk и с ними можно начать разговор.</p>
+<p>Основным разработичиком программы Kontalk для Android является итальянский программист Даниэлле Риччи.</p>
 
 <br><h2 id="download">Где скачать программу</h2>
 <ul>
@@ -148,7 +154,7 @@ $( document ).ready(function() {
 <li>Отправка фотографий и доставка их в оффлайн;</li>
 <li>Статусы;</li>
 <li>Группы пользователей (через задницу сделано);</li>
-<li>RSA шифрование сообщений (выполнено через собственную XEP имплементацию);</li>
+<li>RSA шифрование сообщений (выполнено через <a href="https://xmpp.org/extensions/xep-0374.html">XEP имплементацию 0374</a>);</li>
 <li>Связь с обычными Jabber контактами (при условии, что добавление контакта произведут с их стороны);</li>
 <li>Недописанное сообщение сохраняется в черновик.</li>
 </ul>
@@ -186,54 +192,59 @@ Telegram также работает на Jolla, имеется нативный
 </ul>
 
 <br><h2 id="installation">Инструкции по установке</h2>
-<p><a class="fancybox" href="../images/articles/or/kontalk1.png" data-fancybox-group="gallery" title="Установка"><img src="../images/articles/th/kontalk1.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk1.png" data-fancybox-group="gallery" title="Установка"><img src="../images/articles/th/kontalk1.png" alt="Снимок экрана" /></a></p>
 <p>Нажмите <b>Далее</b> и дождитесь окончания професса установки. Откройте программу и сделайте по аналогии с представленным на снимке:</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk2.png" data-fancybox-group="gallery" title="Регитстрация"><img src="../images/articles/th/kontalk2.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk2.png" data-fancybox-group="gallery" title="Регитстрация"><img src="../images/articles/th/kontalk2.png" alt="Снимок экрана" /></a></p>
 <p>Вам позвонят с иностранного номера. Не берите трубку и дождитесь, пока вызов будет пропущен. Введите требуемые цифры из этого номера в поле. Скорее всего это будут последние 4 цифры. Не перезванивайте на этот номер, оттуда Вам звонит робот!</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk3.png" data-fancybox-group="gallery" title="Подтверждение регистрации"><img src="../images/articles/th/kontalk3.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk3.png" data-fancybox-group="gallery" title="Подтверждение регистрации"><img src="../images/articles/th/kontalk3.png" alt="Снимок экрана" /></a></p>
 <p>Введите цифры в поле и нажмите <b>ПРОВЕРКА</b>. Если вдруг проверка не сработает, нажмите кнопку <b>НЕ ПОЛУЧИЛИ ЗВОНОК?</b>.
 Вам придёт SMS сообщение с иностранного номера.
 Введите цифры из SMS в поле и подтвердите регистрацию.</p>
 <p>Сверху поплывут оранжевые полосочки — это означает прохождение процесса регистрации. Во время регистрации происходит подтверждение регистрации на сервере,
 а также генерация ключевой пары, с помощью которой будут шифроваться сообщение при переписке.</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk4.png" data-fancybox-group="gallery" title="Оранжевые полосы"><img src="../images/articles/th/kontalk4.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk4.png" data-fancybox-group="gallery" title="Оранжевые полосы"><img src="../images/articles/th/kontalk4.png" alt="Снимок экрана" /></a></p>
 <p>После окончания процесса подтверждения регистрации (занимает около 2 минут) появится пустой список контактов и кнопочка с карандашом. Нажмите эту кнопочку.</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk5.png" data-fancybox-group="gallery" title="Пустой список контактов"><img src="../images/articles/th/kontalk5.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk5.png" data-fancybox-group="gallery" title="Пустой список контактов"><img src="../images/articles/th/kontalk5.png" alt="Снимок экрана" /></a></p>
 <p>Появится список тех, кому можно написать. Там будете сначала только Вы. Потяните список вниз. Произойдёт обновление списка из номеров в Вашей телефонной книге.</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk6.png" data-fancybox-group="gallery" title="Обновление списка контактов"><img src="../images/articles/th/kontalk6.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk6.png" data-fancybox-group="gallery" title="Обновление списка контактов"><img src="../images/articles/th/kontalk6.png" alt="Снимок экрана" /></a></p>
 <p>Напишите кому-нибудь, кто появился сообщение со словом "Тест" или с общим приглашением каким-нибудь.</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk7.png" data-fancybox-group="gallery" title="Тест"><img src="../images/articles/th/kontalk7.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk7.png" data-fancybox-group="gallery" title="Тест"><img src="../images/articles/th/kontalk7.png" alt="Снимок экрана" /></a></p>
 <p>Ему придёт вот такое приглашение. Вместо "Тестирование" будет указано Ваше имя.</p>
+<p><a class="fancybox" href="../images/articles/or/kontalk18.png" data-fancybox-group="gallery" title="Приглашение на беседу"><img src="../images/articles/th/kontalk18.png" alt="Снимок экрана" /></a></p>
 
-<p><a class="fancybox" href="../images/articles/or/kontalk8.png" data-fancybox-group="gallery" title="Приглашение пришло"><img src="../images/articles/th/kontalk8.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk8.png" data-fancybox-group="gallery" title="Приглашение пришло"><img src="../images/articles/th/kontalk8.png" alt="Снимок экрана" /></a></p>
 <p><b>Дальше внимательно читайте!</b> Принимающий должен нажать кнопку <b>ИДЕНТИФИКАЦИЯ</b>. После этого подождите пару минут. После этого обновите список контактов и он тоже должен обновить. Затем напишите ему сообщение "Тест2".</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk9.png" data-fancybox-group="gallery" title="Установление ширфованного соединения"><img src="../images/articles/th/kontalk9.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk9.png" data-fancybox-group="gallery" title="Установление ширфованного соединения"><img src="../images/articles/th/kontalk9.png" alt="Снимок экрана" /></a></p>
 <p>Собеседник должен ткнуть DETAILS. Ему отобразится ключ. Если Вы сидите рядом и регистрируйтесь в Kontalk вместе, то сверьте ключ. Если нет физической возможности, этим можно пренебречь.
 Сомневаюсь, что есть хакеры, которым есть дело до Kontalk. После идентификации и принятия ключа обновите список контактов и немного подождите.</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk11.png" data-fancybox-group="gallery" title="Этой ошибки быть не должно"><img src="../images/articles/th/kontalk11.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk11.png" data-fancybox-group="gallery" title="Этой ошибки быть не должно"><img src="../images/articles/th/kontalk11.png" alt="Снимок экрана" /></a></p>
 <p>Посмотрите на последний снимок. Такой ошибки у вас быть не должно, текст должен быть не красным, а зелёным. Не забудьте также верно выставить время на своём Android устройстве,
 если у Вас там будет какой-нибудь 1999 год, то будет ошибка
 о неверной отметке времени (шифрование требует наличия верной даты и времени!).
 Устраните обе ошибки, после этого Вы сможете вести шифрованную переписку.</p>
+<p>На снимке подписаны сообщения — с ошибкой и без.</p>
+<p><a class="fancybox" href="../images/articles/or/kontalk22.png" data-fancybox-group="gallery" title="Пример плохого и хорошего сообщений"><img src="../images/articles/th/kontalk22.png" alt="Снимок экрана" /></a></p>
 
 <br><h2 id="key-update">Инструкция по обновлению ключа контакта</h2>
 <p>Если собеседник сообщил Вам иным способом, что обновил свой ключ в Kontalk, то Вам нужно будет принять его ключ заново.</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk9.png" data-fancybox-group="gallery" title="Установление ширфованного соединения"><img src="../images/articles/th/kontalk9.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk9.png" data-fancybox-group="gallery" title="Установление ширфованного соединения"><img src="../images/articles/th/kontalk9.png" alt="Снимок экрана" /></a></p>
 <p>Он напишет что-нибудь и Вам нужно будет нажать DETAILS. Отобразится ключ. Нажмите ПРИНЯТЬ. Если Вы сидите рядом, то сверьте ключ. Если нет физической возможности, этим можно пренебречь.
 После идентификации и принятия ключа проверьте связь. Скорее всег всего всё должно работать в штатном режиме.
 <br>А если нет, и возникает ошибка, то обновите список контактов. Читайте далее, как это сделать.</p>
 <p>Вернитесь в предыдущее меню. Нажмите на карандаш — появится список тех, кому можно написать. Потяните список вниз. Произойдёт обновление списка из номеров в Вашей телефонной книге.</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk6.png" data-fancybox-group="gallery" title="Обновление списка контактов"><img src="../images/articles/th/kontalk6.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk6.png" data-fancybox-group="gallery" title="Обновление списка контактов"><img src="../images/articles/th/kontalk6.png" alt="Снимок экрана" /></a></p>
 <p>и немного подождите.</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk11.png" data-fancybox-group="gallery" title="Этой ошибки быть не должно"><img src="../images/articles/th/kontalk11.png" alt="Фотография" /></a></p>
+<p><a class="fancybox" href="../images/articles/or/kontalk11.png" data-fancybox-group="gallery" title="Этой ошибки быть не должно"><img src="../images/articles/th/kontalk11.png" alt="Снимок экрана" /></a></p>
 <p>Посмотрите на последний снимок. Такой ошибки у вас быть не должно, текст должен быть не красным, а зелёным. Не забудьте также верно выставить время на своём Android устройстве,
 если у Вас там будет какой-нибудь 1999 год, то будет ошибка
 о неверной отметке времени. Устраните обе ошибки, после этого Вы сможете вести шифрованную переписку.</p>
 
 <br><h2 id="deletion">Инструкции по удалению аккаунта</h2>
 <p>Откройте меню — Обслуживание и прокрутите его вниз.</p>
-<p><a class="fancybox" href="../images/articles/or/kontalk12.png" data-fancybox-group="gallery" title="Удаление аккаунта"><img src="../images/articles/th/kontalk12.png" alt="Фотография" /></a></p>
-<p>Согласитесь с предупреждением об удалении аккаунта. Теперь программу можно удалить с устройства.
+<p><a class="fancybox" href="../images/articles/or/kontalk12.png" data-fancybox-group="gallery" title="Удаление аккаунта — пункт"><img src="../images/articles/th/kontalk12.png" alt="Снимок экрана" /></a></p>
+<p>Согласитесь с предупреждением об удалении аккаунта.
+<p><a class="fancybox" href="../images/articles/or/kontalk17.png" data-fancybox-group="gallery" title="Удаление аккаунта — подтверждение"><img src="../images/articles/th/kontalk17.png" alt="Снимок экрана" /></a></p>
+Теперь программу можно удалить с устройства.
 Не забудьте, что после удаления программы фотографии от неё останутся на карте памяти устройства.</p>
 
 <br><h2 id="conclusion">Сомневаетесь, стоит ли использовать?</h2>
@@ -271,9 +282,63 @@ Telegram также работает на Jolla, имеется нативный
 думайте дважды перед тем как давать телефон/планшет кому-то поиграть.</li>
 </ul>
 
-<p><i>Статья была написана 2016/08/15 и дополнена 2016/08/28 и 2016/09/06.</i></p>
-<p>Позже напишу про планы авторов программы и про использование
-на двух устройствах без kontalk-keys.zip (при наличии root доступа).</p>
+<br><h2 id="root-way">Использование на нескольких устройствах без kontalk-keys.zip</h2>
+
+<p>Способ работает только на Android 4!
+Для совершения этого трюка вам понадобятся:
+root доступ на обоих смартфонах/планшетах (Super SU), Titanium Backup, Root Explorer. И сама программа Kontalk.
+Первым делом найдите файл <b>accounts.db</b>. На Android устройтве этот файл находится в папке <b>/system/users/0</b>. Его нужно передать на второе устройство.</p>
+<p><a class="fancybox" href="../images/articles/or/kontalk15.png" data-fancybox-group="gallery" title="accounts.db с аккаунтами"><img src="../images/articles/th/kontalk15.png" alt="Снимок экрана" /></a></p>
+Просто передайте этот файл по Bluetooth. Теперь поместите этот файл по тому же пути на втором устройстве с заменой.
+
+<p>Второй способ: перенести оттуда строки в базу второго устройства. Он нуждается в пояснениях.
+Установите Kontalk на втором устройстве и заморозьте его в Titanium Backup.
+Теперь вам понадобится программа SQLite Editor. Откройте в ней <b>accounts.db</b> на первом устройстве.</p>
+<p><a class="fancybox" href="../images/articles/or/kontalk19.png" data-fancybox-group="gallery" title="accounts.db в SQLite Editor"><img src="../images/articles/th/kontalk19.png" alt="Снимок экрана" /></a></p>
+
+<p>В списке аккаунтов найдёте Kontalk. Пароль к нему хранится в MD5. В extra вы найдёте ещё строки с ключами. При желании Вы можете
+всё это скопировать в БД на втором устройтве. А теперь задайтесь вопросом — нахрен это надо?</p>
+<p><a class="fancybox" href="../images/articles/or/kontalk20.png" data-fancybox-group="gallery" title="accounts.db в SQLite Editor — акккаунты"><img src="../images/articles/th/kontalk20.png" alt="Снимок экрана" /></a></p>
+
+<p>После выполненных манипуляций сделайте бэкап программы Kontalk в Titanium Backup и передайте этот бэкап на второе устройство.
+На нём уже должен быть подготовленный свежий <b>accounts.db</b>. Теперь активируйте восстановите данные из бэкапа Kontalk. Затем перезагрузите устройство.
+После загрузки устройства разморозьте Kontalk в Titanium Backup. Всё. Можно пользоваться. Может нифига не сработать.</p>
+
+<br><h2 id="pc-program">Программа для ПК</h2>
+
+<p>Ребят, это полный абзац. У меня слов нет просто!</p>
+<p><a class="fancybox" href="../images/articles/or/kontalk21.png" data-fancybox-group="gallery" title="Программа для ПК"><img src="../images/articles/th/kontalk21.png" alt="Снимок экрана" /></a></p>
+<p>Она страшная, использует много ресурсов и забагованная. Но пользоваться реально.</p>
+
+<br><h2 id="pc-program-compilation">Компиляция программы для ПК</h2>
+<p>Разработчик Abika вносит улучшения в код, согласно замечаниям пользователей. Но новую версию ему собирать почему-то не хочется.
+Поэтому он предлагает нам собрать её самим. Однако, программа собирается очень неудобным способом: фреймворк собирает необходимые
+компоненты, а затем компилирует программу, после чего запускает её. После закрытия программы можно найти лишь код, а программу
+нужно компилировать <b>заново для следующего запуска.</b>
+Для того, чтобы скомпилировать программу, нам необходимо проделать несложные действия. Информация взята из официального FAQ,
+но снабжена подробностями. Все действия, кроме установки самой системы git (только первого шага) производятся от <b>не</b> суперпользователя. Приступим:</p>
+<ul>
+<li>Установите git из репозиториев своего дистрибутива. Это единственный шаг, для которого понадобятся права суперпользователя;</li>
+<li>В терминале выполните <blockquote>git submodule update --init</blockquote>;</li>
+git submodule update --init
+<li>В терминале выполните <blockquote>git clone https://github.com/kontalk/desktopclient-java/</blockquote> из папки, куда Вы обычно складываете GIT проекты;</li>
+<li>Дождитесь окончания загрузки. Откройте терминал из папки <b>desktopclient-java</b>;</li>
+<li>Выполните команду <blockquote>./gradlew run</blockquote> Примерно на 48 секунде запустится свежий Kontalk.</li>
+<li>После закрытия Kontalk будет обозначено 100% и выполнение кода прекратиться. Компиляцию кода нужно производить перед <b>каждым</b> запуском программы.</li>
+</ul>
+
+<br><h2 id="plans">Планы разработчиков (для Android)</h2>
+
+<ul>
+<li>Ввести поддержку Direct Share для Android 6;</li>
+<li>Ввести поддержку /me;</li>
+<li>Исправить ряд багов программы.</li>
+</ul>
+
+<br><h2 id="article-tech">О статье</h2>
+
+<p><i>Статья была написана 2016/08/15 и дополнена 2016/08/28 и 2016/09/06 и 2016/09/23.</i></p>
+<p>Позже напишу про планы авторов программы.</p>
 
 </div>
 <div id="right">

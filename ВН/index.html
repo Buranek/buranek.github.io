@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--Language: Russian-->
+<html lang="ru">
+
+<head>
+<title>Буранчик - Визуальная новелла</title>
+<!-- Метан -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- Набор символов -->
+<meta name="description" content="Статья Буранчика"> <!-- Описание страницы -->
+<meta name="keywords" content="буранчик,новелла,ВН,VN,визуальная,новелла,произведение"> <!-- Ключевые слова -->
+<meta name="author" content="Buranchik"> <!-- Имя автора -->
+<meta name="generator" content="Static page" /> <!-- Оставлю это для статистики -->
+<!--<link rel="icon" href="../favicon.ico"> простой код значка сайта -->
+<!-- ICO браузеры -->
+<link rel="icon" href="../images/favicons/favicon-16.ico" type="image/x-icon">
+<link rel="icon" href="../images/favicons/favicon-32.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="../images/favicons/favicon-48.ico" type="image/vnd.microsoft.icon">
+<!-- PNG Apple -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/favicons/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/favicons/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/favicons/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../images/favicons/apple-touch-icon-57-precomposed.png">
+<!-- PNG значок сайта -->
+<link rel="shortcut icon" href="../images/favicons/favicon.png">
+<link rel="stylesheet" href="../style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
+
+<!--Эта статья была написана вручную в блокноте Geany-->
+
+<!-- <<<ПОДРУБОНЫ>>> -->
+<!-- Подрубить бибиотеку jQuery (production версия) -->
+<script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+
+<!-- Добавить fancyBox -->
+<link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js"></script>
+
+<!-- Простой режим запуска fancyBox -->
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+});
+</script>
+
+<!-- Скрипт загрузки блоков (использует JQuery) -->
+<script type="text/javascript">
+$( document ).ready(function() {
+	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
+	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
+	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
+	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
+	$("#menu").load("../blocks/menu.html"); <!-- Меню -->
+});
+</script>
+
+<!-- HTML5Shiv для осла -->
+<!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="content">
+<div id="slogan"></div>
+
+<!-- Левый блок сайта -->
+<div id="left">
+<!-- Содержание сайта -->
+<h1 class="articleheader">Визуальная новелла Прения Интеллекта</h1>
+<h3>На снимки можно нажать!</h3><br>
+
+<br><h2 id="shortly">Суть</h2>
+<p><br>Представляю вашему вниманию визуальную новеллу Прения Интеллекта (<i>по-английски:</i> Intel Bicker),
+которая планируется для выпуска на русском и английском языках. Ветвления сюжета присутствуют.
+Планируется разрешение 1280 на 720 пикселей.</p>
+
+<p><b>Описание:</b> Игра повествует о том, как человек, внезапно попавший в автомобильную катастрофу
+пытается выкарабкаться из болезни. Ему в этом помогает его жена, а также необычные персонажи,
+находящиеся в больнице. Действие новеллы разворачивается как в больничных помещениях, так и в сознании
+находящегося в коме человека. Именно это и объясняет название новеллы.</p>
+
+<!--
+<p><a class="fancybox" href="../images/vn/1.png" data-fancybox-group="gallery" title="Снимок 1"><img src="../images/other/1.png" alt="Снимок экрана" /></a></p>
+<p><a class="fancybox" href="../images/vn/2.png" data-fancybox-group="gallery" title="Снимок 2"><img src="../images/other/2.png" alt="Снимки экрана" /></a></p>
+-->
+
+<p>Снимки будут позже, так как новые я ещё не делал,
+а также для скачивания игра станет доступна несколько позже.</p>
+
+</div>
+<div id="right">
+<h3>Меню сайта:</h3><br>
+<div id='menu'></div><!-- Нутро меню сайта -->
+<br>
+
+<div id='socials'></div><!-- Социальный блок -->
+<div id='metrika'></div><!-- Яндекс.Метрика -->
+
+</div>
+
+<div id="footer"></div><!-- Подвал -->
+
+</div>
+</body>
+</html>

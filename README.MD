@@ -19,10 +19,10 @@ Yo, are you chinese, do you like rice?
 Hey, are you interested in these? Join the Fohroer family!
 
 #基本 自述
-这个 互联网 网站 是 玛氏 Fohroer 集子制品. 更新 急速的.
+这个 互联网 网站 是 玛氏 冯罗杰 集子制品. 更新 急速的.
 很想 付清 超过 版權? 不必, 实 大米.
 这个 网站 实行 俄语. 以德報德 發.
 
 喂, 你 有趣地 吗?
 
-我们 一同 合作化 去 吧 Fohroer 家庭!
+我们 一同 合作化 去 吧 冯罗杰 家庭!

@@ -5,4 +5,4 @@ Disallow: /js/
 
 User-agent: *
 Disallow:
-Host: www.буранчик.рф
+Host: www.фохроер.рф

@@ -3,8 +3,20 @@
 <RecentArticles>
 
   <Article>
+    <Title>Новые картины в апреле!</Title>
+    <Full>Новые картины в спелой галерее!</Full>
+    <Date>2017/04/09</Date>
+  </Article>
+
+  <Article>
+    <Title>Результат Search Console</Title>
+    <Full>Google Search Console показал отсутствие ошибок на сайте. Ура!</Full>
+    <Date>2017/03/28</Date>
+  </Article>
+
+  <Article>
     <Title>Мартовское обновление #2</Title>
-    <Full>Изменил логин на GitHub на новый (и новый адрес репозитория). Добавил новую информацию про китайские кремы.
+    <Full>Сменил логин на GitHub на Fohroer (и у репозитория теперь новый адрес). Добавил новую информацию про китайские кремы.
     Активировал верификацию в Google Search Console. Добавил новые картины в спелую галерею.</Full>
     <Date>2017/03/25</Date>
   </Article>

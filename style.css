@@ -88,19 +88,21 @@ h3, h4 {
 	padding-left: 24px;
 }
 
-h5 {
-/* */
-}
+div.muzak {
+    font-size: 13pt;
+	text-align: center;
+	color: #555450;
+} 
 
-/* Противобаг, но это типа-типа h5 */
-.muzak {
+/* P класс для музыки */
+p.muzak {
 	font-size: 13pt;
 	text-align: center;
 	color: #555450;
 }
 
 /* Противобаг */
-h5 a:link {
+.muzak a:link {
 text-decoration:none;
 }
 

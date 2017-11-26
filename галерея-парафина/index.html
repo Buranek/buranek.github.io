@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--Language: Russian-->
+<!--Привет, благородный витязь. Классно, что Вы решили заглянуть сюда! Тут с кодом всё обстоит не так уж и плохо.-->
+<html lang="ru">
+
+<head>
+<title>Фохроер - Парафин</title>
+<!-- Метан -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- Набор символов -->
+<meta name="description" content="Галерея приколов от Фохроера"> <!-- Описание страницы -->
+<meta name="keywords" content="фохроер,галерея,фотографии,фото,фигурки,фигуры,парафин,искусство"> <!-- Ключевые слова -->
+<meta name="author" content="Fohroer"> <!-- Имя автора -->
+<meta name="generator" content="Static page" /> <!-- Оставлю это для статистики -->
+<!--<link rel="icon" href="../favicon.ico"> простой код значка сайта -->
+<!-- ICO браузеры -->
+<link rel="icon" href="../images/favicons/favicon-16.ico" type="image/x-icon">
+<link rel="icon" href="../images/favicons/favicon-32.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="../images/favicons/favicon-48.ico" type="image/vnd.microsoft.icon">
+<!-- PNG Apple -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/favicons/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/favicons/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/favicons/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../images/favicons/apple-touch-icon-57-precomposed.png">
+<!-- PNG значок сайта -->
+<link rel="shortcut icon" href="../images/favicons/favicon.png">
+<link rel="stylesheet" href="../style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
+
+<!-- ***<<<Подключения скриптов>>>*** -->
+<!-- Подключить бибиотеку jQuery (production версия) -->
+<script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+
+<!-- Добавить fancyBox -->
+<link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js"></script>
+
+<!-- Простой режим запуска fancyBox -->
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+});
+</script>
+
+<!-- Скрипт загрузки блоков (использует JQuery) -->
+<script type="text/javascript">
+$( document ).ready(function() {
+	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
+	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
+	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
+	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
+	$("#menu").load("../blocks/menu.html"); <!-- Меню -->
+});
+</script>
+
+<!-- HTML5Shiv для осла -->
+<!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="content">
+<div id="slogan"></div>
+
+<!-- Левый блок сайта -->
+<div id="left">
+<!-- Содержание сайта -->
+
+<h2>Фотогалерея, серия парафиновых фигурок</h2>
+<h3 id="note">Примечание</h3>
+<p>Вы можете использовать <b>стрелочки</b>, чтобы перемещаться между изображениями в режиме показа плашек.
+Чтобы выйти из показа плашек, нужно нажать мышкой вне плашки, чтобы переключиться с плашек обратно на сетку.
+<br>Изображения все являются приличными. Фото в галерее расположены в архаичном порядке.
+<br>Для скачивания <i>сохраните изображение как</i>. Думаю, все Вам не понадобятся.
+<br>Эти фигурки все являются продуктом ручной работы. В настоящее время все целы и стоят у меня в комнате.
+</p>
+<br>
+<!-- Фотографии начинаются здесь -->
+<div id="galdiv">
+<p>
+	<a class="fancybox" href="../images/gal-parafin/or/1.jpg" data-fancybox-group="gallery" title="Ферзь. Фото было сделано 2017/11/26 в 20:30."><img src="../images/gal-parafin/th/1.jpg" alt="Фотография" /></a>
+	<a class="fancybox" href="../images/gal-parafin/or/2.jpg" data-fancybox-group="gallery" title="Офицер. Фото было сделано 2017/11/26 в 20:31."><img src="../images/gal-parafin/th/2.jpg" alt="Фотография" /></a>
+	<a class="fancybox" href="../images/gal-parafin/or/3.jpg" data-fancybox-group="gallery" title="Ладья. Фото было сделано 2017/11/26 в 20:31."><img src="../images/gal-parafin/th/3.jpg" alt="Фотография" /></a>
+	<a class="fancybox" href="../images/gal-parafin/or/4.jpg" data-fancybox-group="gallery" title="Привидение. Фото было сделано 2017/11/26 в 20:32."><img src="../images/gal-parafin/th/4.jpg" alt="Фотография" /></a>
+	<a class="fancybox" href="../images/gal-parafin/or/5.jpg" data-fancybox-group="gallery" title="Морской конёк. Фото было сделано 2017/11/26 в 20:32."><img src="../images/gal-parafin/th/5.jpg" alt="Фотография" /></a>
+</p>
+</div>
+<!-- А кончаются тут -->
+</div>
+<div id="right">
+<h3>Меню сайта:</h3><br>
+<div id='menu'></div><!-- Нутро меню сайта -->
+<br>
+<!-- Социальный блок НАЧАЛО -->
+<div id='socials'></div>
+<!-- Социальный блок КОНЕЦ -->
+<!-- Яндекс.Метрика НАЧАЛО -->
+<div id='metrika'></div>
+<!-- Яндекс.Метрика КОНЕЦ -->
+</div>
+<!-- Подвал -->
+<!-- Подвала начало -->
+<div id="footer"></div>
+<!-- Подвала конец -->
+</div>
+</body>
+</html>

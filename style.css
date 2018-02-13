@@ -1,4 +1,5 @@
 /* ШРИФТЫ */
+
 /* Шрифт Oldtyper (версия, исправленная мной) */
 @font-face {
 font-family: Oldtyper; /* Гарнитура шрифта */
@@ -33,7 +34,7 @@ body {
 	margin: 0;
 	padding: 0px;
 	background: #ded1be url(images/theme/back.png) repeat top left;
-	font-family: Liberation Sans, Arial, Helvetica, sans-serif;
+	font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
 	font-size: 12pt;
 	color: #152018;
 }
@@ -248,7 +249,7 @@ background: #ded1be url(../images/theme/mainback.png) repeat top left; /* Клё
 	padding: 10px 0px 10px 0px;
 	background-color: #cdcdcd;
 	background-image: url("../images/theme/footerback.jpg");
-    background-repeat: repeat-x-y;
+    background-repeat: repeat;
 	font-size: 10px;
 	text-align: center;
 	color: #FFFFFF;
@@ -261,7 +262,7 @@ background: #ded1be url(../images/theme/mainback.png) repeat top left; /* Клё
 	height: 500px; /* Высота блока (теперь стала необходима) */
 	background-color: #C3C3C3; /* Фоновый цвет */
 	background-image: url("../images/theme/newsback.png"); /* Клёвый бесшовный фон */
-    background-repeat: repeat-x-y;
+    background-repeat: repeat;
 	border: 3px solid #ba7373; /* Ширина и цвет границ */
 	border-radius: 10px; /* Радиус границ */
 	box-shadow: 0 0 15px #F5C671; /* Размер и цвет тени блока (оранжевый) */
@@ -308,18 +309,19 @@ footer {
 }
 
 /* <<<Меню CSSMENU>>> */
-@import url(../fonts/Ubuntu:300,400,500,700);
 
-@import url(../fonts/Open_Sans:400,600,300);
-@charset "UTF-8";
 /* Базовые Стили Меню */
 #cssmenu,
 #cssmenu ul,
 #cssmenu li,
 #cssmenu a {
+	@import url(../fonts/Ubuntu:300,400,500,700);
+
+	@import url(../fonts/Open_Sans:400,600,300);
+	@charset "UTF-8";
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: none;
 	list-style: none;
 	font-weight: normal;
 	text-decoration: none;

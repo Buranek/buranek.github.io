@@ -93,7 +93,17 @@ div.muzak {
     font-size: 13pt;
 	text-align: center;
 	color: #555450;
-} 
+}
+
+div.marquee {
+    white-space:no-wrap;
+    overflow:hidden;
+}
+div.marquee > div.marquee-text {
+    white-space:nowrap;
+    display:inline;
+    width:auto;
+}
 
 /* P класс для музыки */
 p.muzak {

@@ -61,6 +61,19 @@ function xmlParser(xml) {
     });
 
 }
+
+var marquee = $('div.marquee');
+marquee.each(function() {
+    var mar = $(this),indent = mar.width();
+    mar.marquee = function() {
+        indent--;
+        mar.css('text-indent',indent);
+        if (indent < -1 * mar.children('div.marquee-text').width()) {
+            indent = mar.width();
+        }
+    };
+    mar.data('interval',setInterval(mar.marquee,1860/60));
+});
 </script>
 
 <!-- HTML5Shiv для осла -->
@@ -77,7 +90,7 @@ function xmlParser(xml) {
 <div id="left">
 <!-- Содержание сайта -->
 <h2>Здравствуйте! Вы сможете узнать меня, благодаря этой странице.</h2>
-<br><marquee behavior="scroll" scrollAmount="3" width="" height="" onMouseOver="this.scrollAmount=0" onMouseOut="this.scrollAmount=3">Здесь интересно — я гарантирую это!</marquee>
+<br><div class='marquee'><div class='marquee-text'>Здесь интересно — я гарантирую это!</div></div>
 
 <br>
 <h3 id="contents">Оглавление страницы</h3>

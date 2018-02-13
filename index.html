@@ -62,6 +62,7 @@ function xmlParser(xml) {
 
 }
 
+$(document).ready(function () {
 var marquee = $('div.marquee');
 marquee.each(function() {
     var mar = $(this),indent = mar.width();
@@ -73,6 +74,7 @@ marquee.each(function() {
         }
     };
     mar.data('interval',setInterval(mar.marquee,1860/60));
+});
 });
 </script>
 

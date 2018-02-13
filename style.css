@@ -265,6 +265,12 @@ background: #ded1be url(../images/theme/mainback.png) repeat top left; /* Клё
 	color: #FFFFFF;
 }
 
+#loader {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Блок с новостями (не хуже, чем в KDE 5!) */
 
 .newsbox {

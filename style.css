@@ -1,19 +1,47 @@
 /* ШРИФТЫ */
 
-/* Шрифт Oldtyper (версия, исправленная мной) */
+/* Шрифт Oldtyper (версия, исправленная мной и заавтохинченная transfonter.org) */
 @font-face {
-font-family: Oldtyper; /* Гарнитура шрифта */
-src: url(../fonts/oldtyper2016.ttf); /* Путь к файлу со шрифтом */
+    font-family: 'OldTyper';
+    src: local('OldTyper'),
+        url('hinted-subset-OldTyper.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* Шрифт Liberation Sans */
+/* Шрифт Liberation Sans (версия, заавтохинченная transfonter.org) */
 @font-face {
-    font-family: 'Liberation Sans'; /* Гарнитура шрифта */
+    font-family: 'Liberation Sans';
+    src: local('Liberation Sans'), local('LiberationSans'),
+        url('hinted-subset-LiberationSans.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: local('Liberation Sans'), local('LiberationSans-Regular'),
-        url(../fonts/liberation-sans.woff) format('woff'),
-        url(../fonts/liberation-sans.ttf) format('truetype');
+}
+
+/* Шрифт Ubuntu (версия, заавтохинченная transfonter.org) */
+@font-face {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+        url('hinted-Ubuntu-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Шрифт Open Sans (версия, заавтохинченная transfonter.org) */
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'),
+        url('hinted-OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'),
+        url('hinted-OpenSans-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
 }
 
 /* Основное */
@@ -331,10 +359,7 @@ footer {
 #cssmenu ul,
 #cssmenu li,
 #cssmenu a {
-	@import url(../fonts/Ubuntu:300,400,500,700);
 
-	@import url(../fonts/Open_Sans:400,600,300);
-	@charset "UTF-8";
 	margin: 0;
 	padding: 0;
 	border: none;

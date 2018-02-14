@@ -4,7 +4,7 @@
 @font-face {
     font-family: 'OldTyper';
     src: local('OldTyper'),
-        url('hinted-subset-OldTyper.woff') format('woff');
+        url('../fonts/hinted-subset-OldTyper.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +13,7 @@
 @font-face {
     font-family: 'Liberation Sans';
     src: local('Liberation Sans'), local('LiberationSans'),
-        url('hinted-subset-LiberationSans.woff') format('woff');
+        url('../fonts/hinted-subset-LiberationSans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,7 +22,7 @@
 @font-face {
     font-family: 'Ubuntu';
     src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
-        url('hinted-Ubuntu-Regular.woff') format('woff');
+        url('../fonts/hinted-Ubuntu-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -31,7 +31,7 @@
 @font-face {
     font-family: 'Open Sans';
     src: local('Open Sans Light'), local('OpenSans-Light'),
-        url('hinted-OpenSans-Light.woff') format('woff');
+        url('../fonts/hinted-OpenSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -39,7 +39,7 @@
 @font-face {
     font-family: 'Open Sans';
     src: local('Open Sans Semibold'), local('OpenSans-Semibold'),
-        url('hinted-OpenSans-Semibold.woff') format('woff');
+        url('../fonts/hinted-OpenSans-Semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }

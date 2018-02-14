@@ -22,7 +22,7 @@
 @font-face {
     font-family: 'Ubuntu';
     src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
-        url('../fonts/hinted-Ubuntu-Regular.woff') format('woff');
+        url('../fonts/hinted-subset-Ubuntu-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

@@ -28,23 +28,23 @@
 
 <!-- ***<<<Подключения скриптов>>>*** -->
 <!-- Подключить бибиотеку jQuery (production версия) -->
-<script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+<script src="../js/jquery-2.2.1.min.js"></script>
 <!-- Подключить бибиотеку jQuery UI (production версия) -->
 <script src="../js/ui/jquery-ui.min.js"></script>
 
 <!-- Добавить fancyBox -->
 <link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="../js/fancybox/source/jquery.fancybox.pack.js"></script>
 
 <!-- Простой режим запуска fancyBox -->
-<script type="text/javascript">
+<script>
 $(document).ready(function() {
     $(".fancybox").fancybox();
 });
 </script>
 
 <!-- Скрипт загрузки блоков (использует JQuery) -->
-<script type="text/javascript">
+<script>
 $( document ).ready(function() {
 	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
 	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
@@ -74,7 +74,7 @@ $( document ).ready(function() {
 Была проделана продуктивная работа: я 4,5 года оттачивал своё музыкальное умение и чутьё, 1,5 года изучал мастеринг,
 аккуратно и неторопливо создавал музыкальные композиции и вот &mdash; перед вами альбом "Мне не холодно".
 <br>Одну песенку пишу, другую сочиняю. По поводу моей музыки: я второоткрыватель своего жанра.
-Но и первооткрываетем был также я.
+Но и первооткрываетем был также я!
 <br>Альбомы распространяются по лицензии Creavite Commons
 (а именно <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>)
 с допуском на создание производных, и это было бы любопытно — увидеть ваши проивзодные!
@@ -83,14 +83,19 @@ $( document ).ready(function() {
 <br>Собрав свои силы и волю в солнечное сплетение,
 я сумел выпустить альбом "Необычайная лёгкость". Это мой максимум. Я очень доволен результатом!
 Как человек дела, я выпустил этот альбом! Как человек слова, я ещё и спел!
-<br>И не зря вы верили, что в следующем альбоме вы услышите, как я могу выдавать вокал в очень редком диапазоне.
+И не зря вы верили, что в следующем альбоме вы услышите, как я могу выдавать вокал в очень редком диапазоне.
 Как робот, как дикий зверь ягуар, да и вообще я могу делать натуральный wobble бас, только лишь используя возможности своего организма.
 И даже звучание <a href="http://фохроер.рф/казуу/">казуу</a>! И вот это вот всё + Turntablism попало в новый альбом!
 И по длительности неплохой — 27 минут. 27 минут удивления, благородный витязь — это точно! + Доступен микс альбома, удивите друзей.
+<br>И на конфетец, хватило энергии и для создания альбома "Соки из наушников".
+Почему я выпустил этот альбом? Когда свежие продукты долго хранятся даже в холодильнике — они начинают протухать. Допустить такое было нельзя!
+И снова я вернулся с вашим любимым звуком, а ещё с уникальными затяжными музыкальными диджестивами, которые нет-нет, да затронут что-то в душе!
+2018 год запомнится вам именно тем, что в этом году вы прослушали новый альбом Марса Фохроера!
+
 <br>Альбом "Мне не холодно" был представлен на <a href="http://www.gamedev.ru/flame/forum/?id=207741">сайте gamedev.ru</a>.
 
 <br>Что ж, поглядим, может на на эту страницу поступят ещё и другие альбомы. Но надо полагать, что это уже конец.
-<br>На данный момент музыкой занимаюсь уже в течение шести с небольшим лет.
+<br>На данный момент музыкой занимаюсь уже в течение семи с небольшим лет.
 <br>Если хотите заниматься электронной музыкой, я рекомендую вам использовать только легковесные VST плагины
 и не пренебрегать использованием бесплатных. Например, раньше у меня папка VSTPlugins занимала около 1 Гб. Теперь побольше.
 <br>Жизнь — это музыка. Больше басов — больше могущества. Но это лёгкий путь!
@@ -118,6 +123,7 @@ $( document ).ready(function() {
 		<li><a href="#artix">Артикс</a></li>
 		<li><a href="#neoble">Необычайная лёгкость</a></li>
 		<li><a href="#konjzot">Конжзот</a></li>
+		<li><a href="#soki">Соки из наушников</a></li>
 		<li><a href="#moshna">Отблагодарить</a></li>
 	</ul>
 	
@@ -192,6 +198,24 @@ $( document ).ready(function() {
 <p class="muzak"><img src="../images/theme/disks/small/dropbox.png" alt="Dropbox logo" width="32" height="32" /> <a title="Скачать zip архив с альбомом с Dropbox (FLAC 24 бита)" href="https://www.dropbox.com/s/242e4vh76e5yn66/konjzot.zip?dl=0">Скачать архив с Dropbox (24 битные FLAC файлы)</a></p>
 
 <!-- Микс альбома --><p class="muzak"><img src="../images/theme/disks/small/soundcloud.png" alt="SoundCloud logo" width="32" height="32" /> <a title="Прослушать альбом на SoundCloud" href="https://soundcloud.com/fohro/konjzot-mix">Прослушать микс альбома на SoundCloud (без регистрации)</a></p>
+</div>
+</div>
+
+<div id="artix">
+<!-- Соки из наушников -->
+<div>
+<p><a class="fancybox" href="../images/music/soki_cover.png" data-fancybox-group="gallery" title="Фохроер - Соки из наушников (обложка)"><img src="../images/music/soki_cover_small.png" alt="Фохроер - Артикс (обложка)" /></a></p>
+</div>
+<!--Это-->
+<div>
+<h2 id="artix-inside">Фохроер - Соки из наушников</h2>
+<h3><strong>Дата выпуска альбома:</strong> 03 марта апреля 2018 года</h3>
+<h3>MD5 сумма: 16bcebd7f97fd4c18d1bd89f4f5211f9  soki.zip</h3>
+<p class="muzak"><img src="../images/theme/disks/small/bandcamp.png" alt="Bandcamp logo" width="32" height="32" /> <a title="Скачать альбом с Bandcamp (+ прослушивание)" href="https://fohroer.bandcamp.com/album/--5">Скачать или прослушать на Bandcamp</a></p>
+<p class="muzak"><img src="../images/theme/disks/small/soundcloud.png" alt="SoundCloud logo" width="32" height="32" /> <a title="Прослушать альбом на SoundCloud" href="https://soundcloud.com/fohroer/sets/soki">Прослушать альбом на SoundCloud (без регистрации)</a></p>
+<p class="muzak"><img src="../images/theme/disks/small/yandex-disk.png" alt="Yandex.Disk logo" width="32" height="32" /> <a title="Скачать zip архив с альбомом с Яндекс.Диска (FLAC 24 бита)" href="https://yadi.sk/d/oe7v4HD93SyCzJ">Скачать архив с Яндекс.Диска (24 битные FLAC файлы)</a></p>
+<p class="muzak"><img src="../images/theme/disks/small/google_drive.png" alt="Google drive logo" width="32" height="32" /> <a title="Скачать zip архив с альбомом с Google Диска (FLAC 24 бита)" href="https://drive.google.com/open?id=1dxgP9zzUIY3YI1XG9K6EmVdBMF5t1iml">Скачать архив с Google Диска (24 битные FLAC файлы)</a></p>
+<p class="muzak"><img src="../images/theme/disks/small/dropbox.png" alt="Dropbox logo" width="32" height="32" /> <a title="Скачать zip архив с альбомом с Dropbox (FLAC 24 бита)" href="https://www.dropbox.com/s/qesm7yoaq3btq6z/soki.zip?dl=0">Скачать архив с Dropbox (24 битные FLAC файлы)</a></p>
 </div>
 </div>
 

@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /blocks/
 Disallow: /fonts/
 Disallow: /js/
+Disallow: /src/
 
 User-agent: *
 Disallow:

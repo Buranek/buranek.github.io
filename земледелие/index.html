@@ -28,7 +28,7 @@
 
 <!-- ***<<<Подключения скриптов>>>*** -->
 <!-- Подключить бибиотеку jQuery (production версия) -->
-<script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+<script src="../js/jquery-2.2.1.min.js"></script>
 <!-- Подключить бибиотеку jQuery UI (production версия) -->
 <script src="../js/ui/jquery-ui.min.js"></script>
 
@@ -38,17 +38,17 @@
 
 <!-- Добавить fancyBox -->
 <link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="../js/fancybox/source/jquery.fancybox.pack.js"></script>
 
 <!-- Простой режим запуска fancyBox -->
-<script type="text/javascript">
+<script>
 $(document).ready(function() {
     $(".fancybox").fancybox();
 });
 </script>
 
 <!-- Скрипт загрузки блоков (использует JQuery) -->
-<script type="text/javascript">
+<script>
 $( document ).ready(function() {
 	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
 	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->

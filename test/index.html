@@ -69,16 +69,6 @@ $( document ).ready(function() {
     success: parseXml
   });
 });
-
-function parseXml(xml)
-{
-  $("#main").html("<ul id='content' data-role='listview' data-inset='true'></ul>");
-  $(xml).find("item").each(function()
-  {
-    $("#content").append("<li><a href='"+$(this).find("link").text()+"'><img src='"+$(this).find("image").text()+"'/><h2>"+$(this).find("title").text()+"</h2><p>"+$(this).find("title").text()+"</p></a></li>");
-  });  
-}
-});
 </script>
 
 <!-- HTML5Shiv для осла -->
@@ -114,26 +104,18 @@ function parseXml(xml)
 <p>Ну, там, привет, это тест, ё-моё. Давайте сразу к новостям перейдём.</p>
 
 <h3 id="news">Новости</h3>
-<div class="newsfresh">
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-
-xmlhttp.open("GET","sample.xml",false);
-xmlhttp.send(null);
-xmlDoc=xmlhttp.responseXML; 
-document.write("<ul id='content' data-role='listview' data-inset='true'>");
-var x=xmlDoc.getElementsByTagName("item");
-for (i=0;i<x.length;i++)
-  {     
-    document.write("<li><a href='"+x[i].getElementsByTagName("link")[0].childNodes[0].nodeValue+"'><img src='"+x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue+"'/><h2>"+x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</h2><p>"+x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</p></a></li>");
-  }
-document.write("</ul>");
+<div>
+<script>
+function parseXml(xml)
+{
+  $("#main").html("<ul id='content' data-role='listview' data-inset='true'></ul>");
+  $(xml).find("item").each(function()
+  {
+    $("#content").append("<li><a href='"+$(this).find("link").text()+"'><img src='"+$(this).find("image").text()+"'/><h2>"+$(this).find("title").text()+"</h2><p>"+$(this).find("title").text()+"</p></a></li>");
+  });  
+}
+});
+</script>
 </div> <!-- Закрытие класса newsbox -->
 
 <h3 id="frommyheart">Лично от себя</h3>

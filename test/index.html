@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon-precomposed" href="../images/favicons/apple-touch-icon-57-precomposed.png">
 <!-- PNG значок сайта -->
 <link rel="shortcut icon" href="../images/favicons/favicon.png">
-<link rel="stylesheet" href="./style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
+<link rel="stylesheet" href="../style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
 
 <!-- ***<<<Подключения скриптов>>>*** -->
 <!-- Подключить бибиотеку jQuery (production версия) -->
@@ -114,14 +114,26 @@ function parseXml(xml)
 <p>Ну, там, привет, это тест, ё-моё. Давайте сразу к новостям перейдём.</p>
 
 <h3 id="news">Новости</h3>
-<div class="newsbox">
-Дата в новостях указана согласно международному формату разметки даты (как в EXIF).
+<div class="newsfresh">
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
 
-<!-- Отделение комплекта новостей (без br, потому что там div) -->
-<div class="main">
-<div id="loader" class="loader"><img src="../images/theme/loader.gif" alt="loader" id="load" width="64" height="64" style="vertical-align:middle;"/></div>
-</div> <!-- Закрытие класса main (новостей) -->
-
+xmlhttp.open("GET","sample.xml",false);
+xmlhttp.send(null);
+xmlDoc=xmlhttp.responseXML; 
+document.write("<ul id='content' data-role='listview' data-inset='true'>");
+var x=xmlDoc.getElementsByTagName("item");
+for (i=0;i<x.length;i++)
+  {     
+    document.write("<li><a href='"+x[i].getElementsByTagName("link")[0].childNodes[0].nodeValue+"'><img src='"+x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue+"'/><h2>"+x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</h2><p>"+x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</p></a></li>");
+  }
+document.write("</ul>");
 </div> <!-- Закрытие класса newsbox -->
 
 <h3 id="frommyheart">Лично от себя</h3>

@@ -59,16 +59,6 @@ $( document ).ready(function() {
 	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
 	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
 	$("#menu").load("../blocks/menu.html"); <!-- Меню -->
-
-<!-- <<<Парсер новостей>>> -->
-{
-  $.ajax({
-    type: "GET",
-    url: "sample.xml",
-    dataType: "xml",
-    success: parseXml
-  });
-});
 </script>
 
 <!-- HTML5Shiv для осла -->
@@ -106,6 +96,16 @@ $( document ).ready(function() {
 <h3 id="news">Новости</h3>
 <div>
 <script>
+$(document).ready(function()
+{
+  $.ajax({
+    type: "GET",
+    url: "sample.xml",
+    dataType: "xml",
+    success: parseXml
+  });
+});
+
 function parseXml(xml)
 {
   $("#main").html("<ul id='content' data-role='listview' data-inset='true'></ul>");
@@ -114,7 +114,6 @@ function parseXml(xml)
     $("#content").append("<li><a href='"+$(this).find("link").text()+"'><img src='"+$(this).find("image").text()+"'/><h2>"+$(this).find("title").text()+"</h2><p>"+$(this).find("title").text()+"</p></a></li>");
   });  
 }
-});
 </script>
 </div> <!-- Закрытие класса newsbox -->
 

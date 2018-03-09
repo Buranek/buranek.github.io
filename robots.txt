@@ -3,6 +3,7 @@ Disallow: /blocks/
 Disallow: /fonts/
 Disallow: /js/
 Disallow: /src/
+Disallow: /test/
 
 User-agent: *
 Disallow:

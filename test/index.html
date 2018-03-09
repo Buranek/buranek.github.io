@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--Language: Russian-->
+<!--Приветствую тебя, о благородный витязь. Отрадно, что ты заглянуть сюда решил! Тут с кодом дело обстоит не так уж плохо.-->
+<html lang="ru">
+
+<head>
+<title>Фохроер - Главная страница</title>
+<!-- Метан -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- Набор символов -->
+<meta name="description" content="Про Фохроера"> <!-- Описание страницы -->
+<meta name="keywords" content="фохроер,человек,о сайте,картины,музыка,созидание"> <!-- Ключевые слова -->
+<meta name="author" content="Fohroer"> <!-- Имя автора -->
+<meta name="generator" content="Static page" /> <!-- Оставлю это для статистики -->
+<!--<link rel="icon" href="../favicon.ico"> простой код значка сайта (неактуален) -->
+<!-- ICO браузеры -->
+<link rel="icon" href="../images/favicons/favicon-16.ico" type="image/x-icon">
+<link rel="icon" href="../images/favicons/favicon-32.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="../images/favicons/favicon-48.ico" type="image/vnd.microsoft.icon">
+<!-- PNG Apple -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/favicons/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/favicons/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/favicons/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../images/favicons/apple-touch-icon-57-precomposed.png">
+<!-- PNG значок сайта -->
+<link rel="shortcut icon" href="../images/favicons/favicon.png">
+<link rel="stylesheet" href="./style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
+
+<!-- ***<<<Подключения скриптов>>>*** -->
+<!-- Подключить бибиотеку jQuery (production версия) -->
+<script src="../js/jquery-2.2.1.min.js"></script>
+
+<!-- Стиль парсера -->
+<style>
+  img{
+    float: left;
+    padding-right: 20px;
+  }
+  ul li{
+    height: 100px;
+    list-style: none;
+  }
+  ul li:hover{
+    background-color: #ccc;
+  }
+  ul li a{
+    color: #555;
+    text-decoration: none;
+  }
+  ul li:hover a{
+    color: white;
+  }
+</style>
+
+<!-- Скрипт загрузки блоков (использует JQuery) -->
+<script>
+$( document ).ready(function() {
+	$("#slogan").load("../blocks/slogan.html"); <!-- Слоган сайта -->
+	$("#metrika").load("../blocks/metrika.html"); <!-- Яндекс.Метрика -->
+	$("#socials").load("../blocks/socials.html"); <!-- Кнопочки сервисов -->
+	$("#footer").load("../blocks/footer.html"); <!-- Подвал -->
+	$("#menu").load("../blocks/menu.html"); <!-- Меню -->
+
+<!-- <<<Парсер новостей>>> -->
+{
+  $.ajax({
+    type: "GET",
+    url: "sample.xml",
+    dataType: "xml",
+    success: parseXml
+  });
+});
+
+function parseXml(xml)
+{
+  $("#main").html("<ul id='content' data-role='listview' data-inset='true'></ul>");
+  $(xml).find("item").each(function()
+  {
+    $("#content").append("<li><a href='"+$(this).find("link").text()+"'><img src='"+$(this).find("image").text()+"'/><h2>"+$(this).find("title").text()+"</h2><p>"+$(this).find("title").text()+"</p></a></li>");
+  });  
+}
+});
+</script>
+
+<!-- HTML5Shiv для осла -->
+<!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="content">
+<div id="slogan"></div>
+
+<!-- Левый блок сайта -->
+<div id="left">
+<!-- Содержание сайта -->
+<h2>Здравствуйте! Вы сможете узнать меня, благодаря этой странице.</h2>
+<br><div class='marquee'><div class='marquee-text'>Здесь интересно — я гарантирую это!</div></div>
+
+<br>
+<h3 id="contents">Оглавление страницы</h3>
+<ul>
+	<li><a href="#rfspeaking">Говорит РФ</a></li>
+	<li><a href="#prim">Очень важное</a></li>
+	<li><a href="#news"><b>Новости</b></a></li>
+	<li><a href="#frommyheart">Лично от себя</a></li>
+</ul>
+
+<h3 id="rfspeaking">Говорит РФ</h3>
+<!-- Флаг РФ --><p><img id="FlagRF" alt="Флаг РФ" title="Флаг Российской Федерации — нашего государства" src="../images/theme/FlagRF.png" height="92" width="122"></p>
+<p>Итак, Вы здесь, чтобы узреть слова от имени Российской Федерации. Говорит Российская Федерация! Марс Фохроер — мой человек!</p>
+
+<h3 id="prim">Очень важное</h3>
+<p>Ну, там, привет, это тест, ё-моё. Давайте сразу к новостям перейдём.</p>
+
+<h3 id="news">Новости</h3>
+<div class="newsbox">
+Дата в новостях указана согласно международному формату разметки даты (как в EXIF).
+
+<!-- Отделение комплекта новостей (без br, потому что там div) -->
+<div class="main">
+<div id="loader" class="loader"><img src="../images/theme/loader.gif" alt="loader" id="load" width="64" height="64" style="vertical-align:middle;"/></div>
+</div> <!-- Закрытие класса main (новостей) -->
+
+</div> <!-- Закрытие класса newsbox -->
+
+<h3 id="frommyheart">Лично от себя</h3>
+<p>Лично от себя хочу добавить следующее. Текст изложен на французском. Я его учил, поэтому здесь всё чётко.</p>
+<ul>
+<li>Nobles preux! Bienvenue en ces terres!!</li>
+<li><b>Sailcast</b>, merci pour la recherche de nombreux défauts sur ce site!</li>
+<li>L'éclat de la fibre optique!</li>
+</ul>
+<!-- Достижение --><div class="kartoright"><img src="../images/theme/fiber.png" alt="Сияние оптоволокна" title="Сияние оптоволокна" width="200" height="117"></div>
+</div>
+
+<div id="right">
+<h3>Меню сайта:</h3><br>
+<div id='menu'></div><!-- Нутро меню сайта -->
+<br>
+
+<div id='socials'></div><!-- Социальный блок -->
+<div id='metrika'></div><!-- Яндекс.Метрика -->
+
+</div>
+
+<div id="footer"></div><!-- Подвал -->
+
+</div>
+</body>
+</html>

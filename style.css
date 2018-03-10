@@ -508,21 +508,6 @@ footer {
 	min-height: 85%;
 	}
 
-/* Тестовые новости */
-#main {
-	width: 98%;
-	margin: 0 auto;
-	height: 130px;
-	font-size: 13pt;
-    line-height: 110%;
-	font-weight: bold;
-	text-align: center;
-	margin-top: 1em;
-/* color: #0F2658;  Цвет текста новости */
-	overflow-y: scroll; /* Прокручивать текст при перезаполнении */
-	min-height: 85%;
-	}
-
 /* Логотип загрузки новостей */
 .loader {
 	height:36px;

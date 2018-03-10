@@ -44,7 +44,7 @@ $( document ).ready(function() {
 $(document).ready(function () {
     $.ajax({
         type: "GET",
-        url: "../list.xml",
+        url: "../news.xml",
         dataType: "xml",
         success: xmlParser
     });
@@ -54,9 +54,9 @@ function xmlParser(xml) {
 
     $('#load').fadeOut();
 
-    $(xml).find("Article").each(function () {
+    $(xml).find("item").each(function () {
 
-        $(".main").append('<div class="article"><div class="title">' + $(this).find("Title").text() + '</div><div class="full">' + $(this).find("Full").html() + '</div><div class="date">Добавлена: ' + $(this).find("Date").text() + '</div></div>');
+        $(".main").append('<div class="article"><div class="title">' + $(this).find("title").text() + '</div><div class="full">' + $(this).find("description").html() + '</div><div class="date">Добавлена: ' + $(this).find("pubDate").text() + '</div></div>');
         $(".article").fadeIn(500); // Плавное выплывание
     });
 

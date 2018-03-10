@@ -111,11 +111,10 @@ $(document).ready(function()
 
 function parseXml(xml)
 {
-	$('#load').fadeOut()
-	$("#main").html("<div class="article"></div>");
 	$(xml).find("item").each(function()
 	{
 		$(".main").append("<div class="article"><a href='"+$(this).find("link").text()+"'><img src='"+$(this).find("image").text()+"'/><div class="title">"+$(this).find("title").text()+"</div><p>"+$(this).find("description").text()+"</p></a></div>");
+		$(".article").fadeIn(500); // Плавное выплывание
 	});  
 }
 </script>

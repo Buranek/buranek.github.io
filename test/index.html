@@ -113,7 +113,7 @@ function parseXml(xml)
 {
 	$(xml).find("item").each(function()
 	{
-		$(".main").append("<div class="article"><a href='"+$(this).find("link").text()+"'><img src='"+$(this).find("image").text()+"'/><div class="title">"+$(this).find("title").text()+"</div><p>"+$(this).find("description").text()+"</p></a></div>");
+		$(".main").append('<div class="article"><div class="title">' + $(this).find("Title").text() + '</div><div class="full">' + $(this).find("Full").html() + '</div><div class="date">Добавлена: ' + $(this).find("Date").text() + '</div></div>');
 		$(".article").fadeIn(500); // Плавное выплывание
 	});  
 }

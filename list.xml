@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- От более новых к более старым (сверху вниз) -->
+<rss version="2.0">
 <RecentArticles>
 
   <Article>
@@ -544,3 +545,4 @@
   </Article>
 
 </RecentArticles>
+</rss>

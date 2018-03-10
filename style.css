@@ -242,7 +242,7 @@ button {
 	border-right: 1px solid #5E5945;
 }
 
-/* Кусок с новостями или страницей (или галереей) */
+/* Кусок со статьёй или галереей */
 
 #left, #right {
 background: #ded1be url(../images/theme/mainback.png) repeat top left; /* Клёвый бесшовный фон */

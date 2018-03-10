@@ -114,7 +114,7 @@ function parseXml(xml)
   $("#main").html("<ul id='content' data-role='listview' data-inset='true'></ul>");
   $(xml).find("item").each(function()
   {
-    $("#content").append("<li><a href='"+$(this).find("link").text()+"'><img src='"+$(this).find("image").text()+"'/><h2>"+$(this).find("title").text()+"</h2><p>"+$(this).find("description").text()+"</p></a></li>");
+    $("#content").append("<div class="article"><a href='"+$(this).find("link").text()+"'><img src='"+$(this).find("image").text()+"'/><div class="title">"+$(this).find("title").text()+"</div><p>"+$(this).find("description").text()+"</p></a></div>");
   });  
 }
 </script>

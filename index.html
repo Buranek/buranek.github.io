@@ -56,7 +56,7 @@ function xmlParser(xml) {
 
     $(xml).find("item").each(function () {
 
-        $(".main").append('<div class="article"><div class="title">' + $(this).find("title").text() + '</div><div class="full">' + $(this).find("description").html() + '</div><div class="date">Добавлена: ' + $(this).find("pubDate").text() + '</div></div>');
+        $(".main").append('<div class="article"><div class="title">' + $(this).find("title").text() + <img src='"+$(this).find("image").text()+"' class = "acticleimg" alt="Картинка для новости"/> + '</div><div class="full">' + $(this).find("description").html() + '</div><div class="date">Добавлена: ' + $(this).find("pubDate").text() + '</div></div>');
         $(".article").fadeIn(500); // Плавное выплывание
     });
 

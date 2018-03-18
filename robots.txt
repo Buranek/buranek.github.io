@@ -4,6 +4,7 @@ Disallow: /fonts/
 Disallow: /js/
 Disallow: /src/
 Disallow: /test/
+Disallow: /sexypage/
 
 User-agent: *
 Disallow:

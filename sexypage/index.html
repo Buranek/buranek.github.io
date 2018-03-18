@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Страница статей</title>
+<link rel="stylesheet" href="style.css" type="text/css"> <!-- Ссылка на каскадные таблицы стилей сайта -->
+</head>
+
+<body>
+<div class="container">
+<div class="stack-container">
+<div class="frames-container cf ">
+<div class="frame active" id="frame-line-0">
+<div class="frame-method-info">
+<span class="frame-index">1. </span><span class="frame-class">Статья первая</span></div>
+</div>
+
+<div class="frame" id="frame-line-1">             
+<div class="frame-method-info">
+<span class="frame-index">2. </span>
+<span class="frame-class">Секси текст</span>
+<span class="frame-function">Ещё и красивый</span>
+</div>
+
+<span class="frame-file">путь ошибки: пшш</span></div>
+</div>
+
+<div class="details-container cf">
+<header>
+<div class="exception">        
+<h1><span class="exc-title-primary">Сайт о технологиях будущего</span></h1>
+<h2 id="g0.1">Жахайся оно всё с конём!</h2>
+</div>
+</header>
+
+<div class="frame-code-container ">        
+<div class="frame-code active" id="frame-code-0">
+<div class="frame-file"><a href="#" class="editor-link"><span class="editor-link-callout">Жаба за рубиль:</span>&nbsp;</a>Лучший код!</div>
+<pre class="code-block prettyprint linenums:160 prettyprinted" style="">
+<ul>
+<li>1</li>
+<li>1</li>
+<li>1</li>
+<li><h1>Хватит маленьких гомосексуальных цифр, теперь будут буквы!</h1></li>
+<li><h2>ФЫВА</h2></li>
+</ul></pre>
+
+<div class="frame-comments empty">
+</div>
+</div>
+
+<div class="frame-code" id="frame-code-1">
+                 
+<div class="frame-file"><a href="#" class="editor-link"><span class="editor-link-callout">Пельмени:</span> <strong>из мягкого места мамонта</strong></a></div>
+
+<pre class="code-block prettyprint linenums:160 prettyprinted" style="">
+<ol class="linenums">
+<li value="0" class="L9 current active"><span class="pln">нихуя</span></li><!-- Как я понял, обозначение начала -->
+<!-- Здесь мог бы быть код ошибки сайта -->
+<li class="L0 current">допустим, строка кода, да?</li>
+
+<div class="comments">
+<div class="comment dialog">
+<p>Привет! Выглядит как сообщение?</p>
+</div>
+</div>
+
+<div class="comments">
+<div class="comment dialog">
+<p>Как дела?</p>
+</div>
+</div>
+
+</ol>
+</pre>
+
+<div class="frame-comments empty"></div>
+</div>
+</div>
+
+<!-- Lorem — зал мероприятий -->
+<div class="details"> 
+<div class="data-table-container" id="data-tables">
+<div class="data-table" id="sg-serverrequest-data">
+<label>Пацаны одобряют</label>
+
+<table class="data-table">
+<thead>
+<!--
+<tr>
+<td class="data-table-k">Key</td>
+<td class="data-table-v">Value</td>
+</tr>
+-->
+</thead>
+
+<tbody>
+<tr>
+<td>Lorem</td>
+                    
+<td>забегаловка</td>
+</tr>
+                                             
+</tbody>
+</table>
+</div>
+
+                             
+<div class="data-table" id="sg-post-data">
+<label>Родственники</label><span class="empty">сказали, что очень клёво было</span></div>
+</div>
+                       
+<div class="data-table-container" id="handlers">
+<label>Чо-то ещё</label>
+<div class="handler active">Ух ты, прям ваще норм!</div>
+</div>
+
+          </div>
+<!-- .details -->
+        </div>
+
+      </div>
+    </div>
+
+    <script src="prettify.js"></script> <!--Нужен, чтобы всякие анимации скольжения работали-->
+    <script src="jquery.js"></script>
+    <script>
+      $(function() {
+        prettyPrint();
+
+        var $frameLines  = $('[id^="frame-line-"]');
+        var $activeLine  = $('.frames-container .active');
+        var $activeFrame = $('.active[id^="frame-code-"]').show();
+        var $container   = $('.details-container');
+        var headerHeight = $('header').css('height');
+
+        var highlightCurrentLine = function() {
+          // Highlight the active and neighboring lines for this frame:
+          var activeLineNumber = +($activeLine.find('.frame-line').text());
+          var $lines           = $activeFrame.find('.linenums li');
+          var firstLine        = +($lines.first().val());
+
+          $($lines[activeLineNumber - firstLine - 1]).addClass('current');
+          $($lines[activeLineNumber - firstLine]).addClass('current active');
+          $($lines[activeLineNumber - firstLine + 1]).addClass('current');
+        };
+
+        // Highlight the active for the first frame:
+        highlightCurrentLine();
+
+        $frameLines.click(function() {
+          var $this  = $(this);
+          var id     = /frame\-line\-([\d]*)/.exec($this.attr('id'))[1];
+          var $codeFrame = $('#frame-code-' + id);
+
+          if($codeFrame) {
+            $activeLine.removeClass('active');
+            $activeFrame.removeClass('active');
+
+            $this.addClass('active');
+            $codeFrame.addClass('active');
+
+            $activeLine  = $this;
+            $activeFrame = $codeFrame;
+
+            highlightCurrentLine();
+
+            $container.animate({ scrollTop: headerHeight }, "fast");
+          }
+        });
+      });
+    </script>
+</body>
+</html>

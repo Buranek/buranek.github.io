@@ -14,6 +14,10 @@
 * Добавить новые фото растений на сайт (ближе к лету).
 * Добавить картинки к новостям (или не добавлять). Их потребуется нарисовать (или не потребуется).
 
+### Текст лицензии
+
+https://github.com/Fohroer/fohroer.github.io/blob/master/LICENSE
+
 ********************************************************
 
 ## Main ReadMe
@@ -23,6 +27,10 @@ Wanna pay for copyright? You'd better go and buy some bread or rice.
 This website is presented in Russian. Made with kindness.
 
 Yo, are you chinese, do you like rice?
+
+### Lecense text
+
+https://github.com/Fohroer/fohroer.github.io/blob/master/LICENSE
 
 ********************************************************
 

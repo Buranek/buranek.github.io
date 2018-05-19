@@ -4,6 +4,13 @@
  <channel>
 
   <item>
+    <title>Ещё одна картина</title>
+    <description>+ 1 картина</description>
+    <image>http://фохроер.рф/images/news/yobanews.png</image>
+    <pubDate>2018/05/17 23:40:00 GMT+3</pubDate>
+  </item>
+
+  <item>
     <title>Классно доработал</title>
     <description>Доработал статьи и тексты, добавил одну новую картину.</description>
     <image>http://фохроер.рф/images/news/yobanews.png</image>
